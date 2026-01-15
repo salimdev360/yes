@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Age | RizzLines</title>
+
+  <meta name="description" content="Select your age range to personalize rizz lines and conversation styles. We respect your privacy and store preferences locally.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== BASE ===== */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 15px;
+    }
+
+    /* ===== MAIN CARD ===== */
+    .landing-container {
+      text-align: center;
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(16px);
+      border-radius: 26px;
+      padding: 50px 30px;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.55);
+      max-width: 420px;
+      width: 100%;
+      animation: fadeIn 0.9s ease-in-out;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 12px;
+      color: #ff79c6;
+      text-shadow: 0 0 12px rgba(255,121,198,0.8);
+    }
+
+    .subtitle {
+      font-size: 16px;
+      opacity: 0.85;
+      margin-bottom: 32px;
+    }
+
+    /* ===== BUTTONS ===== */
+    .start-btn {
+      display: block;
+      width: 85%;
+      margin: 14px auto;
+      padding: 15px 0;
+      font-size: 18px;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(45deg, #ff416c, #ff4b2b);
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      letter-spacing: 1.3px;
+      box-shadow: 0 0 18px rgba(255,65,108,0.7);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .start-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 28px rgba(255,65,108,1),
+                  0 0 55px rgba(255,65,108,0.8);
+    }
+
+    /* ===== EXPLANATION ===== */
+    .bottom-info {
+      max-width: 900px;
+      margin-top: 45px;
+      padding: 30px 25px;
+      background: rgba(0,0,0,0.25);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      font-size: 14px;
+      line-height: 1.8;
+      opacity: 0.9;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .bottom-info strong {
+      color: #ff79c6;
+      font-size: 16px;
+    }
+
+    /* ===== ANIMATION ===== */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ===== MOBILE ===== */
+    @media (max-width: 520px) {
+      h1 {
+        font-size: 28px;
+      }
+      .start-btn {
+        font-size: 16px;
+        padding: 13px 0;
+      }
+      .bottom-info {
+        font-size: 13px;
+        padding: 22px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- MAIN CARD -->
+  <div class="landing-container">
+    <h1>🎂 How Old Are You?</h1>
+    <div class="subtitle">
+      Select your age range to personalize your experience
+    </div>
+
+    <button class="start-btn" onclick="selectAge('13-17')">13 – 17</button>
+    <button class="start-btn" onclick="selectAge('18-24')">18 – 24</button>
+    <button class="start-btn" onclick="selectAge('25-34')">25 – 34</button>
+    <button class="start-btn" onclick="selectAge('35+')">35+</button>
+  </div>
+
+  <!-- PROFESSIONAL EXPLANATION -->
+  <div class="bottom-info">
+    <strong>Why does RizzLines ask for age?</strong><br><br>
+
+    At RizzLines, personalization is essential to creating confident, comfortable, and
+    respectful conversations. Age plays a major role in communication style, humor,
+    references, and social boundaries. Asking for an age range allows RizzLines to suggest
+    rizz lines and conversation starters that feel appropriate, relatable, and natural
+    for your stage of life.
+
+    <br><br>
+    This information helps ensure that content matches maturity level and social context.
+    What feels funny or charming at one age may feel awkward or out of place at another.
+    By understanding general age ranges, RizzLines avoids generic suggestions and instead
+    provides content that aligns better with real-world interactions.
+
+    <br><br>
+    Age selection is also important for maintaining a safe and responsible platform.
+    Certain types of content are only appropriate for adults, while younger users benefit
+    from lighter, respectful, and age-appropriate suggestions. Selecting an age range
+    helps RizzLines maintain these boundaries without collecting sensitive personal data.
+
+    <br><br>
+    We want to be completely transparent: RizzLines does not require your exact age or
+    date of birth. We only ask for a general age range, which reduces risk and protects
+    your privacy. No names, emails, phone numbers, or identifying details are collected
+    at this step.
+
+    <br><br>
+    Privacy is a core value at RizzLines. Your age range is stored locally on your device
+    using browser storage. This information stays on your phone or computer and is not
+    transmitted to advertisers, third-party services, or external databases. We do not
+    sell data or track users across websites.
+
+    <br><br>
+    From a user-experience perspective, age-based personalization improves quality and
+    relevance. Instead of repeating the same lines for everyone, RizzLines adapts tone,
+    language, and style to better suit your age group. This leads to more natural
+    conversations and greater confidence when interacting with others.
+
+    <br><br>
+    It is also important to clarify what RizzLines does not do. We do not monitor private
+    messages, access personal chats, or use age selection for profiling or advertising.
+    Age selection does not affect access to features unfairly — it exists solely to
+    improve content relevance and platform safety.
+
+    <br><br>
+    By continuing, you acknowledge that this selection is optional, non-identifying, and
+    used only to enhance your experience. RizzLines is built on transparency, respect,
+    and responsible personalization — because confidence should always feel safe.
+  </div>
+
+  <!-- SCRIPT -->
+  <script>
+    function selectAge(age) {
+      localStorage.setItem("rizz_age", age);
+      window.location.href = "lforth.html";
+    }
+  </script>
+
+</body>
+</html>

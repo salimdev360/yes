@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Motivational Quotes — Rizz Lines & Quotes</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  padding-top:80px;
+  background: linear-gradient(135deg,#ff7e5f,#feb47b);
+  color:#111;
+  transition: background 0.8s, color 0.8s;
+}
+body.dark-mode{
+  background: linear-gradient(135deg,#1b1745,#0f0c29);
+  color:#fff;
+}
+
+/* Header */
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  height:70px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 20px;
+  background:rgba(255,255,255,0.9);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+  transition: background 0.5s;
+}
+body.dark-mode header{
+  background: rgba(15,12,41,0.95);
+}
+header .brand{
+  font-weight:700;
+  font-size:20px;
+  color:#ff416c;
+}
+.burger{
+  width:30px;
+  cursor:pointer;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.burger span{
+  height:3px;
+  margin:5px 0;
+  background:#111;
+  border-radius:5px;
+  transition:0.3s;
+}
+body.dark-mode .burger span{
+  background:#fff;
+}
+
+/* Burger Menu */
+.menu{
+  position:fixed;
+  top:0;
+  left:-100%;
+  width:260px;
+  height:100vh;
+  padding:90px 20px;
+  background:rgba(255,255,255,.95);
+  transition:0.4s;
+  z-index:1000;
+}
+body.dark-mode .menu{
+  background:rgba(20,18,55,.97);
+}
+.menu.active{left:0;}
+.menu a, .menu button{
+  display:block;
+  margin-bottom:16px;
+  text-align:center;
+  text-decoration:none;
+  color:#ff416c;
+  font-weight:600;
+  background:none;
+  border:none;
+  cursor:pointer;
+  width:100%;
+  padding:12px 0;
+  border-radius:12px;
+  transition: transform 0.2s, color 0.2s;
+}
+.menu a:hover, .menu button:hover{
+  transform:scale(1.05);
+  color:#ff8c42;
+}
+
+/* Back button */
+.back-btn{
+  display:inline-block;
+  padding:14px 32px;
+  margin:20px auto;
+  border-radius:50px;
+  font-weight:600;
+  border:none;
+  cursor:pointer;
+  background:linear-gradient(45deg,#f7971e,#ffd200);
+  color:#111;
+  font-size:1.1em;
+  transition:all 0.3s;
+  text-decoration:none;
+  text-align:center;
+}
+body.dark-mode .back-btn{
+  background:linear-gradient(45deg,#ff416c,#ff4b2b);
+  color:#fff;
+}
+.back-btn:hover{
+  transform:scale(1.05);
+  opacity:0.9;
+}
+
+/* Quotes Container */
+.quotes-container{
+  max-width:900px;
+  margin:40px auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px;
+  padding:0 20px;
+}
+.quote-card{
+  background:linear-gradient(135deg,#ffecd2,#fcb69f);
+  padding:24px;
+  border-radius:20px;
+  font-size:1.15em;
+  font-weight:500;
+  color:#111;
+  position:relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor:default;
+}
+.quote-card:hover{
+  transform: translateY(-6px) scale(1.02);
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+body.dark-mode .quote-card{
+  background: linear-gradient(135deg,#ff416c,#ff4b2b);
+  color:#fff;
+}
+.quote-card::before{
+  content:"🔥";
+  position:absolute;
+  top:10px;
+  left:10px;
+  font-size:1.3em;
+}
+
+/* Page Title */
+.page-title{
+  text-align:center;
+  font-size:2.2em;
+  margin:30px 20px 10px 20px;
+  background: linear-gradient(90deg,#f7971e,#ffd200,#ff416c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 5s infinite linear;
+}
+@keyframes gradientShift {
+  0% { background-position:0% 50%; }
+  50% { background-position:100% 50%; }
+  100% { background-position:0% 50%; }
+}
+</style>
+</head>
+<body class="light-mode">
+
+<header>
+  <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  <div class="brand">🚀 Motivational Energy</div>
+   <div class="burger" id="burger"><span></span><span></span><span></span></div>
+</header>
+
+<nav class="menu" id="menu">
+  <a href="oabout.html">About</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="ncontacts.html">Contact</a>
+  <button onclick="toggleMode()">Light/Dark Mode</button>
+</nav>
+
+<!-- Back Button -->
+<div style="text-align:center;">
+  <a href="mquotes.html" class="back-btn">⬅ Back to Quotes</a>
+</div>
+
+<!-- Page Title -->
+<h1 class="page-title">⚡ Boost Your Motivation ⚡</h1>
+
+<!-- Quotes Section -->
+<div class="quotes-container">
+  <div class="quote-card">“The best way to get started is to quit talking and begin doing.”</div>
+  <div class="quote-card">“Don’t let yesterday take up too much of today.”</div>
+  <div class="quote-card">“Push yourself, because no one else is going to do it for you.”</div>
+  <div class="quote-card">“Success doesn’t just find you. You have to go out and get it.”</div>
+  <div class="quote-card">“Great things never come from comfort zones.”</div>
+  <div class="quote-card">“Dream it. Wish it. Do it.”</div>
+   <div class="quote-card">“The best way to get started is to quit talking and begin doing.”</div>
+  <div class="quote-card">“Don’t let yesterday take up too much of today.”</div>
+  <div class="quote-card">“The best way to get started is to quit talking and begin doing.”</div>
+<div class="quote-card">“Don’t let yesterday take up too much of today.”</div>
+<div class="quote-card">“It’s not whether you get knocked down, it’s whether you get up.”</div>
+<div class="quote-card">“If you are working on something exciting, it will keep you motivated.”</div>
+<div class="quote-card">“Success is not in what you have, but who you are.”</div>
+<div class="quote-card">“Hard work beats talent when talent doesn’t work hard.”</div>
+<div class="quote-card">“Don’t wait for opportunity. Create it.”</div>
+<div class="quote-card">“Great things never come from comfort zones.”</div>
+<div class="quote-card">“Dream it. Wish it. Do it.”</div>
+<div class="quote-card">“Push yourself, because no one else is going to do it for you.”</div>
+<div class="quote-card">“Success doesn’t just find you. You have to go out and get it.”</div>
+<div class="quote-card">“The harder you work for something, the greater you’ll feel when you achieve it.”</div>
+<div class="quote-card">“Dream bigger. Do bigger.”</div>
+<div class="quote-card">“Don’t stop when you’re tired. Stop when you’re done.”</div>
+<div class="quote-card">“Wake up with determination. Go to bed with satisfaction.”</div>
+<div class="quote-card">“Little things make big days.”</div>
+<div class="quote-card">“It’s going to be hard, but hard does not mean impossible.”</div>
+<div class="quote-card">“Don’t wait for the perfect moment. Take the moment and make it perfect.”</div>
+<div class="quote-card">“Sometimes later becomes never. Do it now.”</div>
+<div class="quote-card">“Success is what happens after you have survived all your mistakes.”</div>
+<div class="quote-card">“The key to success is to focus on goals, not obstacles.”</div>
+<div class="quote-card">“Your limitation—it’s only your imagination.”</div>
+<div class="quote-card">“Dream it. Believe it. Build it.”</div>
+<div class="quote-card">“Do something today that your future self will thank you for.”</div>
+<div class="quote-card">“Great things take time. Be patient.”</div>
+<div class="quote-card">“Don’t wish it were easier. Wish you were better.”</div>
+<div class="quote-card">“Sometimes we’re tested not to show our weaknesses, but to discover our strengths.”</div>
+<div class="quote-card">“The way to get started is to quit talking and begin doing.”</div>
+<div class="quote-card">“Motivation is what gets you started. Habit is what keeps you going.”</div>
+<div class="quote-card">“The only limit to our realization of tomorrow will be our doubts today.”</div>
+<div class="quote-card">“Failure will never overtake me if my determination to succeed is strong enough.”</div>
+<div class="quote-card">“Act as if what you do makes a difference. It does.”</div>
+<div class="quote-card">“You don’t have to be great to start, but you have to start to be great.”</div>
+<div class="quote-card">“Great things are done by a series of small things brought together.”</div>
+<div class="quote-card">“Believe you can and you’re halfway there.”</div>
+<div class="quote-card">“Don’t be pushed around by the fears in your mind. Be led by the dreams in your heart.”</div>
+<div class="quote-card">“Do what you can with all you have, wherever you are.”</div>
+<div class="quote-card">“Success is not final, failure is not fatal: It is the courage to continue that counts.”</div>
+<div class="quote-card">“The secret of getting ahead is getting started.”</div>
+<div class="quote-card">“Everything you’ve ever wanted is on the other side of fear.”</div>
+<div class="quote-card">“Opportunities don’t happen. You create them.”</div>
+<div class="quote-card">“Don’t limit your challenges. Challenge your limits.”</div>
+<div class="quote-card">“Push yourself because no one else is going to do it for you.”</div>
+<div class="quote-card">“If it doesn’t challenge you, it won’t change you.”</div>
+<div class="quote-card">“Success usually comes to those who are too busy to be looking for it.”</div>
+<div class="quote-card">“Don’t watch the clock; do what it does. Keep going.”</div>
+<div class="quote-card">“The future depends on what you do today.”</div>
+<div class="quote-card">“It always seems impossible until it’s done.”</div>
+<div class="quote-card">“Small daily improvements over time lead to stunning results.”</div>
+<div class="quote-card">“You are capable of more than you know.”</div>
+<div class="quote-card">“Great things never come from comfort zones.”</div>
+<div class="quote-card">“Start where you are. Use what you have. Do what you can.”</div>
+<div class="quote-card">“The only way to do great work is to love what you do.”</div>
+<div class="quote-card">“The best way to get started is to quit talking and begin doing.”</div>
+<div class="quote-card">“Don’t let yesterday take up too much of today.”</div>
+<div class="quote-card">“It’s not whether you get knocked down, it’s whether you get up.”</div>
+<div class="quote-card">“If you are working on something exciting, it will keep you motivated.”</div>
+<div class="quote-card">“Success is not in what you have, but who you are.”</div>
+<div class="quote-card">“Hard work beats talent when talent doesn’t work hard.”</div>
+<div class="quote-card">“Don’t wait for opportunity. Create it.”</div>
+<div class="quote-card">“Great things never come from comfort zones.”</div>
+<div class="quote-card">“Dream it. Wish it. Do it.”</div>
+<div class="quote-card">“Push yourself, because no one else is going to do it for you.”</div>
+<div class="quote-card">“Success doesn’t just find you. You have to go out and get it.”</div>
+<div class="quote-card">“The harder you work for something, the greater you’ll feel when you achieve it.”</div>
+<div class="quote-card">“Dream bigger. Do bigger.”</div>
+<div class="quote-card">“Don’t stop when you’re tired. Stop when you’re done.”</div>
+<div class="quote-card">“Wake up with determination. Go to bed with satisfaction.”</div>
+<div class="quote-card">“Little things make big days.”</div>
+<div class="quote-card">“It’s going to be hard, but hard does not mean impossible.”</div>
+<div class="quote-card">“Don’t wait for the perfect moment. Take the moment and make it perfect.”</div>
+<div class="quote-card">“Sometimes later becomes never. Do it now.”</div>
+<div class="quote-card">“Success is what happens after you have survived all your mistakes.”</div>
+<div class="quote-card">“The key to success is to focus on goals, not obstacles.”</div>
+<div class="quote-card">“Your limitation—it’s only your imagination.”</div>
+<div class="quote-card">“Dream it. Believe it. Build it.”</div>
+<div class="quote-card">“Do something today that your future self will thank you for.”</div>
+<div class="quote-card">“Great things take time. Be patient.”</div>
+<div class="quote-card">“Don’t wish it were easier. Wish you were better.”</div>
+<div class="quote-card">“Sometimes we’re tested not to show our weaknesses, but to discover our strengths.”</div>
+<div class="quote-card">“Motivation is what gets you started. Habit is what keeps you going.”</div>
+<div class="quote-card">“The only limit to our realization of tomorrow will be our doubts today.”</div>
+<div class="quote-card">“Failure will never overtake me if my determination to succeed is strong enough.”</div>
+<div class="quote-card">“Act as if what you do makes a difference. It does.”</div>
+<div class="quote-card">“You don’t have to be great to start, but you have to start to be great.”</div>
+<div class="quote-card">“Great things are done by a series of small things brought together.”</div>
+<div class="quote-card">“Believe you can and you’re halfway there.”</div>
+<div class="quote-card">“Don’t be pushed around by the fears in your mind. Be led by the dreams in your heart.”</div>
+<div class="quote-card">“Do what you can with all you have, wherever you are.”</div>
+<div class="quote-card">“Success is not final, failure is not fatal: It is the courage to continue that counts.”</div>
+<div class="quote-card">“The secret of getting ahead is getting started.”</div>
+<div class="quote-card">“Everything you’ve ever wanted is on the other side of fear.”</div>
+<div class="quote-card">“Opportunities don’t happen. You create them.”</div>
+<div class="quote-card">“Don’t limit your challenges. Challenge your limits.”</div>
+<div class="quote-card">“Push yourself because no one else is going to do it for you.”</div>
+<div class="quote-card">“If it doesn’t challenge you, it won’t change you.”</div>
+<div class="quote-card">“Success usually comes to those who are too busy to be looking for it.”</div>
+<div class="quote-card">“Don’t watch the clock; do what it does. Keep going.”</div>
+<div class="quote-card">“The future depends on what you do today.”</div>
+<div class="quote-card">“It always seems impossible until it’s done.”</div>
+<div class="quote-card">“Small daily improvements over time lead to stunning results.”</div>
+<div class="quote-card">“You are capable of more than you know.”</div>
+<div class="quote-card">“Great things never come from comfort zones.”</div>
+<div class="quote-card">“Start where you are. Use what you have. Do what you can.”</div>
+<div class="quote-card">“The only way to do great work is to love what you do.”</div>
+<div class="quote-card">“The harder the battle, the sweeter the victory.”</div>
+<div class="quote-card">“Don’t quit. Suffer now and live the rest of your life as a champion.”</div>
+<div class="quote-card">“Energy and persistence conquer all things.”</div>
+<div class="quote-card">“Discipline is the bridge between goals and accomplishment.”</div>
+<div class="quote-card">“Opportunities are usually disguised as hard work, so most people don’t recognize them.”</div>
+<div class="quote-card">“Do what you love, and you’ll never work a day in your life.”</div>
+<div class="quote-card">“Don’t count the days. Make the days count.”</div>
+<div class="quote-card">“What you get by achieving your goals is not as important as what you become by achieving your goals.”</div>
+<div class="quote-card">“Success is the sum of small efforts repeated day in and day out.”</div>
+<div class="quote-card">“The only place where success comes before work is in the dictionary.”</div>
+<div class="quote-card">“Motivation is temporary, but discipline lasts forever.”</div>
+<div class="quote-card">“Your attitude, not your aptitude, will determine your altitude.”</div>
+<div class="quote-card">“You don’t drown by falling in the water; you drown by staying there.”</div>
+<div class="quote-card">“Do not wait to strike till the iron is hot; but make it hot by striking.”</div>
+<div class="quote-card">“Great minds discuss ideas; average minds discuss events; small minds discuss people.”</div>
+<div class="quote-card">“Don’t be afraid to give up the good to go for the great.”</div>
+<div class="quote-card">“Success is walking from failure to failure with no loss of enthusiasm.”</div>
+<div class="quote-card">“A year from now you may wish you had started today.”</div>
+<div class="quote-card">“The man who moves a mountain begins by carrying away small stones.”</div>
+<div class="quote-card">“Act as if what you do makes a difference. It does.”</div>
+<div class="quote-card">“Success is liking yourself, liking what you do, and liking how you do it.”</div>
+<div class="quote-card">“Don’t wait for opportunity. Create it.”</div>
+<div class="quote-card">“The difference between ordinary and extraordinary is that little extra.”</div>
+<div class="quote-card">“Success is the result of preparation, hard work, and learning from failure.”</div>
+<div class="quote-card">“Do not go where the path may lead, go instead where there is no path and leave a trail.”</div>
+<div class="quote-card">“Everything you can imagine is real.”</div>
+<div class="quote-card">“You are never too old to set another goal or to dream a new dream.”</div>
+<div class="quote-card">“Success is best when it’s shared.”</div>
+<div class="quote-card">“Don’t let small minds convince you that your dreams are too big.”</div>
+<div class="quote-card">“The road to success and the road to failure are almost exactly the same.”</div>
+<div class="quote-card">“You miss 100% of the shots you don’t take.”</div>
+<div class="quote-card">“Success is getting what you want. Happiness is wanting what you get.”</div>
+<div class="quote-card">“Fall seven times and stand up eight.”</div>
+<div class="quote-card">“Success isn’t overnight. It’s when every day you get a little better than the day before.”</div>
+<div class="quote-card">“Hustle until your haters ask if you’re hiring.”</div>
+<div class="quote-card">“Don’t stop until you’re proud.”</div>
+<div class="quote-card">“Little progress is still progress.”</div>
+<div class="quote-card">“The best revenge is massive success.”</div>
+<div class="quote-card">“Sometimes we’re tested not to show our weaknesses, but to discover our strengths.”</div>
+<div class="quote-card">“Don’t be afraid to give up the good to go for the great.”</div>
+<div class="quote-card">“Do something today that your future self will thank you for.”</div>
+<div class="quote-card">“Success is not in what you have, but who you are.”</div>
+<div class="quote-card">“Start where you are. Use what you have. Do what you can.”</div>
+<div class="quote-card">“Motivation is what gets you started. Habit is what keeps you going.”</div>
+<div class="quote-card">“The harder you work for something, the greater you’ll feel when you achieve it.”</div>
+<div class="quote-card">“Your limitation—it’s only your imagination.”</div>
+<div class="quote-card">“Dream bigger. Do bigger.”</div>
+<div class="quote-card">“Dream it. Believe it. Build it.”</div>
+<div class="quote-card">“Great things take time. Be patient.”</div>
+<div class="quote-card">“The only way to do great work is to love what you do.”</div>
+<div class="quote-card">“Success doesn’t just find you. You have to go out and get it.”</div>
+<div class="quote-card">“Wake up with determination. Go to bed with satisfaction.”</div>
+<div class="quote-card">“Don’t let yesterday take up too much of today.”</div>
+<div class="quote-card">“Push yourself, because no one else is going to do it for you.”</div>
+<div class="quote-card">“Opportunities don’t happen. You create them.”</div>
+<div class="quote-card">“Great things never come from comfort zones.”</div>
+<div class="quote-card">“Don’t wait for the perfect moment. Take the moment and make it perfect.”</div>
+<div class="quote-card">“Success is walking from failure to failure with no loss of enthusiasm.”</div>
+<div class="quote-card">“It’s going to be hard, but hard does not mean impossible.”</div>
+<div class="quote-card">“Little things make big days.”</div>
+<div class="quote-card">“Discipline is the bridge between goals and accomplishment.”</div>
+<div class="quote-card">“Do what you can with all you have, wherever you are.”</div>
+<div class="quote-card">“Small daily improvements over time lead to stunning results.”</div>
+<div class="quote-card">“You are capable of more than you know.”</div>
+<div class="quote-card">“Believe you can and you’re halfway there.”</div>
+<div class="quote-card">“Act as if what you do makes a difference. It does.”</div>
+<div class="quote-card">“Failure will never overtake me if my determination to succeed is strong enough.”</div>
+<div class="quote-card">“Do not wait to strike till the iron is hot; but make it hot by striking.”</div>
+<div class="quote-card">“Start where you are. Use what you have. Do what you can.”</div>
+<div class="quote-card">“Success is the result of preparation, hard work, and learning from failure.”</div>
+<div class="quote-card">“Don’t limit your challenges. Challenge your limits.”</div>
+<div class="quote-card">“Push yourself because no one else is going to do it for you.”</div>
+<div class="quote-card">“Success usually comes to those who are too busy to be looking for it.”</div>
+<div class="quote-card">“Don’t watch the clock; do what it does. Keep going.”</div>
+<div class="quote-card">“The future depends on what you do today.”</div>
+<div class="quote-card">“It always seems impossible until it’s done.”</div>
+<div class="quote-card">“Everything you’ve ever wanted is on the other side of fear.”</div>
+<div class="quote-card">“The only limit to our realization of tomorrow will be our doubts today.”</div>
+<div class="quote-card">“The best way to get started is to quit talking and begin doing.”</div>
+<div class="quote-card">“Don’t let yesterday take up too much of today.”</div>
+<div class="quote-card">“It’s not whether you get knocked down, it’s whether you get up.”</div>
+<div class="quote-card">“If you are working on something exciting, it will keep you motivated.”</div>
+<div class="quote-card">“Success is not in what you have, but who you are.”</div>
+<div class="quote-card">“Hard work beats talent when talent doesn’t work hard.”</div>
+<div class="quote-card">“Don’t wait for opportunity. Create it.”</div>
+<div class="quote-card">“Great things never come from comfort zones.”</div>
+<div class="quote-card">“Dream it. Wish it. Do it.”</div>
+<div class="quote-card">“Push yourself, because no one else is going to do it for you.”</div>
+<div class="quote-card">“Success doesn’t just find you. You have to go out and get it.”</div>
+<div class="quote-card">“The harder you work for something, the greater you’ll feel when you achieve it.”</div>
+<div class="quote-card">“Dream bigger. Do bigger.”</div>
+<div class="quote-card">“Don’t stop when you’re tired. Stop when you’re done.”</div>
+<div class="quote-card">“Wake up with determination. Go to bed with satisfaction.”</div>
+<div class="quote-card">“Little things make big days.”</div>
+<div class="quote-card">“It’s going to be hard, but hard does not mean impossible.”</div>
+<div class="quote-card">“Don’t wait for the perfect moment. Take the moment and make it perfect.”</div>
+<div class="quote-card">“Sometimes later becomes never. Do it now.”</div>
+<div class="quote-card">“Success is what happens after you have survived all your mistakes.”</div>
+<div class="quote-card">“The key to success is to focus on goals, not obstacles.”</div>
+<div class="quote-card">“Your limitation—it’s only your imagination.”</div>
+<div class="quote-card">“Dream it. Believe it. Build it.”</div>
+<div class="quote-card">“Do something today that your future self will thank you for.”</div>
+<div class="quote-card">“Great things take time. Be patient.”</div>
+<div class="quote-card">“Don’t wish it were easier. Wish you were better.”</div>
+<div class="quote-card">“Sometimes we’re tested not to show our weaknesses, but to discover our strengths.”</div>
+<div class="quote-card">“Motivation is what gets you started. Habit is what keeps you going.”</div>
+<div class="quote-card">“The only limit to our realization of tomorrow will be our doubts today.”</div>
+<div class="quote-card">“Failure will never overtake me if my determination to succeed is strong enough.”</div>
+<div class="quote-card">“Act as if what you do makes a difference. It does.”</div>
+<div class="quote-card">“You don’t have to be great to start, but you have to start to be great.”</div>
+<div class="quote-card">“Great things are done by a series of small things brought together.”</div>
+<div class="quote-card">“Believe you can and you’re halfway there.”</div>
+<div class="quote-card">“Don’t be pushed around by the fears in your mind. Be led by the dreams in your heart.”</div>
+<div class="quote-card">“Do what you can with all you have, wherever you are.”</div>
+<div class="quote-card">“Success is not final, failure is not fatal: It is the courage to continue that counts.”</div>
+<div class="quote-card">“The secret of getting ahead is getting started.”</div>
+<div class="quote-card">“Everything you’ve ever wanted is on the other side of fear.”</div>
+<div class="quote-card">“Opportunities don’t happen. You create them.”</div>
+<div class="quote-card">“Don’t limit your challenges. Challenge your limits.”</div>
+<div class="quote-card">“Push yourself because no one else is going to do it for you.”</div>
+<div class="quote-card">“If it doesn’t challenge you, it won’t change you.”</div>
+<div class="quote-card">“Success usually comes to those who are too busy to be looking for it.”</div>
+<div class="quote-card">“Don’t watch the clock; do what it does. Keep going.”</div>
+<div class="quote-card">“The future depends on what you do today.”</div>
+<div class="quote-card">“It always seems impossible until it’s done.”</div>
+<div class="quote-card">“Small daily improvements over time lead to stunning results.”</div>
+<div class="quote-card">“You are capable of more than you know.”</div>
+<div class="quote-card">“Great things never come from comfort zones.”</div>
+<div class="quote-card">“Start where you are. Use what you have. Do what you can.”</div>
+<div class="quote-card">“The only way to do great work is to love what you do.”</div>
+<div class="quote-card">“The harder the battle, the sweeter the victory.”</div>
+<div class="quote-card">“Don’t quit. Suffer now and live the rest of your life as a champion.”</div>
+<div class="quote-card">“Energy and persistence conquer all things.”</div>
+<div class="quote-card">“Discipline is the bridge between goals and accomplishment.”</div>
+<div class="quote-card">“Opportunities are usually disguised as hard work, so most people don’t recognize them.”</div>
+<div class="quote-card">“Do what you love, and you’ll never work a day in your life.”</div>
+<div class="quote-card">“Don’t count the days. Make the days count.”</div>
+<div class="quote-card">“What you get by achieving your goals is not as important as what you become by achieving your goals.”</div>
+<div class="quote-card">“Success is the sum of small efforts repeated day in and day out.”</div>
+<div class="quote-card">“The only place where success comes before work is in the dictionary.”</div>
+<div class="quote-card">“Motivation is temporary, but discipline lasts forever.”</div>
+<div class="quote-card">“Your attitude, not your aptitude, will determine your altitude.”</div>
+<div class="quote-card">“You don’t drown by falling in the water; you drown by staying there.”</div>
+<div class="quote-card">“Do not wait to strike till the iron is hot; but make it hot by striking.”</div>
+<div class="quote-card">“Great minds discuss ideas; average minds discuss events; small minds discuss people.”</div>
+<div class="quote-card">“Don’t be afraid to give up the good to go for the great.”</div>
+<div class="quote-card">“Success is walking from failure to failure with no loss of enthusiasm.”</div>
+<div class="quote-card">“A year from now you may wish you had started today.”</div>
+<div class="quote-card">“The man who moves a mountain begins by carrying away small stones.”</div>
+<div class="quote-card">“Act as if what you do makes a difference. It does.”</div>
+<div class="quote-card">“Success is liking yourself, liking what you do, and liking how you do it.”</div>
+<div class="quote-card">“Don’t wait for opportunity. Create it.”</div>
+<div class="quote-card">“The difference between ordinary and extraordinary is that little extra.”</div>
+<div class="quote-card">“Success is the result of preparation, hard work, and learning from failure.”</div>
+<div class="quote-card">“Do not go where the path may lead, go instead where there is no path and leave a trail.”</div>
+<div class="quote-card">“Everything you can imagine is real.”</div>
+<div class="quote-card">“You are never too old to set another goal or to dream a new dream.”</div>
+<div class="quote-card">“Success is best when it’s shared.”</div>
+<div class="quote-card">“Don’t let small minds convince you that your dreams are too big.”</div>
+<div class="quote-card">“The road to success and the road to failure are almost exactly the same.”</div>
+<div class="quote-card">“You miss 100% of the shots you don’t take.”</div>
+<div class="quote-card">“Success is getting what you want. Happiness is wanting what you get.”</div>
+<div class="quote-card">“Fall seven times and stand up eight.”</div>
+<div class="quote-card">“Success isn’t overnight. It’s when every day you get a little better than the day before.”</div>
+<div class="quote-card">“Hustle until your haters ask if you’re hiring.”</div>
+<div class="quote-card">“Don’t stop until you’re proud.”</div>
+<div class="quote-card">“Little progress is still progress.”</div>
+<div class="quote-card">“The best revenge is massive success.”</div>
+<div class="quote-card">“Sometimes we’re tested not to show our weaknesses, but to discover our strengths.”</div>
+<div class="quote-card">“Don’t be afraid to give up the good to go for the great.”</div>
+<div class="quote-card">“Do something today that your future self will thank you for.”</div>
+<div class="quote-card">“Success is not in what you have, but who you are.”</div>
+<div class="quote-card">“Start where you are. Use what you have. Do what you can.”</div>
+<div class="quote-card">“Motivation is what gets you started. Habit is what keeps you going.”</div>
+<div class="quote-card">“The harder you work for something, the greater you’ll feel when you achieve it.”</div>
+<div class="quote-card">“Your limitation—it’s only your imagination.”</div>
+<div class="quote-card">“Dream bigger. Do bigger.”</div>
+<div class="quote-card">“Dream it. Believe it. Build it.”</div>
+<div class="quote-card">“Great things take time. Be patient.”</div>
+<div class="quote-card">“The only way to do great work is to love what you do.”</div>
+<div class="quote-card">“Success doesn’t just find you. You have to go out and get it.”</div>
+<div class="quote-card">“Wake up with determination. Go to bed with satisfaction.”</div>
+<div class="quote-card">“Don’t let yesterday take up too much of today.”</div>
+<div class="quote-card">“Push yourself, because no one else is going to do it for you.”</div>
+<div class="quote-card">“Opportunities don’t happen. You create them.”</div>
+<div class="quote-card">“Great things never come from comfort zones.”</div>
+<div class="quote-card">“Don’t wait for the perfect moment. Take the moment and make it perfect.”</div>
+<div class="quote-card">“Success is walking from failure to failure with no loss of enthusiasm.”</div>
+<div class="quote-card">“It’s going to be hard, but hard does not mean impossible.”</div>
+<div class="quote-card">“Little things make big days.”</div>
+<div class="quote-card">“Discipline is the bridge between goals and accomplishment.”</div>
+<div class="quote-card">“Do what you can with all you have, wherever you are.”</div>
+<div class="quote-card">“Small daily improvements over time lead to stunning results.”</div>
+<div class="quote-card">“You are capable of more than you know.”</div>
+<div class="quote-card">“Believe you can and you’re halfway there.”</div>
+<div class="quote-card">“Act as if what you do makes a difference. It does.”</div>
+<div class="quote-card">“Failure will never overtake me if my determination to succeed is strong enough.”</div>
+<div class="quote-card">“Do not wait to strike till the iron is hot; but make it hot by striking.”</div>
+<div class="quote-card">“Start where you are. Use what you have. Do what you can.”</div>
+<div class="quote-card">“Success is the result of preparation, hard work, and learning from failure.”</div>
+<div class="quote-card">“Don’t limit your challenges. Challenge your limits.”</div>
+<div class="quote-card">“Push yourself because no one else is going to do it for you.”</div>
+<div class="quote-card">“Success usually comes to those who are too busy to be looking for it.”</div>
+<div class="quote-card">“Don’t watch the clock; do what it does. Keep going.”</div>
+<div class="quote-card">“The future depends on what you do today.”</div>
+<div class="quote-card">“It always seems impossible until it’s done.”</div>
+<div class="quote-card">“Everything you’ve ever wanted is on the other side of fear.”</div>
+<div class="quote-card">“The only limit to our realization of tomorrow will be our doubts today.”</div>
+<div class="quote-card">“The best way to get started is to quit talking and begin doing.”</div>
+<div class="quote-card">“Don’t let yesterday take up too much of today.”</div>
+<div class="quote-card">“It’s not whether you get knocked down, it’s whether you get up.”</div>
+<div class="quote-card">“If you are working on something exciting, it will keep you motivated.”</div>
+<div class="quote-card">“Success is not in what you have, but who you are.”</div>
+<div class="quote-card">“Hard work beats talent when talent doesn’t work hard.”</div>
+<div class="quote-card">“Don’t wait for opportunity. Create it.”</div>
+<div class="quote-card">“Great things never come from comfort zones.”</div>
+<div class="quote-card">“Dream it. Wish it. Do it.”</div>
+<div class="quote-card">“Push yourself, because no one else is going to do it for you.”</div>
+<div class="quote-card">“Success doesn’t just find you. You have to go out and get it.”</div>
+<div class="quote-card">“The harder you work for something, the greater you’ll feel when you achieve it.”</div>
+<div class="quote-card">“Dream bigger. Do bigger.”</div>
+<div class="quote-card">“Don’t stop when you’re tired. Stop when you’re done.”</div>
+<div class="quote-card">“Wake up with determination. Go to bed with satisfaction.”</div>
+<div class="quote-card">“Little things make big days.”</div>
+<div class="quote-card">“It’s going to be hard, but hard does not mean impossible.”</div>
+<div class="quote-card">“Don’t wait for the perfect moment. Take the moment and make it perfect.”</div>
+<div class="quote-card">“Sometimes later becomes never. Do it now.”</div>
+<div class="quote-card">“Success is what happens after you have survived all your mistakes.”</div>
+<div class="quote-card">“The key to success is to focus on goals, not obstacles.”</div>
+<div class="quote-card">“Your limitation—it’s only your imagination.”</div>
+<div class="quote-card">“Dream it. Believe it. Build it.”</div>
+<div class="quote-card">“Do something today that your future self will thank you for.”</div>
+<div class="quote-card">“Great things take time. Be patient.”</div>
+<div class="quote-card">“Don’t wish it were easier. Wish you were better.”</div>
+<div class="quote-card">“Sometimes we’re tested not to show our weaknesses, but to discover our strengths.”</div>
+<div class="quote-card">“Motivation is what gets you started. Habit is what keeps you going.”</div>
+<div class="quote-card">“The only limit to our realization of tomorrow will be our doubts today.”</div>
+<div class="quote-card">“Failure will never overtake me if my determination to succeed is strong enough.”</div>
+<div class="quote-card">“Act as if what you do makes a difference. It does.”</div>
+<div class="quote-card">“You don’t have to be great to start, but you have to start to be great.”</div>
+<div class="quote-card">“Great things are done by a series of small things brought together.”</div>
+<div class="quote-card">“Believe you can and you’re halfway there.”</div>
+<div class="quote-card">“Don’t be pushed around by the fears in your mind. Be led by the dreams in your heart.”</div>
+<div class="quote-card">“Do what you can with all you have, wherever you are.”</div>
+<div class="quote-card">“Success is not final, failure is not fatal: It is the courage to continue that counts.”</div>
+<div class="quote-card">“The secret of getting ahead is getting started.”</div>
+<div class="quote-card">“Everything you’ve ever wanted is on the other side of fear.”</div>
+<div class="quote-card">“Opportunities don’t happen. You create them.”</div>
+<div class="quote-card">“Don’t limit your challenges. Challenge your limits.”</div>
+<div class="quote-card">“Push yourself because no one else is going to do it for you.”</div>
+<div class="quote-card">“If it doesn’t challenge you, it won’t change you.”</div>
+<div class="quote-card">“Success usually comes to those who are too busy to be looking for it.”</div>
+<div class="quote-card">“Don’t watch the clock; do what it does. Keep going.”</div>
+<div class="quote-card">“The future depends on what you do today.”</div>
+<div class="quote-card">“It always seems impossible until it’s done.”</div>
+<div class="quote-card">“Small daily improvements over time lead to stunning results.”</div>
+<div class="quote-card">“You are capable of more than you know.”</div>
+<div class="quote-card">“Great things never come from comfort zones.”</div>
+<div class="quote-card">“Start where you are. Use what you have. Do what you can.”</div>
+<div class="quote-card">“The only way to do great work is to love what you do.”</div>
+<div class="quote-card">“The harder the battle, the sweeter the victory.”</div>
+<div class="quote-card">“Don’t quit. Suffer now and live the rest of your life as a champion.”</div>
+<div class="quote-card">“Energy and persistence conquer all things.”</div>
+<div class="quote-card">“Discipline is the bridge between goals and accomplishment.”</div>
+<div class="quote-card">“Opportunities are usually disguised as hard work, so most people don’t recognize them.”</div>
+<div class="quote-card">“Do what you love, and you’ll never work a day in your life.”</div>
+<div class="quote-card">“Don’t count the days. Make the days count.”</div>
+<div class="quote-card">“What you get by achieving your goals is not as important as what you become by achieving your goals.”</div>
+<div class="quote-card">“Success is the sum of small efforts repeated day in and day out.”</div>
+<div class="quote-card">“The only place where success comes before work is in the dictionary.”</div>
+<div class="quote-card">“Motivation is temporary, but discipline lasts forever.”</div>
+<div class="quote-card">“Your attitude, not your aptitude, will determine your altitude.”</div>
+<div class="quote-card">“You don’t drown by falling in the water; you drown by staying there.”</div>
+<div class="quote-card">“Do not wait to strike till the iron is hot; but make it hot by striking.”</div>
+<div class="quote-card">“Great minds discuss ideas; average minds discuss events; small minds discuss people.”</div>
+<div class="quote-card">“Don’t be afraid to give up the good to go for the great.”</div>
+<div class="quote-card">“Success is walking from failure to failure with no loss of enthusiasm.”</div>
+<div class="quote-card">“A year from now you may wish you had started today.”</div>
+<div class="quote-card">“The man who moves a mountain begins by carrying away small stones.”</div>
+<div class="quote-card">“Act as if what you do makes a difference. It does.”</div>
+<div class="quote-card">“Success is liking yourself, liking what you do, and liking how you do it.”</div>
+<div class="quote-card">“Don’t wait for opportunity. Create it.”</div>
+<div class="quote-card">“The difference between ordinary and extraordinary is that little extra.”</div>
+<div class="quote-card">“Success is the result of preparation, hard work, and learning from failure.”</div>
+<div class="quote-card">“Do not go where the path may lead, go instead where there is no path and leave a trail.”</div>
+<div class="quote-card">“Everything you can imagine is real.”</div>
+<div class="quote-card">“You are never too old to set another goal or to dream a new dream.”</div>
+<div class="quote-card">“Success is best when it’s shared.”</div>
+<div class="quote-card">“Don’t let small minds convince you that your dreams are too big.”</div>
+<div class="quote-card">“The road to success and the road to failure are almost exactly the same.”</div>
+<div class="quote-card">“You miss 100% of the shots you don’t take.”</div>
+<div class="quote-card">“Success is getting what you want. Happiness is wanting what you get.”</div>
+<div class="quote-card">“Fall seven times and stand up eight.”</div>
+<div class="quote-card">“Success isn’t overnight. It’s when every day you get a little better than the day before.”</div>
+<div class="quote-card">“Hustle until your haters ask if you’re hiring.”</div>
+<div class="quote-card">“Don’t stop until you’re proud.”</div>
+<div class="quote-card">“Little progress is still progress.”</div>
+<div class="quote-card">“The best revenge is massive success.”</div>
+<div class="quote-card">“Sometimes we’re tested not to show our weaknesses, but to discover our strengths.”</div>
+<div class="quote-card">“Don’t be afraid to give up the good to go for the great.”</div>
+<div class="quote-card">“Do something today that your future self will thank you for.”</div>
+<div class="quote-card">“Success is not in what you have, but who you are.”</div>
+<div class="quote-card">“Start where you are. Use what you have. Do what you can.”</div>
+<div class="quote-card">“Motivation is what gets you started. Habit is what keeps you going.”</div>
+<div class="quote-card">“The harder you work for something, the greater you’ll feel when you achieve it.”</div>
+<div class="quote-card">“Your limitation—it’s only your imagination.”</div>
+<div class="quote-card">“Dream bigger. Do bigger.”</div>
+<div class="quote-card">“Dream it. Believe it. Build it.”</div>
+<div class="quote-card">“Great things take time. Be patient.”</div>
+<div class="quote-card">“The only way to do great work is to love what you do.”</div>
+<div class="quote-card">“Success doesn’t just find you. You have to go out and get it.”</div>
+<div class="quote-card">“Wake up with determination. Go to bed with satisfaction.”</div>
+<div class="quote-card">“Don’t let yesterday take up too much of today.”</div>
+<div class="quote-card">“Push yourself, because no one else is going to do it for you.”</div>
+<div class="quote-card">“Opportunities don’t happen. You create them.”</div>
+<div class="quote-card">“Great things never come from comfort zones.”</div>
+<div class="quote-card">“Don’t wait for the perfect moment. Take the moment and make it perfect.”</div>
+<div class="quote-card">“Success is walking from failure to failure with no loss of enthusiasm.”</div>
+<div class="quote-card">“It’s going to be hard, but hard does not mean impossible.”</div>
+<div class="quote-card">“Little things make big days.”</div>
+<div class="quote-card">“Discipline is the bridge between goals and accomplishment.”</div>
+<div class="quote-card">“Do what you can with all you have, wherever you are.”</div>
+<div class="quote-card">“Small daily improvements over time lead to stunning results.”</div>
+<div class="quote-card">“You are capable of more than you know.”</div>
+<div class="quote-card">“Believe you can and you’re halfway there.”</div>
+<div class="quote-card">“Act as if what you do makes a difference. It does.”</div>
+<div class="quote-card">“Failure will never overtake me if my determination to succeed is strong enough.”</div>
+<div class="quote-card">“Do not wait to strike till the iron is hot; but make it hot by striking.”</div>
+<div class="quote-card">“Start where you are. Use what you have. Do what you can.”</div>
+<div class="quote-card">“Success is the result of preparation, hard work, and learning from failure.”</div>
+<div class="quote-card">“Don’t limit your challenges. Challenge your limits.”</div>
+<div class="quote-card">“Push yourself because no one else is going to do it for you.”</div>
+<div class="quote-card">“Success usually comes to those who are too busy to be looking for it.”</div>
+<div class="quote-card">“Don’t watch the clock; do what it does. Keep going.”</div>
+<div class="quote-card">“The future depends on what you do today.”</div>
+<div class="quote-card">“It always seems impossible until it’s done.”</div>
+<div class="quote-card">“Everything you’ve ever wanted is on the other side of fear.”</div>
+<div class="quote-card">“The only limit to our realization of tomorrow will be our doubts today.”</div>
+<div class="quote-card">“You are capable of more than you know.”</div>
+<div class="quote-card">“Great things never come from comfort zones.”</div>
+<div class="quote-card">“Start where you are. Use what you have. Do what you can.”</div>
+<div class="quote-card">“The only way to do great work is to love what you do.”</div>
+<div class="quote-card">“The best way to get started is to quit talking and begin doing.”</div>
+<div class="quote-card">“Don’t let yesterday take up too much of today.”</div>
+<div class="quote-card">“It’s not whether you get knocked down, it’s whether you get up.”</div>
+<div class="quote-card">“If you are working on something exciting, it will keep you motivated.”</div>
+<div class="quote-card">“Success is not in what you have, but who you are.”</div>
+<div class="quote-card">“Hard work beats talent when talent doesn’t work hard.”</div>
+<div class="quote-card">“Don’t wait for opportunity. Create it.”</div>
+<div class="quote-card">“Great things never come from comfort zones.”</div>
+<div class="quote-card">“Dream it. Wish it. Do it.”</div>
+<div class="quote-card">“Push yourself, because no one else is going to do it for you.”</div>
+<div class="quote-card">“Success doesn’t just find you. You have to go out and get it.”</div>
+<div class="quote-card">“The harder you work for something, the greater you’ll feel when you achieve it.”</div>
+<div class="quote-card">“Dream bigger. Do bigger.”</div>
+<div class="quote-card">“Don’t stop when you’re tired. Stop when you’re done.”</div>
+<div class="quote-card">“Wake up with determination. Go to bed with satisfaction.”</div>
+<div class="quote-card">“Little things make big days.”</div>
+<div class="quote-card">“It’s going to be hard, but hard does not mean impossible.”</div>
+<div class="quote-card">“Don’t wait for the perfect moment. Take the moment and make it perfect.”</div>
+<div class="quote-card">“Sometimes later becomes never. Do it now.”</div>
+<div class="quote-card">“Success is what happens after you have survived all your mistakes.”</div>
+<div class="quote-card">“The key to success is to focus on goals, not obstacles.”</div>
+<div class="quote-card">“Your limitation—it’s only your imagination.”</div>
+<div class="quote-card">“Dream it. Believe it. Build it.”</div>
+<div class="quote-card">“Do something today that your future self will thank you for.”</div>
+<div class="quote-card">“Great things take time. Be patient.”</div>
+<div class="quote-card">“Don’t wish it were easier. Wish you were better.”</div>
+<div class="quote-card">“Sometimes we’re tested not to show our weaknesses, but to discover our strengths.”</div>
+<div class="quote-card">“Motivation is what gets you started. Habit is what keeps you going.”</div>
+<div class="quote-card">“The only limit to our realization of tomorrow will be our doubts today.”</div>
+<div class="quote-card">“Failure will never overtake me if my determination to succeed is strong enough.”</div>
+<div class="quote-card">“Act as if what you do makes a difference. It does.”</div>
+<div class="quote-card">“You don’t have to be great to start, but you have to start to be great.”</div>
+<div class="quote-card">“Great things are done by a series of small things brought together.”</div>
+<div class="quote-card">“Believe you can and you’re halfway there.”</div>
+<div class="quote-card">“Don’t be pushed around by the fears in your mind. Be led by the dreams in your heart.”</div>
+<div class="quote-card">“Do what you can with all you have, wherever you are.”</div>
+<div class="quote-card">“Success is not final, failure is not fatal: It is the courage to continue that counts.”</div>
+<div class="quote-card">“The secret of getting ahead is getting started.”</div>
+<div class="quote-card">“Everything you’ve ever wanted is on the other side of fear.”</div>
+<div class="quote-card">“Opportunities don’t happen. You create them.”</div>
+<div class="quote-card">“Don’t limit your challenges. Challenge your limits.”</div>
+<div class="quote-card">“Push yourself because no one else is going to do it for you.”</div>
+<div class="quote-card">“If it doesn’t challenge you, it won’t change you.”</div>
+<div class="quote-card">“Success usually comes to those who are too busy to be looking for it.”</div>
+<div class="quote-card">“Don’t watch the clock; do what it does. Keep going.”</div>
+<div class="quote-card">“The future depends on what you do today.”</div>
+<div class="quote-card">“It always seems impossible until it’s done.”</div>
+<div class="quote-card">“Small daily improvements over time lead to stunning results.”</div>
+<div class="quote-card">“You are capable of more than you know.”</div>
+<div class="quote-card">“Great things never come from comfort zones.”</div>
+<div class="quote-card">“Start where you are. Use what you have. Do what you can.”</div>
+<div class="quote-card">“The only way to do great work is to love what you do.”</div>
+<div class="quote-card">“The harder the battle, the sweeter the victory.”</div>
+<div class="quote-card">“Don’t quit. Suffer now and live the rest of your life as a champion.”</div>
+<div class="quote-card">“Energy and persistence conquer all things.”</div>
+<div class="quote-card">“Discipline is the bridge between goals and accomplishment.”</div>
+<div class="quote-card">“Opportunities are usually disguised as hard work, so most people don’t recognize them.”</div>
+<div class="quote-card">“Do what you love, and you’ll never work a day in your life.”</div>
+<div class="quote-card">“Don’t count the days. Make the days count.”</div>
+<div class="quote-card">“What you get by achieving your goals is not as important as what you become by achieving your goals.”</div>
+<div class="quote-card">“Success is the sum of small efforts repeated day in and day out.”</div>
+<div class="quote-card">“The only place where success comes before work is in the dictionary.”</div>
+<div class="quote-card">“Motivation is temporary, but discipline lasts forever.”</div>
+<div class="quote-card">“Your attitude, not your aptitude, will determine your altitude.”</div>
+<div class="quote-card">“You don’t drown by falling in the water; you drown by staying there.”</div>
+<div class="quote-card">“Do not wait to strike till the iron is hot; but make it hot by striking.”</div>
+<div class="quote-card">“Great minds discuss ideas; average minds discuss events; small minds discuss people.”</div>
+<div class="quote-card">“Don’t be afraid to give up the good to go for the great.”</div>
+<div class="quote-card">“Success is walking from failure to failure with no loss of enthusiasm.”</div>
+<div class="quote-card">“A year from now you may wish you had started today.”</div>
+<div class="quote-card">“The man who moves a mountain begins by carrying away small stones.”</div>
+<div class="quote-card">“Act as if what you do makes a difference. It does.”</div>
+<div class="quote-card">“Success is liking yourself, liking what you do, and liking how you do it.”</div>
+<div class="quote-card">“Don’t wait for opportunity. Create it.”</div>
+<div class="quote-card">“The difference between ordinary and extraordinary is that little extra.”</div>
+<div class="quote-card">“Success is the result of preparation, hard work, and learning from failure.”</div>
+<div class="quote-card">“Do not go where the path may lead, go instead where there is no path and leave a trail.”</div>
+<div class="quote-card">“Everything you can imagine is real.”</div>
+<div class="quote-card">“You are never too old to set another goal or to dream a new dream.”</div>
+<div class="quote-card">“Success is best when it’s shared.”</div>
+<div class="quote-card">“Don’t let small minds convince you that your dreams are too big.”</div>
+<div class="quote-card">“The road to success and the road to failure are almost exactly the same.”</div>
+<div class="quote-card">“You miss 100% of the shots you don’t take.”</div>
+<div class="quote-card">“Success is getting what you want. Happiness is wanting what you get.”</div>
+<div class="quote-card">“Fall seven times and stand up eight.”</div>
+<div class="quote-card">“Success isn’t overnight. It’s when every day you get a little better than the day before.”</div>
+<div class="quote-card">“Hustle until your haters ask if you’re hiring.”</div>
+<div class="quote-card">“Don’t stop until you’re proud.”</div>
+<div class="quote-card">“Little progress is still progress.”</div>
+<div class="quote-card">“The best revenge is massive success.”</div>
+<div class="quote-card">“Sometimes we’re tested not to show our weaknesses, but to discover our strengths.”</div>
+<div class="quote-card">“Don’t be afraid to give up the good to go for the great.”</div>
+<div class="quote-card">“Do something today that your future self will thank you for.”</div>
+<div class="quote-card">“Success is not in what you have, but who you are.”</div>
+<div class="quote-card">“Start where you are. Use what you have. Do what you can.”</div>
+<div class="quote-card">“Motivation is what gets you started. Habit is what keeps you going.”</div>
+<div class="quote-card">“The harder you work for something, the greater you’ll feel when you achieve it.”</div>
+<div class="quote-card">“Your limitation—it’s only your imagination.”</div>
+<div class="quote-card">“Dream bigger. Do bigger.”</div>
+<div class="quote-card">“Dream it. Believe it. Build it.”</div>
+<div class="quote-card">“Great things take time. Be patient.”</div>
+<div class="quote-card">“The only way to do great work is to love what you do.”</div>
+<div class="quote-card">“Success doesn’t just find you. You have to go out and get it.”</div>
+<div class="quote-card">“Wake up with determination. Go to bed with satisfaction.”</div>
+<div class="quote-card">“Don’t let yesterday take up too much of today.”</div>
+<div class="quote-card">“Push yourself, because no one else is going to do it for you.”</div>
+<div class="quote-card">“Opportunities don’t happen. You create them.”</div>
+<div class="quote-card">“Great things never come from comfort zones.”</div>
+<div class="quote-card">“Don’t wait for the perfect moment. Take the moment and make it perfect.”</div>
+<div class="quote-card">“Success is walking from failure to failure with no loss of enthusiasm.”</div>
+<div class="quote-card">“It’s going to be hard, but hard does not mean impossible.”</div>
+<div class="quote-card">“Little things make big days.”</div>
+<div class="quote-card">“Discipline is the bridge between goals and accomplishment.”</div>
+<div class="quote-card">“Do what you can with all you have, wherever you are.”</div>
+<div class="quote-card">“Small daily improvements over time lead to stunning results.”</div>
+<div class="quote-card">“You are capable of more than you know.”</div>
+<div class="quote-card">“Believe you can and you’re halfway there.”</div>
+<div class="quote-card">“Act as if what you do makes a difference. It does.”</div>
+<div class="quote-card">“Failure will never overtake me if my determination to succeed is strong enough.”</div>
+<div class="quote-card">“Do not wait to strike till the iron is hot; but make it hot by striking.”</div>
+<div class="quote-card">“Start where you are. Use what you have. Do what you can.”</div>
+<div class="quote-card">“Success is the result of preparation, hard work, and learning from failure.”</div>
+<div class="quote-card">“Don’t limit your challenges. Challenge your limits.”</div>
+<div class="quote-card">“Push yourself because no one else is going to do it for you.”</div>
+<div class="quote-card">“Success usually comes to those who are too busy to be looking for it.”</div>
+<div class="quote-card">“Don’t watch the clock; do what it does. Keep going.”</div>
+<div class="quote-card">“The future depends on what you do today.”</div>
+<div class="quote-card">“It always seems impossible until it’s done.”</div>
+<div class="quote-card">“Everything you’ve ever wanted is on the other side of fear.”</div>
+<div class="quote-card">“The only limit to our realization of tomorrow will be our doubts today.”</div>
+<div class="quote-card">“The best way to get started is to quit talking and begin doing.”</div>
+<div class="quote-card">“Don’t let yesterday take up too much of today.”</div>
+<div class="quote-card">“It’s not whether you get knocked down, it’s whether you get up.”</div>
+<div class="quote-card">“If you are working on something exciting, it will keep you motivated.”</div>
+<div class="quote-card">“Success is not in what you have, but who you are.”</div>
+<div class="quote-card">“Hard work beats talent when talent doesn’t work hard.”</div>
+<div class="quote-card">“Don’t wait for opportunity. Create it.”</div>
+<div class="quote-card">“Great things never come from comfort zones.”</div>
+<div class="quote-card">“Dream it. Wish it. Do it.”</div>
+<div class="quote-card">“Push yourself, because no one else is going to do it for you.”</div>
+<div class="quote-card">“Success doesn’t just find you. You have to go out and get it.”</div>
+<div class="quote-card">“The harder you work for something, the greater you’ll feel when you achieve it.”</div>
+<div class="quote-card">“Dream bigger. Do bigger.”</div>
+<div class="quote-card">“Don’t stop when you’re tired. Stop when you’re done.”</div>
+<div class="quote-card">“Wake up with determination. Go to bed with satisfaction.”</div>
+<div class="quote-card">“Little things make big days.”</div>
+<div class="quote-card">“It’s going to be hard, but hard does not mean impossible.”</div>
+<div class="quote-card">“Don’t wait for the perfect moment. Take the moment and make it perfect.”</div>
+<div class="quote-card">“Sometimes later becomes never. Do it now.”</div>
+<div class="quote-card">“Success is what happens after you have survived all your mistakes.”</div>
+<div class="quote-card">“The key to success is to focus on goals, not obstacles.”</div>
+<div class="quote-card">“Your limitation—it’s only your imagination.”</div>
+<div class="quote-card">“Dream it. Believe it. Build it.”</div>
+<div class="quote-card">“Do something today that your future self will thank you for.”</div>
+<div class="quote-card">“Great things take time. Be patient.”</div>
+<div class="quote-card">“Don’t wish it were easier. Wish you were better.”</div>
+<div class="quote-card">“Sometimes we’re tested not to show our weaknesses, but to discover our strengths.”</div>
+<div class="quote-card">“Motivation is what gets you started. Habit is what keeps you going.”</div>
+<div class="quote-card">“The only limit to our realization of tomorrow will be our doubts today.”</div>
+<div class="quote-card">“Failure will never overtake me if my determination to succeed is strong enough.”</div>
+<div class="quote-card">“Act as if what you do makes a difference. It does.”</div>
+<div class="quote-card">“You don’t have to be great to start, but you have to start to be great.”</div>
+<div class="quote-card">“Great things are done by a series of small things brought together.”</div>
+<div class="quote-card">“Believe you can and you’re halfway there.”</div>
+<div class="quote-card">“Don’t be pushed around by the fears in your mind. Be led by the dreams in your heart.”</div>
+<div class="quote-card">“Do what you can with all you have, wherever you are.”</div>
+<div class="quote-card">“Success is not final, failure is not fatal: It is the courage to continue that counts.”</div>
+<div class="quote-card">“The secret of getting ahead is getting started.”</div>
+<div class="quote-card">“Everything you’ve ever wanted is on the other side of fear.”</div>
+<div class="quote-card">“Opportunities don’t happen. You create them.”</div>
+<div class="quote-card">“Don’t limit your challenges. Challenge your limits.”</div>
+<div class="quote-card">“Push yourself because no one else is going to do it for you.”</div>
+<div class="quote-card">“If it doesn’t challenge you, it won’t change you.”</div>
+<div class="quote-card">“Success usually comes to those who are too busy to be looking for it.”</div>
+<div class="quote-card">“Don’t watch the clock; do what it does. Keep going.”</div>
+<div class="quote-card">“The future depends on what you do today.”</div>
+<div class="quote-card">“It always seems impossible until it’s done.”</div>
+<div class="quote-card">“Small daily improvements over time lead to stunning results.”</div>
+<div class="quote-card">“You are capable of more than you know.”</div>
+<div class="quote-card">“Great things never come from comfort zones.”</div>
+<div class="quote-card">“Start where you are. Use what you have. Do what you can.”</div>
+<div class="quote-card">“The only way to do great work is to love what you do.”</div>
+<div class="quote-card">“The harder the battle, the sweeter the victory.”</div>
+<div class="quote-card">“Don’t quit. Suffer now and live the rest of your life as a champion.”</div>
+<div class="quote-card">“Energy and persistence conquer all things.”</div>
+<div class="quote-card">“Discipline is the bridge between goals and accomplishment.”</div>
+<div class="quote-card">“Opportunities are usually disguised as hard work, so most people don’t recognize them.”</div>
+<div class="quote-card">“Do what you love, and you’ll never work a day in your life.”</div>
+<div class="quote-card">“Don’t count the days. Make the days count.”</div>
+<div class="quote-card">“What you get by achieving your goals is not as important as what you become by achieving your goals.”</div>
+<div class="quote-card">“Success is the sum of small efforts repeated day in and day out.”</div>
+<div class="quote-card">“The only place where success comes before work is in the dictionary.”</div>
+<div class="quote-card">“Motivation is temporary, but discipline lasts forever.”</div>
+<div class="quote-card">“Your attitude, not your aptitude, will determine your altitude.”</div>
+<div class="quote-card">“You don’t drown by falling in the water; you drown by staying there.”</div>
+<div class="quote-card">“Do not wait to strike till the iron is hot; but make it hot by striking.”</div>
+<div class="quote-card">“Great minds discuss ideas; average minds discuss events; small minds discuss people.”</div>
+<div class="quote-card">“Don’t be afraid to give up the good to go for the great.”</div>
+<div class="quote-card">“Success is walking from failure to failure with no loss of enthusiasm.”</div>
+<div class="quote-card">“A year from now you may wish you had started today.”</div>
+<div class="quote-card">“The man who moves a mountain begins by carrying away small stones.”</div>
+<div class="quote-card">“Act as if what you do makes a difference. It does.”</div>
+<div class="quote-card">“Success is liking yourself, liking what you do, and liking how you do it.”</div>
+<div class="quote-card">“Don’t wait for opportunity. Create it.”</div>
+<div class="quote-card">“The difference between ordinary and extraordinary is that little extra.”</div>
+<div class="quote-card">“Success is the result of preparation, hard work, and learning from failure.”</div>
+<div class="quote-card">“Do not go where the path may lead, go instead where there is no path and leave a trail.”</div>
+<div class="quote-card">“Everything you can imagine is real.”</div>
+<div class="quote-card">“You are never too old to set another goal or to dream a new dream.”</div>
+<div class="quote-card">“Success is best when it’s shared.”</div>
+<div class="quote-card">“Don’t let small minds convince you that your dreams are too big.”</div>
+<div class="quote-card">“The road to success and the road to failure are almost exactly the same.”</div>
+<div class="quote-card">“You miss 100% of the shots you don’t take.”</div>
+<div class="quote-card">“Success is getting what you want. Happiness is wanting what you get.”</div>
+<div class="quote-card">“Fall seven times and stand up eight.”</div>
+<div class="quote-card">“Success isn’t overnight. It’s when every day you get a little better than the day before.”</div>
+<div class="quote-card">“Hustle until your haters ask if you’re hiring.”</div>
+<div class="quote-card">“Don’t stop until you’re proud.”</div>
+<div class="quote-card">“Little progress is still progress.”</div>
+<div class="quote-card">“The best revenge is massive success.”</div>
+<div class="quote-card">“Sometimes we’re tested not to show our weaknesses, but to discover our strengths.”</div>
+<div class="quote-card">“Don’t be afraid to give up the good to go for the great.”</div>
+<div class="quote-card">“Do something today that your future self will thank you for.”</div>
+<div class="quote-card">“Success is not in what you have, but who you are.”</div>
+<div class="quote-card">“Start where you are. Use what you have. Do what you can.”</div>
+<div class="quote-card">“Motivation is what gets you started. Habit is what keeps you going.”</div>
+<div class="quote-card">“The harder you work for something, the greater you’ll feel when you achieve it.”</div>
+<div class="quote-card">“Your limitation—it’s only your imagination.”</div>
+<div class="quote-card">“Dream bigger. Do bigger.”</div>
+<div class="quote-card">“Dream it. Believe it. Build it.”</div>
+<div class="quote-card">“Great things take time. Be patient.”</div>
+<div class="quote-card">“The only way to do great work is to love what you do.”</div>
+<div class="quote-card">“Success doesn’t just find you. You have to go out and get it.”</div>
+<div class="quote-card">“Wake up with determination. Go to bed with satisfaction.”</div>
+<div class="quote-card">“Don’t let yesterday take up too much of today.”</div>
+<div class="quote-card">“Push yourself, because no one else is going to do it for you.”</div>
+<div class="quote-card">“Opportunities don’t happen. You create them.”</div>
+<div class="quote-card">“Great things never come from comfort zones.”</div>
+<div class="quote-card">“Don’t wait for the perfect moment. Take the moment and make it perfect.”</div>
+<div class="quote-card">“Success is walking from failure to failure with no loss of enthusiasm.”</div>
+<div class="quote-card">“It’s going to be hard, but hard does not mean impossible.”</div>
+<div class="quote-card">“Little things make big days.”</div>
+<div class="quote-card">“Discipline is the bridge between goals and accomplishment.”</div>
+<div class="quote-card">“Do what you can with all you have, wherever you are.”</div>
+<div class="quote-card">“Small daily improvements over time lead to stunning results.”</div>
+<div class="quote-card">“You are capable of more than you know.”</div>
+<div class="quote-card">“Believe you can and you’re halfway there.”</div>
+<div class="quote-card">“Act as if what you do makes a difference. It does.”</div>
+<div class="quote-card">“Failure will never overtake me if my determination to succeed is strong enough.”</div>
+<div class="quote-card">“Do not wait to strike till the iron is hot; but make it hot by striking.”</div>
+<div class="quote-card">“Start where you are. Use what you have. Do what you can.”</div>
+<div class="quote-card">“Success is the result of preparation, hard work, and learning from failure.”</div>
+<div class="quote-card">“Don’t limit your challenges. Challenge your limits.”</div>
+<div class="quote-card">“Push yourself because no one else is going to do it for you.”</div>
+<div class="quote-card">“Success usually comes to those who are too busy to be looking for it.”</div>
+<div class="quote-card">“Don’t watch the clock; do what it does. Keep going.”</div>
+<div class="quote-card">“The future depends on what you do today.”</div>
+<div class="quote-card">“It always seems impossible until it’s done.”</div>
+<div class="quote-card">“Everything you’ve ever wanted is on the other side of fear.”</div>
+<div class="quote-card">“The only limit to our realization of tomorrow will be our doubts today.”</div>
+<div class="quote-card">“The best way to get started is to quit talking and begin doing.”</div>
+<div class="quote-card">“Don’t let yesterday take up too much of today.”</div>
+<div class="quote-card">“It’s not whether you get knocked down, it’s whether you get up.”</div>
+<div class="quote-card">“If you are working on something exciting, it will keep you motivated.”</div>
+<div class="quote-card">“Success is not in what you have, but who you are.”</div>
+<div class="quote-card">“Hard work beats talent when talent doesn’t work hard.”</div>
+<div class="quote-card">“Don’t wait for opportunity. Create it.”</div>
+<div class="quote-card">“Great things never come from comfort zones.”</div>
+<div class="quote-card">“Dream it. Wish it. Do it.”</div>
+<div class="quote-card">“Push yourself, because no one else is going to do it for you.”</div>
+<div class="quote-card">“Success doesn’t just find you. You have to go out and get it.”</div>
+<div class="quote-card">“The harder you work for something, the greater you’ll feel when you achieve it.”</div>
+<div class="quote-card">“Dream bigger. Do bigger.”</div>
+<div class="quote-card">“Don’t stop when you’re tired. Stop when you’re done.”</div>
+<div class="quote-card">“Wake up with determination. Go to bed with satisfaction.”</div>
+<div class="quote-card">“Little things make big days.”</div>
+<div class="quote-card">“It’s going to be hard, but hard does not mean impossible.”</div>
+<div class="quote-card">“Don’t wait for the perfect moment. Take the moment and make it perfect.”</div>
+<div class="quote-card">“Sometimes later becomes never. Do it now.”</div>
+<div class="quote-card">“Success is what happens after you have survived all your mistakes.”</div>
+<div class="quote-card">“The key to success is to focus on goals, not obstacles.”</div>
+<div class="quote-card">“Your limitation—it’s only your imagination.”</div>
+<div class="quote-card">“Dream it. Believe it. Build it.”</div>
+<div class="quote-card">“Do something today that your future self will thank you for.”</div>
+<div class="quote-card">“Great things take time. Be patient.”</div>
+<div class="quote-card">“Don’t wish it were easier. Wish you were better.”</div>
+<div class="quote-card">“Sometimes we’re tested not to show our weaknesses, but to discover our strengths.”</div>
+<div class="quote-card">“Motivation is what gets you started. Habit is what keeps you going.”</div>
+<div class="quote-card">“The only limit to our realization of tomorrow will be our doubts today.”</div>
+<div class="quote-card">“Failure will never overtake me if my determination to succeed is strong enough.”</div>
+<div class="quote-card">“Act as if what you do makes a difference. It does.”</div>
+<div class="quote-card">“You don’t have to be great to start, but you have to start to be great.”</div>
+<div class="quote-card">“Great things are done by a series of small things brought together.”</div>
+<div class="quote-card">“Believe you can and you’re halfway there.”</div>
+<div class="quote-card">“Don’t be pushed around by the fears in your mind. Be led by the dreams in your heart.”</div>
+<div class="quote-card">“Do what you can with all you have, wherever you are.”</div>
+<div class="quote-card">“Success is not final, failure is not fatal: It is the courage to continue that counts.”</div>
+<div class="quote-card">“The secret of getting ahead is getting started.”</div>
+<div class="quote-card">“Everything you’ve ever wanted is on the other side of fear.”</div>
+<div class="quote-card">“Opportunities don’t happen. You create them.”</div>
+<div class="quote-card">“Don’t limit your challenges. Challenge your limits.”</div>
+<div class="quote-card">“Push yourself because no one else is going to do it for you.”</div>
+<div class="quote-card">“If it doesn’t challenge you, it won’t change you.”</div>
+<div class="quote-card">“Success usually comes to those who are too busy to be looking for it.”</div>
+<div class="quote-card">“Don’t watch the clock; do what it does. Keep going.”</div>
+<div class="quote-card">“The future depends on what you do today.”</div>
+<div class="quote-card">“It always seems impossible until it’s done.”</div>
+<div class="quote-card">“Small daily improvements over time lead to stunning results.”</div>
+<div class="quote-card">“You are capable of more than you know.”</div>
+<div class="quote-card">“Great things never come from comfort zones.”</div>
+<div class="quote-card">“Start where you are. Use what you have. Do what you can.”</div>
+<div class="quote-card">“The only way to do great work is to love what you do.”</div>
+<div class="quote-card">“The harder the battle, the sweeter the victory.”</div>
+<div class="quote-card">“Don’t quit. Suffer now and live the rest of your life as a champion.”</div>
+<div class="quote-card">“Energy and persistence conquer all things.”</div>
+<div class="quote-card">“Discipline is the bridge between goals and accomplishment.”</div>
+<div class="quote-card">“Opportunities are usually disguised as hard work, so most people don’t recognize them.”</div>
+<div class="quote-card">“Do what you love, and you’ll never work a day in your life.”</div>
+<div class="quote-card">“Don’t count the days. Make the days count.”</div>
+<div class="quote-card">“What you get by achieving your goals is not as important as what you become by achieving your goals.”</div>
+<div class="quote-card">“Success is the sum of small efforts repeated day in and day out.”</div>
+<div class="quote-card">“The only place where success comes before work is in the dictionary.”</div>
+<div class="quote-card">“Motivation is temporary, but discipline lasts forever.”</div>
+<div class="quote-card">“Your attitude, not your aptitude, will determine your altitude.”</div>
+<div class="quote-card">“You don’t drown by falling in the water; you drown by staying there.”</div>
+<div class="quote-card">“Do not wait to strike till the iron is hot; but make it hot by striking.”</div>
+<div class="quote-card">“Great minds discuss ideas; average minds discuss events; small minds discuss people.”</div>
+<div class="quote-card">“Don’t be afraid to give up the good to go for the great.”</div>
+<div class="quote-card">“Success is walking from failure to failure with no loss of enthusiasm.”</div>
+<div class="quote-card">“A year from now you may wish you had started today.”</div>
+<div class="quote-card">“The man who moves a mountain begins by carrying away small stones.”</div>
+<div class="quote-card">“Act as if what you do makes a difference. It does.”</div>
+<div class="quote-card">“Success is liking yourself, liking what you do, and liking how you do it.”</div>
+<div class="quote-card">“Don’t wait for opportunity. Create it.”</div>
+<div class="quote-card">“The difference between ordinary and extraordinary is that little extra.”</div>
+<div class="quote-card">“Success is the result of preparation, hard work, and learning from failure.”</div>
+<div class="quote-card">“Do not go where the path may lead, go instead where there is no path and leave a trail.”</div>
+<div class="quote-card">“Everything you can imagine is real.”</div>
+<div class="quote-card">“You are never too old to set another goal or to dream a new dream.”</div>
+<div class="quote-card">“Success is best when it’s shared.”</div>
+<div class="quote-card">“Don’t let small minds convince you that your dreams are too big.”</div>
+<div class="quote-card">“The road to success and the road to failure are almost exactly the same.”</div>
+<div class="quote-card">“You miss 100% of the shots you don’t take.”</div>
+<div class="quote-card">“Success is getting what you want. Happiness is wanting what you get.”</div>
+<div class="quote-card">“Fall seven times and stand up eight.”</div>
+<div class="quote-card">“Success isn’t overnight. It’s when every day you get a little better than the day before.”</div>
+<div class="quote-card">“Hustle until your haters ask if you’re hiring.”</div>
+<div class="quote-card">“Don’t stop until you’re proud.”</div>
+<div class="quote-card">“Little progress is still progress.”</div>
+<div class="quote-card">“The best revenge is massive success.”</div>
+<div class="quote-card">“Sometimes we’re tested not to show our weaknesses, but to discover our strengths.”</div>
+<div class="quote-card">“Don’t be afraid to give up the good to go for the great.”</div>
+<div class="quote-card">“Do something today that your future self will thank you for.”</div>
+<div class="quote-card">“Success is not in what you have, but who you are.”</div>
+<div class="quote-card">“Start where you are. Use what you have. Do what you can.”</div>
+<div class="quote-card">“Motivation is what gets you started. Habit is what keeps you going.”</div>
+<div class="quote-card">“The harder you work for something, the greater you’ll feel when you achieve it.”</div>
+<div class="quote-card">“Your limitation—it’s only your imagination.”</div>
+<div class="quote-card">“Dream bigger. Do bigger.”</div>
+<div class="quote-card">“Dream it. Believe it. Build it.”</div>
+<div class="quote-card">“Great things take time. Be patient.”</div>
+<div class="quote-card">“The only way to do great work is to love what you do.”</div>
+<div class="quote-card">“Success doesn’t just find you. You have to go out and get it.”</div>
+<div class="quote-card">“Wake up with determination. Go to bed with satisfaction.”</div>
+<div class="quote-card">“Don’t let yesterday take up too much of today.”</div>
+<div class="quote-card">“Push yourself, because no one else is going to do it for you.”</div>
+<div class="quote-card">“Opportunities don’t happen. You create them.”</div>
+<div class="quote-card">“Great things never come from comfort zones.”</div>
+<div class="quote-card">“Don’t wait for the perfect moment. Take the moment and make it perfect.”</div>
+<div class="quote-card">“Success is walking from failure to failure with no loss of enthusiasm.”</div>
+<div class="quote-card">“It’s going to be hard, but hard does not mean impossible.”</div>
+<div class="quote-card">“Little things make big days.”</div>
+<div class="quote-card">“Discipline is the bridge between goals and accomplishment.”</div>
+<div class="quote-card">“Do what you can with all you have, wherever you are.”</div>
+<div class="quote-card">“Small daily improvements over time lead to stunning results.”</div>
+<div class="quote-card">“You are capable of more than you know.”</div>
+<div class="quote-card">“Believe you can and you’re halfway there.”</div>
+<div class="quote-card">“Act as if what you do makes a difference. It does.”</div>
+<div class="quote-card">“Failure will never overtake me if my determination to succeed is strong enough.”</div>
+<div class="quote-card">“Do not wait to strike till the iron is hot; but make it hot by striking.”</div>
+<div class="quote-card">“Start where you are. Use what you have. Do what you can.”</div>
+<div class="quote-card">“Success is the result of preparation, hard work, and learning from failure.”</div>
+<div class="quote-card">“Don’t limit your challenges. Challenge your limits.”</div>
+<div class="quote-card">“Push yourself because no one else is going to do it for you.”</div>
+<div class="quote-card">“Success usually comes to those who are too busy to be looking for it.”</div>
+<div class="quote-card">“Don’t watch the clock; do what it does. Keep going.”</div>
+<div class="quote-card">“The future depends on what you do today.”</div>
+<div class="quote-card">“It always seems impossible until it’s done.”</div>
+<div class="quote-card">“Everything you’ve ever wanted is on the other side of fear.”</div>
+  <div class="quote-card">“Sometimes later becomes never. Do it now.”</div>
+  <div class="quote-card">“It always seems impossible until it’s done.”</div>
+  <div class="quote-card">“Don’t watch the clock; do what it does. Keep going.”</div>
+  <div class="quote-card">“Your limitation—it’s only your imagination.”</div>
+</div>
+
+<script>
+const burger = document.getElementById('burger');
+const menu = document.getElementById('menu');
+
+// Toggle burger menu
+burger.addEventListener('click', function(event){
+  menu.classList.toggle("active");
+  event.stopPropagation();
+});
+
+// Close menu if clicked outside
+document.addEventListener('click', function(event){
+  if(!menu.contains(event.target) && !burger.contains(event.target)){
+    menu.classList.remove("active");
+  }
+});
+
+// Menu links close menu when clicked
+const links = menu.querySelectorAll('a, button');
+links.forEach(link => {
+  link.addEventListener('click', function(event){
+    menu.classList.remove("active");
+  });
+});
+
+// Light/Dark Mode
+function toggleMode(){
+  document.body.classList.toggle('light-mode');
+  document.body.classList.toggle('dark-mode');
+}
+</script>
+
+</body>
+</html>

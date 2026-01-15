@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Gender | RizzLines</title>
+
+  <meta name="description" content="Choose your gender to personalize rizz lines and conversation starters. We respect your privacy and store preferences locally.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== BASE ===== */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 15px;
+    }
+
+    /* ===== MAIN CARD ===== */
+    .landing-container {
+      text-align: center;
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(16px);
+      border-radius: 26px;
+      padding: 50px 30px;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.55);
+      max-width: 420px;
+      width: 100%;
+      animation: fadeIn 0.9s ease-in-out;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 12px;
+      color: #ff79c6;
+      text-shadow: 0 0 12px rgba(255,121,198,0.8);
+    }
+
+    .subtitle {
+      font-size: 16px;
+      opacity: 0.85;
+      margin-bottom: 32px;
+    }
+
+    /* ===== BUTTONS ===== */
+    .start-btn {
+      display: block;
+      width: 85%;
+      margin: 14px auto;
+      padding: 15px 0;
+      font-size: 18px;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(45deg, #ff416c, #ff4b2b);
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      letter-spacing: 1.3px;
+      box-shadow: 0 0 18px rgba(255,65,108,0.7);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .start-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 28px rgba(255,65,108,1),
+                  0 0 55px rgba(255,65,108,0.8);
+    }
+
+    /* ===== EXPLANATION ===== */
+    .bottom-info {
+      max-width: 900px;
+      margin-top: 45px;
+      padding: 30px 25px;
+      background: rgba(0,0,0,0.25);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      font-size: 14px;
+      line-height: 1.8;
+      opacity: 0.9;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .bottom-info strong {
+      color: #ff79c6;
+      font-size: 16px;
+    }
+
+    /* ===== ANIMATION ===== */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ===== MOBILE ===== */
+    @media (max-width: 520px) {
+      h1 {
+        font-size: 28px;
+      }
+      .start-btn {
+        font-size: 16px;
+        padding: 13px 0;
+      }
+      .bottom-info {
+        font-size: 13px;
+        padding: 22px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- MAIN CARD -->
+  <div class="landing-container">
+    <h1>👤 Select Your Gender</h1>
+    <div class="subtitle">
+      This helps us personalize your rizz experience 😎
+    </div>
+
+    <button class="start-btn" onclick="selectGender('male')">♂️ Male</button>
+    <button class="start-btn" onclick="selectGender('female')">♀️ Female</button>
+    <button class="start-btn" onclick="selectGender('other')">⚧️ Other</button>
+  </div>
+
+  <!-- PROFESSIONAL EXPLANATION -->
+  <div class="bottom-info">
+    <strong>Why does RizzLines ask for gender?</strong><br><br>
+
+    At RizzLines, our mission is to help users communicate more confidently, naturally,
+    and effectively in social and romantic conversations. Communication styles, humor,
+    and flirting preferences can vary depending on context and personal comfort. Asking
+    for gender allows us to tailor rizz lines and conversation starters in a way that
+    feels relevant rather than generic.
+
+    <br><br>
+    This selection is used strictly for personalization. Certain expressions, jokes,
+    and conversation tones may work better in specific scenarios. By understanding the
+    general context you prefer, RizzLines can suggest content that feels smoother,
+    more natural, and less awkward — improving confidence and success in conversations.
+
+    <br><br>
+    We want to be completely transparent: RizzLines does not use this information to
+    identify you personally. We do not request your name, email address, phone number,
+    or any real-world identifying details at this stage. Your gender selection is simply
+    a preference setting used to improve content relevance.
+
+    <br><br>
+    Privacy is a core principle of RizzLines. Your selection is stored locally on your
+    device using browser storage. This means the information stays on your phone or
+    computer and is not transmitted to external servers, advertisers, or third parties.
+    We do not sell data, track identities, or build behavioral profiles.
+
+    <br><br>
+    Inclusivity is important to us. Communication and attraction are personal, and not
+    everyone fits neatly into a single category. That is why RizzLines offers inclusive
+    options and focuses on comfort and respect rather than assumptions.
+
+    <br><br>
+    From a user-experience perspective, personalization reduces repetition and improves
+    quality. Instead of showing random or one-size-fits-all lines, RizzLines adapts its
+    suggestions to your selected context. This leads to better engagement, more natural
+    interactions, and increased confidence.
+
+    <br><br>
+    It is also important to clarify what we do not do. We do not monitor private messages,
+    access conversations, or track activity outside the website. Gender selection does
+    not affect access to features or visibility — it only influences the type of content
+    displayed.
+
+    <br><br>
+    By continuing, you acknowledge that this selection is optional, non-identifying,
+    and used solely to improve your experience. RizzLines is built on transparency,
+    respect, and user trust — because confidence starts with feeling comfortable.
+  </div>
+
+  <!-- SCRIPT -->
+  <script>
+    function selectGender(gender) {
+      localStorage.setItem("rizz_gender", gender);
+      window.location.href = "kage.html";
+    }
+  </script>
+
+</body>
+</html>

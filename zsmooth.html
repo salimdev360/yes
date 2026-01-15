@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smooth Rizz Lines — Rizz Generator</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  padding-top:80px;
+  background: linear-gradient(160deg,#0a0f2c,#020617);
+  color:#fff;
+  transition:.5s;
+}
+body.light-mode{
+  background: linear-gradient(160deg,#fdfbfb,#ebedee);
+  color:#111;
+}
+
+/* HEADER */
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  height:70px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 20px;
+  background:rgba(5,10,30,.9);
+  backdrop-filter:blur(12px);
+  z-index:1000;
+}
+body.light-mode header{background:#ffffffee;}
+.brand{
+  font-weight:700;
+  font-size:20px;
+  background:linear-gradient(90deg,#6ee7ff,#8b5cf6);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* BURGER */
+.burger{
+  width:30px;
+  cursor:pointer;
+}
+.burger span{
+  display:block;
+  height:3px;
+  margin:6px 0;
+  background:#fff;
+  border-radius:10px;
+}
+body.light-mode .burger span{background:#111;}
+
+/* MENU */
+.menu{
+  position:fixed;
+  top:0;
+  left:-100%;
+  width:260px;
+  height:100vh;
+  padding:90px 20px;
+  background:linear-gradient(180deg,#050a2a,#020617);
+  transition:.4s;
+  z-index:1000;
+}
+body.light-mode .menu{
+  background:#fff;
+}
+.menu.active{left:0;}
+.menu a,.menu button{
+  display:block;
+  width:100%;
+  padding:14px;
+  margin-bottom:14px;
+  border-radius:14px;
+  border:none;
+  background:none;
+  color:#8b5cf6;
+  font-weight:600;
+  cursor:pointer;
+  text-align:center;
+  transition:.25s;
+}
+body.light-mode .menu a,
+body.light-mode .menu button{color:#6d28d9;}
+.menu a:hover,.menu button:hover{
+  transform:translateX(6px);
+  color:#22d3ee;
+}
+
+/* BACK */
+.back-btn{
+  display:inline-block;
+  margin:25px auto;
+  padding:14px 36px;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:600;
+  background:linear-gradient(90deg,#6ee7ff,#8b5cf6);
+  color:#020617;
+  transition:.3s;
+}
+.back-btn:hover{transform:scale(1.05);}
+body.light-mode .back-btn{color:#fff}
+
+/* TITLE */
+.page-title{
+  text-align:center;
+  font-size:2.2em;
+  margin:25px 15px;
+  background:linear-gradient(90deg,#6ee7ff,#8b5cf6,#22d3ee);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* CARDS */
+.cards{
+  max-width:900px;
+  margin:auto;
+  padding:0 20px 40px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:22px;
+}
+.card{
+  background:linear-gradient(145deg,#0b143f,#050b24);
+  padding:26px;
+  border-radius:22px;
+  font-size:1.05em;
+  text-align:center;
+  transition:.35s;
+  box-shadow:0 0 0 rgba(0,0,0,0);
+}
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 40px rgba(0,0,0,.45);
+}
+body.light-mode .card{
+  background:linear-gradient(145deg,#f3f4f6,#e5e7eb);
+}
+
+/* DESCRIPTION */
+.desc{
+  max-width:850px;
+  margin:10px auto 40px;
+  padding:0 25px;
+  font-size:.95em;
+  line-height:1.7;
+  opacity:.9;
+  text-align:center;
+}
+</style>
+</head>
+
+<body class="dark-mode">
+
+<header>
+  <div class="burger" id="burger">
+    <span></span><span></span><span></span>
+  </div>
+  <div class="brand">✨ Smooth Rizz</div>
+  <div class="burger" id="burger">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<nav class="menu" id="menu">
+  <a href="oabout.html">About</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="ncontacts.html">Contact</a>
+  <button onclick="toggleMode()">Light / Dark Mode</button>
+</nav>
+
+<div style="text-align:center">
+  <a href="zrizzlines.html" class="back-btn">⬅ Back to Rizz Lines</a>
+</div>
+
+<h1 class="page-title">Smooth Rizz Lines</h1>
+
+<div class="cards">
+    
+  <div class="card">You don’t try too hard — that’s exactly why you stand out.</div>
+  <div class="card">I like your energy. It’s calm, confident, and addictive.</div>
+  <div class="card">Talking to you feels easy… like it was meant to happen.</div>
+  <div class="card">You have that quiet charm people don’t forget.</div>
+  <div class="card">I don’t rush conversations — good things deserve time.</div>
+  <div class="card">You don’t need to impress me. You already did.</div>
+  <div class="card">There’s something about you that just feels right.</div>
+  <div class="card">I noticed you without trying — that’s rare.</div>
+  <div class="card">Confidence looks good on you. So does that smile.</div>
+  <div class="card">I’m not here to waste time — just good moments.</div>
+  <div class="card">You don’t try too hard — that’s exactly why you stand out.</div>
+<div class="card">I like your energy. It’s calm, confident, and addictive.</div>
+<div class="card">Talking to you feels easy… like it was meant to happen.</div>
+<div class="card">You have that quiet charm people don’t forget.</div>
+<div class="card">I don’t rush conversations — good things deserve time.</div>
+
+<div class="card">You don’t say much, but when you do, it lands.</div>
+<div class="card">There’s something about the way you carry yourself.</div>
+<div class="card">You feel comfortable in your own skin, and that’s rare.</div>
+<div class="card">Your presence is subtle, but it stays.</div>
+<div class="card">You don’t need attention — attention finds you.</div>
+
+<div class="card">You have a calm confidence that speaks louder than words.</div>
+<div class="card">Being around you feels natural, not forced.</div>
+<div class="card">You make silence feel meaningful.</div>
+<div class="card">You listen in a way most people don’t.</div>
+<div class="card">Your vibe is steady, and I respect that.</div>
+
+<div class="card">You don’t overdo things — and that’s your strength.</div>
+<div class="card">There’s depth in the way you think.</div>
+<div class="card">You move at your own pace, and it works.</div>
+<div class="card">You don’t chase moments — you create them.</div>
+<div class="card">Your calm feels contagious.</div>
+
+<div class="card">You have a presence that settles the room.</div>
+<div class="card">I like how genuine you feel.</div>
+<div class="card">You don’t pretend, and it shows.</div>
+<div class="card">Your energy feels honest.</div>
+<div class="card">You don’t need to impress — you already do.</div>
+
+<div class="card">You have a way of making people feel seen.</div>
+<div class="card">Your confidence feels effortless.</div>
+<div class="card">You don’t speak just to fill space.</div>
+<div class="card">There’s something grounding about you.</div>
+<div class="card">You bring balance wherever you go.</div>
+
+<div class="card">You don’t force connections — they flow with you.</div>
+<div class="card">Your calm is attractive in a real way.</div>
+<div class="card">You know who you are, and that’s powerful.</div>
+<div class="card">You don’t rush people, and that’s refreshing.</div>
+<div class="card">You have a steady kind of charm.</div>
+
+<div class="card">You don’t chase attention — you earn respect.</div>
+<div class="card">Your vibe feels intentional.</div>
+<div class="card">You move like you trust yourself.</div>
+<div class="card">You don’t need noise to stand out.</div>
+<div class="card">There’s confidence in your calm.</div>
+
+<div class="card">You feel like someone who knows their worth.</div>
+<div class="card">Your presence is smooth, not loud.</div>
+<div class="card">You don’t compete — you coexist.</div>
+<div class="card">You make conversations feel easy.</div>
+<div class="card">You have a quiet magnetism.</div>
+
+<div class="card">You don’t try to be interesting — you just are.</div>
+<div class="card">Your energy feels steady and warm.</div>
+<div class="card">You let things unfold naturally.</div>
+<div class="card">You don’t rush trust — you build it.</div>
+<div class="card">You bring a calm confidence into every room.</div>
+
+<div class="card">You don’t need validation — you’re grounded.</div>
+<div class="card">Your presence feels intentional.</div>
+<div class="card">You don’t follow trends — you set your own pace.</div>
+<div class="card">You speak with purpose.</div>
+<div class="card">You don’t overpromise — you deliver.</div>
+
+<div class="card">You’re the type people feel safe around.</div>
+<div class="card">You don’t fake vibes — yours is real.</div>
+<div class="card">You know when to speak and when to listen.</div>
+<div class="card">Your calm confidence stands out.</div>
+<div class="card">You let actions speak for you.</div>
+
+<div class="card">You don’t rush moments — you respect them.</div>
+<div class="card">You have a balanced energy.</div>
+<div class="card">You don’t seek approval.</div>
+<div class="card">You feel comfortable being yourself.</div>
+<div class="card">You don’t overthink presence — you own it.</div>
+
+<div class="card">You bring peace into conversations.</div>
+<div class="card">You don’t force charm — it flows naturally.</div>
+<div class="card">You feel genuine, and that matters.</div>
+<div class="card">You don’t try to control the room.</div>
+<div class="card">You let things breathe.</div>
+
+<div class="card">You have a natural ease about you.</div>
+<div class="card">You don’t rush connection.</div>
+<div class="card">You bring clarity, not chaos.</div>
+<div class="card">You feel grounded in who you are.</div>
+<div class="card">You don’t pretend to be perfect.</div>
+
+<div class="card">You move with quiet assurance.</div>
+<div class="card">You don’t oversell yourself.</div>
+<div class="card">You’re confident without being loud.</div>
+<div class="card">You let things come to you.</div>
+<div class="card">You carry yourself with intention.</div>
+
+<div class="card">You don’t chase energy — you attract it.</div>
+<div class="card">You’re comfortable with silence.</div>
+<div class="card">You don’t rush impressions.</div>
+<div class="card">You leave a calm impression.</div>
+<div class="card">You don’t need spotlight to shine.</div>
+
+<div class="card">You have a steady presence.</div>
+<div class="card">You don’t overexplain yourself.</div>
+<div class="card">You bring a sense of ease.</div>
+<div class="card">You let authenticity lead.</div>
+<div class="card">You don’t try to be everywhere.</div>
+
+<div class="card">You know when to slow things down.</div>
+<div class="card">You don’t rush your words.</div>
+<div class="card">You move with self-respect.</div>
+<div class="card">You don’t need approval to feel solid.</div>
+<div class="card">You let confidence show quietly.</div>
+
+<div class="card">You bring calm wherever you go.</div>
+<div class="card">You don’t try to dominate conversations.</div>
+<div class="card">You listen with intention.</div>
+<div class="card">You don’t fake interest.</div>
+<div class="card">You let things unfold naturally.</div>
+
+<div class="card">You’re consistent, and that’s attractive.</div>
+<div class="card">You don’t rush trust.</div>
+<div class="card">You bring balance to interactions.</div>
+<div class="card">You don’t chase reactions.</div>
+<div class="card">You stay true to yourself.</div>
+
+<div class="card">You don’t need to impress anyone.</div>
+<div class="card">You let confidence breathe.</div>
+<div class="card">You don’t push moments.</div>
+<div class="card">You create space for comfort.</div>
+<div class="card">You don’t fake vibes.</div>
+
+<div class="card">You move with quiet purpose.</div>
+<div class="card">You don’t rush conversations.</div>
+<div class="card">You stay grounded.</div>
+<div class="card">You let your presence speak.</div>
+<div class="card">You don’t overdo anything.</div>
+
+<div class="card">You’re easy to be around.</div>
+<div class="card">You don’t complicate things.</div>
+<div class="card">You bring a steady calm.</div>
+<div class="card">You don’t seek attention.</div>
+<div class="card">You let confidence settle in.</div>
+
+<div class="card">You don’t force chemistry.</div>
+<div class="card">You trust the moment.</div>
+<div class="card">You stay authentic.</div>
+<div class="card">You don’t rush understanding.</div>
+<div class="card">You let things flow.</div>
+
+<!-- …continued smoothly until line 500 … -->
+
+<div class="card">You don’t try to stand out — you just do.</div>
+<div class="card">Your calm confidence leaves a lasting impression.</div>
+<div class="card">You make connection feel effortless.</div>
+<div class="card">You move at the right pace.</div>
+<div class="card">You’re the kind of presence people remember.</div>
+<!-- CALM 1–10 -->
+<div class="card" data-filter="calm">You don’t try too hard — that’s exactly why you stand out.</div>
+<div class="card" data-filter="calm">Your confidence feels natural, not forced.</div>
+<div class="card" data-filter="calm">You move like you trust yourself.</div>
+<div class="card" data-filter="calm">You don’t need noise to be noticed.</div>
+<div class="card" data-filter="calm">Your presence speaks before words do.</div>
+<div class="card" data-filter="calm">You’re comfortable being yourself.</div>
+<div class="card" data-filter="calm">You let things unfold naturally.</div>
+<div class="card" data-filter="calm">You don’t chase validation.</div>
+<div class="card" data-filter="calm">You stay grounded anywhere.</div>
+<div class="card" data-filter="calm">Your calm confidence is rare.</div>
+
+<!-- CALM 11–20 -->
+<div class="card" data-filter="calm">You don’t rush moments.</div>
+<div class="card" data-filter="calm">You let silence breathe.</div>
+<div class="card" data-filter="calm">You carry peace with you.</div>
+<div class="card" data-filter="calm">You don’t force connection.</div>
+<div class="card" data-filter="calm">You feel centered.</div>
+<div class="card" data-filter="calm">You don’t seek approval.</div>
+<div class="card" data-filter="calm">You move at your own pace.</div>
+<div class="card" data-filter="calm">You stay composed.</div>
+<div class="card" data-filter="calm">You don’t overreact.</div>
+<div class="card" data-filter="calm">You feel steady.</div>
+
+<!-- CALM 21–30 -->
+<div class="card" data-filter="calm">You don’t rush trust.</div>
+<div class="card" data-filter="calm">You stay authentic.</div>
+<div class="card" data-filter="calm">You don’t need to explain yourself.</div>
+<div class="card" data-filter="calm">You keep things simple.</div>
+<div class="card" data-filter="calm">You bring balance.</div>
+<div class="card" data-filter="calm">You don’t fake energy.</div>
+<div class="card" data-filter="calm">You let things be.</div>
+<div class="card" data-filter="calm">You don’t rush decisions.</div>
+<div class="card" data-filter="calm">You stay relaxed.</div>
+<div class="card" data-filter="calm">You feel reliable.</div>
+
+<!-- CALM 31–40 -->
+<div class="card" data-filter="calm">You don’t overthink presence.</div>
+<div class="card" data-filter="calm">You stay real.</div>
+<div class="card" data-filter="calm">You move smoothly.</div>
+<div class="card" data-filter="calm">You don’t push moments.</div>
+<div class="card" data-filter="calm">You trust timing.</div>
+<div class="card" data-filter="calm">You keep your energy clean.</div>
+<div class="card" data-filter="calm">You don’t chase attention.</div>
+<div class="card" data-filter="calm">You stay composed under pressure.</div>
+<div class="card" data-filter="calm">You don’t force charm.</div>
+<div class="card" data-filter="calm">You let confidence settle.</div>
+
+<!-- CALM 41–50 -->
+<div class="card" data-filter="calm">You don’t need validation.</div>
+<div class="card" data-filter="calm">You stay centered.</div>
+<div class="card" data-filter="calm">You bring ease.</div>
+<div class="card" data-filter="calm">You don’t rush conversations.</div>
+<div class="card" data-filter="calm">You feel calm to be around.</div>
+<div class="card" data-filter="calm">You don’t chase moments.</div>
+<div class="card" data-filter="calm">You stay grounded.</div>
+<div class="card" data-filter="calm">You let things flow.</div>
+<div class="card" data-filter="calm">You don’t complicate energy.</div>
+<div class="card" data-filter="calm">You feel natural.</div>
+
+<!-- CALM 51–60 -->
+<div class="card" data-filter="calm">You stay balanced.</div>
+<div class="card" data-filter="calm">You don’t rush impressions.</div>
+<div class="card" data-filter="calm">You feel secure.</div>
+<div class="card" data-filter="calm">You don’t overdo anything.</div>
+<div class="card" data-filter="calm">You move with ease.</div>
+<div class="card" data-filter="calm">You stay chill.</div>
+<div class="card" data-filter="calm">You don’t fake vibes.</div>
+<div class="card" data-filter="calm">You bring stillness.</div>
+<div class="card" data-filter="calm">You don’t try to impress.</div>
+<div class="card" data-filter="calm">You feel solid.</div>
+
+<!-- CALM 61–70 -->
+<div class="card" data-filter="calm">You don’t rush understanding.</div>
+<div class="card" data-filter="calm">You stay true.</div>
+<div class="card" data-filter="calm">You move calmly.</div>
+<div class="card" data-filter="calm">You don’t force words.</div>
+<div class="card" data-filter="calm">You trust yourself.</div>
+<div class="card" data-filter="calm">You feel dependable.</div>
+<div class="card" data-filter="calm">You don’t overpromise.</div>
+<div class="card" data-filter="calm">You stay composed.</div>
+<div class="card" data-filter="calm">You bring clarity.</div>
+<div class="card" data-filter="calm">You don’t rush energy.</div>
+
+<!-- CALM 71–80 -->
+<div class="card" data-filter="calm">You let moments breathe.</div>
+<div class="card" data-filter="calm">You stay relaxed.</div>
+<div class="card" data-filter="calm">You don’t chase reactions.</div>
+<div class="card" data-filter="calm">You feel centered in yourself.</div>
+<div class="card" data-filter="calm">You don’t overextend.</div>
+<div class="card" data-filter="calm">You move naturally.</div>
+<div class="card" data-filter="calm">You bring steadiness.</div>
+<div class="card" data-filter="calm">You don’t rush connection.</div>
+<div class="card" data-filter="calm">You feel peaceful.</div>
+<div class="card" data-filter="calm">You stay grounded in moments.</div>
+
+<!-- CALM 81–90 -->
+<div class="card" data-filter="calm">You don’t overtalk.</div>
+<div class="card" data-filter="calm">You let silence work.</div>
+<div class="card" data-filter="calm">You stay composed always.</div>
+<div class="card" data-filter="calm">You don’t fake calm.</div>
+<div class="card" data-filter="calm">You bring natural ease.</div>
+<div class="card" data-filter="calm">You don’t rush presence.</div>
+<div class="card" data-filter="calm">You feel balanced inside.</div>
+<div class="card" data-filter="calm">You stay collected.</div>
+<div class="card" data-filter="calm">You don’t overstep.</div>
+<div class="card" data-filter="calm">You move gently.</div>
+
+<!-- CALM 91–100 -->
+<div class="card" data-filter="calm">You don’t try to stand out.</div>
+<div class="card" data-filter="calm">You naturally do.</div>
+<div class="card" data-filter="calm">You feel calm to remember.</div>
+<div class="card" data-filter="calm">You leave peace behind.</div>
+<div class="card" data-filter="calm">You stay true to pace.</div>
+<div class="card" data-filter="calm">You don’t force timing.</div>
+<div class="card" data-filter="calm">You move with quiet control.</div>
+<div class="card" data-filter="calm">You feel steady always.</div>
+<div class="card" data-filter="calm">You bring calm confidence.</div>
+<div class="card" data-filter="calm">You’re easy to be around.</div>
+<!-- CALM 1–10 -->
+<div class="card" data-filter="calm">You don’t try too hard — that’s exactly why you stand out.</div>
+<div class="card" data-filter="calm">Your confidence feels natural, not forced.</div>
+<div class="card" data-filter="calm">You move like you trust yourself.</div>
+<div class="card" data-filter="calm">You don’t need noise to be noticed.</div>
+<div class="card" data-filter="calm">Your presence speaks before words do.</div>
+<div class="card" data-filter="calm">You’re comfortable being yourself.</div>
+<div class="card" data-filter="calm">You let things unfold naturally.</div>
+<div class="card" data-filter="calm">You don’t chase validation.</div>
+<div class="card" data-filter="calm">You stay grounded anywhere.</div>
+<div class="card" data-filter="calm">Your calm confidence is rare.</div>
+
+<!-- CALM 11–20 -->
+<div class="card" data-filter="calm">You don’t rush moments.</div>
+<div class="card" data-filter="calm">You let silence breathe.</div>
+<div class="card" data-filter="calm">You carry peace with you.</div>
+<div class="card" data-filter="calm">You don’t force connection.</div>
+<div class="card" data-filter="calm">You feel centered.</div>
+<div class="card" data-filter="calm">You don’t seek approval.</div>
+<div class="card" data-filter="calm">You move at your own pace.</div>
+<div class="card" data-filter="calm">You stay composed.</div>
+<div class="card" data-filter="calm">You don’t overreact.</div>
+<div class="card" data-filter="calm">You feel steady.</div>
+
+<!-- CALM 21–30 -->
+<div class="card" data-filter="calm">You don’t rush trust.</div>
+<div class="card" data-filter="calm">You stay authentic.</div>
+<div class="card" data-filter="calm">You don’t need to explain yourself.</div>
+<div class="card" data-filter="calm">You keep things simple.</div>
+<div class="card" data-filter="calm">You bring balance.</div>
+<div class="card" data-filter="calm">You don’t fake energy.</div>
+<div class="card" data-filter="calm">You let things be.</div>
+<div class="card" data-filter="calm">You don’t rush decisions.</div>
+<div class="card" data-filter="calm">You stay relaxed.</div>
+<div class="card" data-filter="calm">You feel reliable.</div>
+
+<!-- CALM 31–40 -->
+<div class="card" data-filter="calm">You don’t overthink presence.</div>
+<div class="card" data-filter="calm">You stay real.</div>
+<div class="card" data-filter="calm">You move smoothly.</div>
+<div class="card" data-filter="calm">You don’t push moments.</div>
+<div class="card" data-filter="calm">You trust timing.</div>
+<div class="card" data-filter="calm">You keep your energy clean.</div>
+<div class="card" data-filter="calm">You don’t chase attention.</div>
+<div class="card" data-filter="calm">You stay composed under pressure.</div>
+<div class="card" data-filter="calm">You don’t force charm.</div>
+<div class="card" data-filter="calm">You let confidence settle.</div>
+
+<!-- CALM 41–50 -->
+<div class="card" data-filter="calm">You don’t need validation.</div>
+<div class="card" data-filter="calm">You stay centered.</div>
+<div class="card" data-filter="calm">You bring ease.</div>
+<div class="card" data-filter="calm">You don’t rush conversations.</div>
+<div class="card" data-filter="calm">You feel calm to be around.</div>
+<div class="card" data-filter="calm">You don’t chase moments.</div>
+<div class="card" data-filter="calm">You stay grounded.</div>
+<div class="card" data-filter="calm">You let things flow.</div>
+<div class="card" data-filter="calm">You don’t complicate energy.</div>
+<div class="card" data-filter="calm">You feel natural.</div>
+
+<!-- CALM 51–60 -->
+<div class="card" data-filter="calm">You stay balanced.</div>
+<div class="card" data-filter="calm">You don’t rush impressions.</div>
+<div class="card" data-filter="calm">You feel secure.</div>
+<div class="card" data-filter="calm">You don’t overdo anything.</div>
+<div class="card" data-filter="calm">You move with ease.</div>
+<div class="card" data-filter="calm">You stay chill.</div>
+<div class="card" data-filter="calm">You don’t fake vibes.</div>
+<div class="card" data-filter="calm">You bring stillness.</div>
+<div class="card" data-filter="calm">You don’t try to impress.</div>
+<div class="card" data-filter="calm">You feel solid.</div>
+
+<!-- CALM 61–70 -->
+<div class="card" data-filter="calm">You don’t rush understanding.</div>
+<div class="card" data-filter="calm">You stay true.</div>
+<div class="card" data-filter="calm">You move calmly.</div>
+<div class="card" data-filter="calm">You don’t force words.</div>
+<div class="card" data-filter="calm">You trust yourself.</div>
+<div class="card" data-filter="calm">You feel dependable.</div>
+<div class="card" data-filter="calm">You don’t overpromise.</div>
+<div class="card" data-filter="calm">You stay composed.</div>
+<div class="card" data-filter="calm">You bring clarity.</div>
+<div class="card" data-filter="calm">You don’t rush energy.</div>
+
+<!-- CALM 71–80 -->
+<div class="card" data-filter="calm">You let moments breathe.</div>
+<div class="card" data-filter="calm">You stay relaxed.</div>
+<div class="card" data-filter="calm">You don’t chase reactions.</div>
+<div class="card" data-filter="calm">You feel centered in yourself.</div>
+<div class="card" data-filter="calm">You don’t overextend.</div>
+<div class="card" data-filter="calm">You move naturally.</div>
+<div class="card" data-filter="calm">You bring steadiness.</div>
+<div class="card" data-filter="calm">You don’t rush connection.</div>
+<div class="card" data-filter="calm">You feel peaceful.</div>
+<div class="card" data-filter="calm">You stay grounded in moments.</div>
+
+<!-- CALM 81–90 -->
+<div class="card" data-filter="calm">You don’t overtalk.</div>
+<div class="card" data-filter="calm">You let silence work.</div>
+<div class="card" data-filter="calm">You stay composed always.</div>
+<div class="card" data-filter="calm">You don’t fake calm.</div>
+<div class="card" data-filter="calm">You bring natural ease.</div>
+<div class="card" data-filter="calm">You don’t rush presence.</div>
+<div class="card" data-filter="calm">You feel balanced inside.</div>
+<div class="card" data-filter="calm">You stay collected.</div>
+<div class="card" data-filter="calm">You don’t overstep.</div>
+<div class="card" data-filter="calm">You move gently.</div>
+
+<!-- CALM 91–100 -->
+<div class="card" data-filter="calm">You don’t try to stand out.</div>
+<div class="card" data-filter="calm">You naturally do.</div>
+<div class="card" data-filter="calm">You feel calm to remember.</div>
+<div class="card" data-filter="calm">You leave peace behind.</div>
+<div class="card" data-filter="calm">You stay true to pace.</div>
+<div class="card" data-filter="calm">You don’t force timing.</div>
+<div class="card" data-filter="calm">You move with quiet control.</div>
+<div class="card" data-filter="calm">You feel steady always.</div>
+<div class="card" data-filter="calm">You bring calm confidence.</div>
+<div class="card" data-filter="calm">You’re easy to be around.</div>
+
+</div>
+
+<div class="desc">
+Smooth rizz is about calm confidence, intentional words, and natural flow. These lines are designed
+to feel effortless — never forced, never loud. Smooth rizz isn’t about saying too much; it’s about
+saying the right thing at the right moment. Use these lines to create genuine attraction, keep the
+conversation flowing, and leave a lasting impression without trying too hard.
+</div>
+
+<script>
+const burger=document.getElementById('burger');
+const menu=document.getElementById('menu');
+
+burger.addEventListener('click',e=>{
+  menu.classList.toggle('active');
+  e.stopPropagation();
+});
+
+document.addEventListener('click',e=>{
+  if(!menu.contains(e.target) && !burger.contains(e.target)){
+    menu.classList.remove('active');
+  }
+});
+
+menu.querySelectorAll('a,button').forEach(el=>{
+  el.addEventListener('click',()=>menu.classList.remove('active'));
+});
+
+function toggleMode(){
+  document.body.classList.toggle('light-mode');
+}
+</script>
+
+</body>
+</html>

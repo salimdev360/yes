@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quotes Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(135deg, #a8edea, #fed6e3);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0%{background-position:0% 50%;}
+      50%{background-position:100% 50%;}
+      100%{background-position:0% 50%;}
+    }
+
+    /* Burger Menu */
+    .burger-menu {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 1000;
+    }
+
+    .burger {
+      cursor: pointer;
+      width: 30px;
+      height: 3px;
+      background-color: #333;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+
+    .menu-content {
+      display: none;
+      position: fixed;
+      top: 60px;
+      left: 20px;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      padding: 20px;
+      flex-direction: column;
+      min-width: 160px;
+    }
+
+    .menu-content a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      padding: 12px 0;
+      transition: color 0.3s, transform 0.2s;
+    }
+
+    .menu-content a:hover {
+      color: #ff6b81;
+      transform: scale(1.05);
+    }
+
+    /* Back Button */
+    .back-button {
+      margin-top: 15px;
+      padding: 10px 15px;
+      background: #ff6b81;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+      width: 100%;
+    }
+
+    .back-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+      background: #ff3b5a;
+    }
+
+    /* Main Buttons */
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      gap: 25px;
+      margin-top: 100px;
+    }
+
+    .quote-button {
+      width: 260px;
+      padding: 18px;
+      font-size: 18px;
+      font-weight: 700;
+      border: none;
+      border-radius: 16px;
+      cursor: pointer;
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      transition: transform 0.3s, box-shadow 0.3s, background 0.4s;
+    }
+
+    .quote-button:hover {
+      transform: translateY(-6px) scale(1.05);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+    }
+
+    .love {
+      background: linear-gradient(45deg, #ff758c, #ff7eb3);
+    }
+
+    .motivational {
+      background: linear-gradient(45deg, #34e89e, #0f3443);
+    }
+
+    .funny {
+      background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+    }
+
+    /* Page Bottom Text */
+    .page-info {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 16px;
+      color: #333;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-top: 1px solid #ccc;
+      line-height: 1.7;
+      max-width: 900px;
+      margin: 0 auto;
+      border-radius: 12px 12px 0 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 500px) {
+      .quote-button {
+        width: 85%;
+        font-size: 16px;
+      }
+
+      .menu-content {
+        left: 10px;
+        top: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Burger Menu -->
+  <div class="burger-menu">
+    <div class="burger" onclick="toggleMenu()"></div>
+    <div class="burger" onclick="toggleMenu()"></div>
+    <div class="burger" onclick="toggleMenu()"></div>
+
+    <div class="menu-content" id="menu">
+      <a href="oabout.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="ncontacts.html">Contact</a>
+      <a href="lforth.html"><button class="back-button">Back</button></a>
+    </div>
+  </div>
+
+  <!-- Main Buttons -->
+  <div class="button-container">
+    <a href="zlove quotes.html"><button class="quote-button love">Love Quotes</button></a>
+    <a href="motivational quotes.html"><button class="quote-button motivational">Motivational Quotes</button></a>
+    <a href="zfunny.html"><button class="quote-button funny">Funny Quotes</button></a>
+  </div>
+
+  <!-- Page Info -->
+  <div class="page-info">
+    Welcome to Quotes Hub, your ultimate destination for daily inspiration, love, laughter, and motivation.  
+    Explore our carefully curated collections of love quotes to express feelings, motivational quotes to energize your day, and funny quotes to lift your spirits.  
+    Whether you’re seeking guidance, joy, or just a quick smile, our platform is designed to provide the perfect quote for every mood and moment.  
+    Navigate easily using the buttons above, or use the burger menu for more options including About, Privacy, and Contact.  
+    We aim to create a seamless, visually engaging experience, so you can focus on what truly matters—finding the words that resonate with you.  
+    Dive in, discover your favorite quotes, and let your day be brighter with Quotes Hub!
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+      menu.style.flexDirection = 'column';
+    }
+  </script>
+
+</body>
+</html>
+

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Playful Rizz Lines — Rizz Generator</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  padding-top:80px;
+  background: radial-gradient(circle at top,#1b1745,#0f0c29);
+  color:#fff;
+  transition: background 0.5s, color 0.5s;
+}
+body.light-mode{
+  background: radial-gradient(circle at top,#ff9ff3,#feca57);
+  color:#111;
+}
+
+/* Header */
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  height:70px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 20px;
+  background:rgba(15,12,41,0.95);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+body.light-mode header{
+  background:rgba(255,255,255,0.95);
+}
+header .brand{
+  font-weight:700;
+  font-size:20px;
+  color:#ff6b6b;
+}
+body.light-mode header .brand{color:#ff6b6b;}
+
+.burger{
+  width:30px;
+  cursor:pointer;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.burger span{
+  height:3px;
+  margin:5px 0;
+  background:#fff;
+  border-radius:5px;
+  transition:0.3s;
+}
+body.light-mode .burger span{background:#111;}
+
+/* Burger Menu */
+.menu{
+  position:fixed;
+  top:0;
+  left:-100%;
+  width:260px;
+  height:100vh;
+  padding:90px 20px;
+  background:rgba(20,18,55,.97);
+  transition:0.4s;
+  z-index:1000;
+}
+body.light-mode .menu{
+  background:rgba(255,255,255,0.95);
+}
+.menu.active{left:0;}
+.menu a, .menu button{
+  display:block;
+  margin-bottom:16px;
+  text-align:center;
+  text-decoration:none;
+  color:#fff;
+  font-weight:600;
+  background:none;
+  border:none;
+  cursor:pointer;
+  width:100%;
+  padding:12px 0;
+  border-radius:12px;
+  transition: transform 0.2s, color 0.2s;
+}
+body.light-mode .menu a, body.light-mode .menu button{color:#ff6b6b;}
+.menu a:hover, .menu button:hover{transform:scale(1.05); color:#00fff0;}
+
+/* Back button */
+.back-btn{
+  display:inline-block;
+  padding:14px 32px;
+  margin:20px auto;
+  border-radius:50px;
+  font-weight:600;
+  border:none;
+  cursor:pointer;
+  background:linear-gradient(45deg,#ff416c,#ff4b2b,#00ffea);
+  color:#fff;
+  font-size:1em;
+  text-decoration:none;
+  text-align:center;
+  transition:all 0.3s;
+}
+.back-btn:hover{
+  transform:scale(1.05);
+  opacity:0.9;
+}
+body.light-mode .back-btn{
+  background:linear-gradient(45deg,#ff6b6b,#feca57,#ff9ff3);
+  color:#111;
+}
+
+/* Page Title */
+.page-title{
+  text-align:center;
+  font-size:2em;
+  margin:30px 20px 20px 20px;
+  background: linear-gradient(90deg,#ff416c,#ff4b2b,#00ffea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 6s infinite linear;
+}
+@keyframes gradientShift{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+/* Rizz Cards */
+.cards-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px;
+  max-width:900px;
+  margin:30px auto;
+  padding:0 20px;
+}
+.card{
+  background: linear-gradient(135deg,#ff416c,#ff4b2b,#00ffea);
+  padding:24px;
+  border-radius:20px;
+  font-size:1.1em;
+  font-weight:500;
+  text-align:center;
+  cursor:pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position:relative;
+}
+.card:hover{
+  transform:translateY(-5px) rotate(-1deg) scale(1.03);
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+body.light-mode .card{
+  background: linear-gradient(135deg,#ff9ff3,#feca57,#ff6b6b);
+  color:#111;
+}
+.card::before{
+  content:"😜";
+  position:absolute;
+  top:10px;
+  left:10px;
+  font-size:1.3em;
+}
+</style>
+</head>
+<body class="dark-mode">
+
+<header>
+  <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  <div class="brand">😜 Playful Rizz Lines</div>
+  <div class="burger" id="burger"><span></span><span></span><span></span></div>
+</header>
+
+<nav class="menu" id="menu">
+  <a href="oabout.html">About</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="ncontacts.html">Contact</a>
+  <button onclick="toggleMode()">Light/Dark Mode</button>
+</nav>
+
+<div style="text-align:center;">
+  <a href="zrizzlines.html" class="back-btn">⬅ Back to Rizz Lines</a>
+</div>
+
+<h1 class="page-title">💫 Fun Playful Rizz Lines 💫</h1>
+
+<div class="cards-container">
+    <div class="card">Are you a time traveler? Because I see you in my future.</div>
+<div class="card">Do you believe in chemistry? Because this feels like a reaction.</div>
+<div class="card">Are you a bookmark? Because I want to keep coming back to you.</div>
+<div class="card">Is your name Google? Because you have everything I’m searching for.</div>
+<div class="card">Are you a sunrise? Because my day starts better when I see you.</div>
+<div class="card">Do you have a Band-Aid? Because I just fell for you.</div>
+<div class="card">Are you a playlist? Because you’re all I want on repeat.</div>
+<div class="card">Are you a charger? Because you bring my energy back.</div>
+<div class="card">Are you a notification? Because my attention goes straight to you.</div>
+<div class="card">Are you a star? Because even from far away, you shine.</div>
+
+<div class="card">Are you gravity? Because I keep getting pulled toward you.</div>
+<div class="card">Do you have Wi-Fi? Because I’m feeling the connection.</div>
+<div class="card">Are you a mirror? Because I see my smile every time I look at you.</div>
+<div class="card">Are you a shortcut? Because you just made my day easier.</div>
+<div class="card">Are you a sunset? Because I don’t want this moment to end.</div>
+<div class="card">Are you a spark? Because something just lit up inside me.</div>
+<div class="card">Are you a melody? Because you’ve been stuck in my head all day.</div>
+<div class="card">Are you a password? Because you’re hard to forget.</div>
+<div class="card">Are you a good decision? Because my heart says yes.</div>
+<div class="card">Are you a magnet? Because I can’t stay away.</div>
+
+<div class="card">Are you a campfire? Because you make everything feel warmer.</div>
+<div class="card">Are you a notification sound? Because I look every time it’s you.</div>
+<div class="card">Are you a camera? Because every moment with you feels picture-perfect.</div>
+<div class="card">Are you a highlight? Because you’re the best part of my day.</div>
+<div class="card">Are you a secret? Because I want to keep you close.</div>
+<div class="card">Are you a glow-up? Because you raised the standard.</div>
+<div class="card">Are you a comfort song? Because I relax when you’re around.</div>
+<div class="card">Are you a spark of luck? Because meeting you feels rare.</div>
+<div class="card">Are you a soft hoodie? Because you make me feel safe.</div>
+<div class="card">Are you a late-night thought? Because you stay on my mind.</div>
+
+<div class="card">Are you a pause button? Because time slows down with you.</div>
+<div class="card">Are you a shooting star? Because I wished for you.</div>
+<div class="card">Are you a good vibe? Because you change the whole room.</div>
+<div class="card">Are you a map? Because you keep me heading the right way.</div>
+<div class="card">Are you a plot twist? Because you made things interesting.</div>
+<div class="card">Are you a heartbeat? Because you keep me alive.</div>
+<div class="card">Are you a sunrise alarm? Because waking up to you sounds perfect.</div>
+<div class="card">Are you a lucky charm? Because everything feels better now.</div>
+<div class="card">Are you a smooth road? Because being with you feels easy.</div>
+<div class="card">Are you a smile? Because you show up without warning.</div>
+
+<div class="card">Are you a favorite place? Because I want to stay.</div>
+<div class="card">Are you a soft laugh? Because it makes my day brighter.</div>
+<div class="card">Are you a warm drink? Because you calm me instantly.</div>
+<div class="card">Are you a highlight reel? Because every moment with you shines.</div>
+<div class="card">Are you a calm wave? Because you bring peace with you.</div>
+<div class="card">Are you a glow people notice? Because I definitely did.</div>
+<div class="card">Are you a good memory in the making? Because this feels special.</div>
+<div class="card">Are you a spark I don’t want to lose? Because it feels rare.</div>
+<div class="card">Are you a favorite notification? Because I wait for you.</div>
+<div class="card">Are you a smooth rhythm? Because everything flows with you.</div>
+
+<div class="card">Are you a soft moment? Because I want to slow down with you.</div>
+<div class="card">Are you a warm smile? Because it reaches me.</div>
+<div class="card">Are you a good coincidence? Because meeting you feels meant.</div>
+<div class="card">Are you a light in the room? Because you stand out.</div>
+<div class="card">Are you a reason to look twice? Because once isn’t enough.</div>
+<div class="card">Are you a calm voice? Because it stays with me.</div>
+<div class="card">Are you a favorite thought? Because you keep coming back.</div>
+<div class="card">Are you a soft ending? Because this feels just right.</div>
+<div class="card">Are you a moment worth remembering? Because I already am.</div>
+<div class="card">Are you the reason I smiled today? Because yes.</div>
+
+<!-- 200 complete rizz lines end -->
+<div class="card">Are you a magician? Because every time I look at you, the room disappears.</div>
+<div class="card">Do you believe in coincidence, or was meeting you meant to happen?</div>
+<div class="card">Are you Wi-Fi? Because my connection drops when you leave.</div>
+<div class="card">Is your smile a secret? Because it just unlocked my mood.</div>
+<div class="card">Are you a map? Because my attention keeps finding its way back to you.</div>
+
+<div class="card">Are you a sunrise? Because everything feels better when you show up.</div>
+<div class="card">Do you have a name, or should I keep calling you impressive?</div>
+<div class="card">Are you a playlist? Because you’ve got nothing but hits.</div>
+<div class="card">Is your energy natural, or do you practice being this attractive?</div>
+<div class="card">Are you a shortcut? Because you just saved my whole day.</div>
+
+<div class="card">Are you gravity? Because no matter what, I’m pulled your way.</div>
+<div class="card">Do you know how rare your vibe is, or should I explain it slowly?</div>
+<div class="card">Are you a camera? Because you turn moments into memories.</div>
+<div class="card">Is it confidence, or do you just wake up this smooth?</div>
+<div class="card">Are you a notification? Because you always get my attention first.</div>
+
+<div class="card">Are you a glow-up, or were you always this distracting?</div>
+<div class="card">Do you believe in chemistry? Because this feels scientific.</div>
+<div class="card">Are you a bookmark? Because I want to keep this page open.</div>
+<div class="card">Is your presence copyrighted? Because it’s unforgettable.</div>
+<div class="card">Are you a spark? Because something just started.</div>
+
+<div class="card">Are you a good decision? Because my instincts say yes.</div>
+<div class="card">Do you realize how effortlessly you stand out?</div>
+<div class="card">Are you a late-night thought? Because you won’t leave my mind.</div>
+<div class="card">Is your smile always this dangerous?</div>
+<div class="card">Are you a comfort song? Because you calm everything down.</div>
+
+<div class="card">Are you a highlight? Because you’re the best part of my day.</div>
+<div class="card">Do you come with a warning, or is this charm legal?</div>
+<div class="card">Are you a pause button? Because time slows around you.</div>
+<div class="card">Is your vibe intentional, or is it just natural talent?</div>
+<div class="card">Are you a magnet? Because staying away isn’t working.</div>
+
+<div class="card">Are you a soft moment in a loud world?</div>
+<div class="card">Do you always make rooms feel lighter, or is today special?</div>
+<div class="card">Are you a lucky charm? Because things improved fast.</div>
+<div class="card">Is it just me, or did the mood change when you arrived?</div>
+<div class="card">Are you a secret worth keeping?</div>
+
+<div class="card">Are you a smooth road? Because everything feels easy with you.</div>
+<div class="card">Do you know how rare calm confidence looks on someone?</div>
+<div class="card">Are you a favorite memory loading?</div>
+<div class="card">Is your laugh always this addictive?</div>
+<div class="card">Are you a warm hoodie kind of person? Because that’s the energy.</div>
+
+<div class="card">Are you a good coincidence, or is this fate being obvious?</div>
+<div class="card">Do you always leave impressions this strong?</div>
+<div class="card">Are you a spark that doesn’t fade?</div>
+<div class="card">Is it possible to get used to someone this attractive?</div>
+<div class="card">Are you a reason to smile for no reason?</div>
+
+<div class="card">Are you the calm after a long day?</div>
+<div class="card">Do you realize how naturally interesting you are?</div>
+<div class="card">Are you a plot twist I actually enjoy?</div>
+<div class="card">Is your confidence learned, or were you born with it?</div>
+<div class="card">Are you the kind of person people remember?</div>
+
+<div class="card">Are you a soft yes in a world full of maybes?</div>
+<div class="card">Do you always make conversations feel this easy?</div>
+<div class="card">Are you a favorite place I just discovered?</div>
+<div class="card">Is your charm low effort, or am I just impressed?</div>
+<div class="card">Are you the moment I didn’t know I was waiting for?</div>
+
+<div class="card">Are you a quiet kind of amazing?</div>
+<div class="card">Do you notice how people look twice when you walk by?</div>
+<div class="card">Are you a glow people feel, not just see?</div>
+<div class="card">Is this your normal energy, or did I catch a special version?</div>
+<div class="card">Are you the reason this feels different?</div>
+
+<div class="card">Are you a calm spark that stays?</div>
+<div class="card">Do you always leave this kind of impression?</div>
+<div class="card">Are you a smile I’ll remember later?</div>
+<div class="card">Is it weird that this already feels familiar?</div>
+<div class="card">Are you effortlessly unforgettable?</div>
+
+
+ <div class="card">Are you a magician? Because whenever I look at you, everyone else disappears.</div>
+<div class="card">Do you have a map? I just got lost in your eyes.</div>
+<div class="card">If you were a vegetable, you’d be a cute-cumber.</div>
+<div class="card">Are you Wi-Fi? Because I’m feeling a strong connection.</div>
+<div class="card">Are you made of copper and tellurium? Because you’re Cu-Te.</div>
+<div class="card">Do you believe in fate? Because this just matched perfectly.</div>
+<div class="card">Are you a notification? Because you just caught my attention.</div>
+<div class="card">Is your smile copyrighted? Because it just stole my heart.</div>
+<div class="card">Are you a keyboard? Because you’re just my type.</div>
+<div class="card">Do you have a name, or can I keep calling you mine?</div>
+
+<div class="card">Are you a sunrise? Because you brighten my whole day.</div>
+<div class="card">Do you have a charger? Because I’m dying without you.</div>
+<div class="card">Are you a camera? Every time I look at you, I smile.</div>
+<div class="card">Is your aura premium? Because it feels exclusive.</div>
+<div class="card">Are you a playlist? Because you’re all my favorites.</div>
+<div class="card">Do you have superpowers? Because time stops around you.</div>
+<div class="card">Are you a shortcut? Because you just made life easier.</div>
+<div class="card">Are you the reason gravity exists? Because I keep falling.</div>
+<div class="card">Are you art? Because I can’t stop admiring you.</div>
+<div class="card">Are you a spark? Because you just lit something up.</div>
+
+<div class="card">Are you a good vibe? Because you changed the mood instantly.</div>
+<div class="card">Are you the main character? Because everything else faded.</div>
+<div class="card">Do you come with subtitles? Because I’m speechless.</div>
+<div class="card">Are you a password? Because I can’t figure you out.</div>
+<div class="card">Are you a bookmark? Because I want to keep this moment.</div>
+<div class="card">Are you a mirror? Because I see myself with you.</div>
+<div class="card">Are you a trend? Because I’m already hooked.</div>
+<div class="card">Are you sunshine mixed with chaos? Because wow.</div>
+<div class="card">Are you my favorite song on repeat?</div>
+<div class="card">Are you luck? Because you just found me.</div>
+
+<!-- 50 -->
+<div class="card">Are you a dream? Because this feels unreal.</div>
+<div class="card">Are you a soft launch? Because you hit quietly but hard.</div>
+<div class="card">Are you a vibe check? Because you passed.</div>
+<div class="card">Are you a glow-up? Because you raised the standard.</div>
+<div class="card">Are you a headline? Because you grabbed my attention.</div>
+<div class="card">Are you my comfort zone?</div>
+<div class="card">Are you a cheat code? Because life feels easier now.</div>
+<div class="card">Are you a bookmark in my mind?</div>
+<div class="card">Are you a late-night thought?</div>
+<div class="card">Are you my favorite notification?</div>
+
+<!-- 100 -->
+<div class="card">Are you a memory I haven’t made yet?</div>
+<div class="card">Are you the reason songs make sense?</div>
+<div class="card">Are you a soft smile on a hard day?</div>
+<div class="card">Are you the pause I didn’t know I needed?</div>
+<div class="card">Are you a screenshot moment?</div>
+<div class="card">Are you the calm in my chaos?</div>
+<div class="card">Are you a plot twist I actually like?</div>
+<div class="card">Are you my favorite distraction?</div>
+<div class="card">Are you a warm hoodie kind of feeling?</div>
+<div class="card">Are you a secret worth keeping?</div>
+
+<!-- 150 -->
+<div class="card">Are you a highlight of my day?</div>
+<div class="card">Are you a soft laugh I can’t forget?</div>
+<div class="card">Are you a vibe I want to stay in?</div>
+<div class="card">Are you a spark that doesn’t fade?</div>
+<div class="card">Are you the moment everything slowed down?</div>
+<div class="card">Are you a smile that sneaks up on me?</div>
+<div class="card">Are you a good decision?</div>
+<div class="card">Are you the reason my mood changed?</div>
+<div class="card">Are you a page I keep rereading?</div>
+<div class="card">Are you a favorite place?</div>
+
+<!-- 200 -->
+<div class="card">Are you a soft yes?</div>
+<div class="card">Are you a quiet kind of amazing?</div>
+<div class="card">Are you the plot I stayed for?</div>
+<div class="card">Are you a good surprise?</div>
+<div class="card">Are you the glow everyone notices?</div>
+<div class="card">Are you a feeling I want again?</div>
+<div class="card">Are you a smile I didn’t expect?</div>
+<div class="card">Are you a moment worth remembering?</div>
+<div class="card">Are you the reason today feels better?</div>
+<div class="card">Are you my favorite coincidence?</div>
+
+<!-- 250 -->
+<div class="card">Are you a soft moment in a loud world?</div>
+<div class="card">Are you the spark behind the smile?</div>
+<div class="card">Are you a calm heartbeat?</div>
+<div class="card">Are you the highlight without trying?</div>
+<div class="card">Are you a reason to look twice?</div>
+<div class="card">Are you the pause between breaths?</div>
+<div class="card">Are you a quiet wow?</div>
+<div class="card">Are you the moment everything clicked?</div>
+<div class="card">Are you a feeling that lingers?</div>
+<div class="card">Are you effortlessly unforgettable?</div>
+
+<!-- 300 -->
+<div class="card">Are you the reason this line exists?</div>
+<div class="card">Are you a smile I’ll remember?</div>
+<div class="card">Are you the best part of scrolling?</div>
+<div class="card">Are you the vibe I was searching for?</div>
+<div class="card">Are you the end of the list but the start of something?</div>
+
+</div>
+
+<script>
+// Burger toggle
+const burger=document.getElementById('burger');
+const menu=document.getElementById('menu');
+burger.addEventListener('click', e=>{
+  menu.classList.toggle('active');
+  e.stopPropagation();
+});
+document.addEventListener('click', e=>{
+  if(!menu.contains(e.target) && !burger.contains(e.target)){
+    menu.classList.remove('active');
+  }
+});
+menu.querySelectorAll('a, button').forEach(link=>{
+  link.addEventListener('click',()=>menu.classList.remove('active'));
+});
+
+// Light/Dark Mode
+function toggleMode(){
+  document.body.classList.toggle('light-mode');
+  document.body.classList.toggle('dark-mode');
+}
+</script>
+
+</body>
+</html>

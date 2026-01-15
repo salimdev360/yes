@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Funny Rizz Lines — Rizz Generator</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  padding-top:80px;
+  background: linear-gradient(160deg,#0f0a1e,#05020d);
+  color:#fff;
+  transition:.5s;
+}
+body.light-mode{
+  background: linear-gradient(160deg,#fff7ed,#ffedd5);
+  color:#111;
+}
+
+/* HEADER */
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  height:70px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 20px;
+  background:rgba(10,5,25,.95);
+  backdrop-filter:blur(12px);
+  z-index:1000;
+}
+body.light-mode header{background:#ffffffee;}
+
+.brand{
+  font-weight:700;
+  font-size:20px;
+  background:linear-gradient(90deg,#facc15,#fb923c,#f97316);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* BURGER */
+.burger{
+  width:30px;
+  cursor:pointer;
+}
+.burger span{
+  display:block;
+  height:3px;
+  margin:6px 0;
+  background:#fff;
+  border-radius:10px;
+}
+body.light-mode .burger span{background:#111;}
+
+/* MENU */
+.menu{
+  position:fixed;
+  top:0;
+  left:-100%;
+  width:260px;
+  height:100vh;
+  padding:90px 20px;
+  background:linear-gradient(180deg,#12081f,#05020d);
+  transition:.4s;
+  z-index:1000;
+}
+body.light-mode .menu{background:#fff;}
+.menu.active{left:0;}
+
+.menu a,.menu button{
+  display:block;
+  width:100%;
+  padding:14px;
+  margin-bottom:14px;
+  border-radius:14px;
+  border:none;
+  background:none;
+  color:#fbbf24;
+  font-weight:600;
+  cursor:pointer;
+  text-align:center;
+  transition:.25s;
+}
+body.light-mode .menu a,
+body.light-mode .menu button{color:#ea580c;}
+.menu a:hover,.menu button:hover{
+  transform:translateX(6px);
+  color:#fb923c;
+}
+
+/* BACK */
+.back-btn{
+  display:inline-block;
+  margin:25px auto;
+  padding:14px 36px;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:600;
+  background:linear-gradient(90deg,#facc15,#fb923c);
+  color:#020617;
+  transition:.3s;
+}
+.back-btn:hover{transform:scale(1.05);}
+body.light-mode .back-btn{color:#fff}
+
+/* TITLE */
+.page-title{
+  text-align:center;
+  font-size:2.3em;
+  margin:25px 15px;
+  background:linear-gradient(90deg,#facc15,#fb923c,#f97316);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* CARDS */
+.cards{
+  max-width:900px;
+  margin:auto;
+  padding:0 20px 40px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:22px;
+}
+.card{
+  background:linear-gradient(145deg,#1a1233,#0b0620);
+  padding:26px;
+  border-radius:22px;
+  font-size:1.05em;
+  text-align:center;
+  transition:.35s;
+}
+.card:hover{
+  transform:rotate(-1deg) translateY(-6px);
+  box-shadow:0 20px 40px rgba(0,0,0,.5);
+}
+body.light-mode .card{
+  background:linear-gradient(145deg,#fff7ed,#ffedd5);
+}
+
+/* DESCRIPTION */
+.desc{
+  max-width:850px;
+  margin:10px auto 40px;
+  padding:0 25px;
+  font-size:.95em;
+  line-height:1.7;
+  opacity:.92;
+  text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="burger" id="burger">
+    <span></span><span></span><span></span>
+  </div>
+  <div class="brand">😂 Funny Rizz</div>
+  <div class="burger" id="burger">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<nav class="menu" id="menu">
+  <a href="oabout.html">About</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="ncontacts.html">Contact</a>
+  <button onclick="toggleMode()">Light / Dark Mode</button>
+</nav>
+
+<div style="text-align:center">
+  <a href="zrizzlines.html" class="back-btn">⬅ Back to Rizz Lines</a>
+</div>
+
+<h1 class="page-title">Funny Rizz Lines</h1>
+
+<div class="cards">
+  <div class="card">Are you Wi-Fi? Because I’m feeling a weak connection but I’m committed.</div>
+  <div class="card">I’m not saying you’re the reason I smile… but you’re definitely suspicious.</div>
+  <div class="card">Do you believe in fate? Because my bad decisions led me here.</div>
+  <div class="card">I’d flirt better, but my brain stopped working when you smiled.</div>
+  <div class="card">Are you made of caffeine? Because I can’t function without you.</div>
+  <div class="card">I’m not clumsy — I just fell for you aggressively.</div>
+  <div class="card">If being cute was a crime, you’d be doing life.</div>
+  <div class="card">I tried to play it cool, but here we are.</div>
+  <div class="card">You must be a meme because I can’t stop thinking about you.</div>
+  <div class="card">I came for the vibes and accidentally caught feelings.</div>
+  <div class="card">Are you Wi-Fi? Because I’m feeling a weak connection but I’m committed.</div>
+<div class="card">I’m not saying you’re the reason I smile… but you’re definitely suspicious.</div>
+<div class="card">Do you believe in fate? Because my bad decisions led me here.</div>
+<div class="card">I’d flirt better, but my brain stopped working when you smiled.</div>
+<div class="card">Are you made of caffeine? Because I can’t function without you.</div>
+
+<div class="card">Are you a magician? Because every time you leave, everyone else disappears… and so does my attention span.</div>
+<div class="card">Are you a loan? Because you have my interest — slightly risky, but worth it.</div>
+<div class="card">Do you have a name, or can I call you mine… at least in my dreams?</div>
+<div class="card">Are you a keyboard? Because you’re definitely my type.</div>
+<div class="card">Do you like cheesy jokes? Because I’m grate at flirting.</div>
+
+<div class="card">Are you a campfire? Because you’re hot and I want s’more.</div>
+<div class="card">Are you a banana? Because I find you a-peeling.</div>
+<div class="card">Are you a cloud? Because you make my heart feel light… and occasionally thunderous.</div>
+<div class="card">Do you have a map? I just got lost in your memes.</div>
+<div class="card">Are you a parking ticket? Because you’ve got FINE written all over you.</div>
+
+<div class="card">Are you French? Because *Eiffel* for you.</div>
+<div class="card">Do you have a pencil? Because I want to erase your past and write our future.</div>
+<div class="card">Are you a magician? Because whenever I look at you, my brain disappears.</div>
+<div class="card">Are you a time traveler? Because I see you in my future… awkwardly waving.</div>
+<div class="card">Are you a light bulb? Because you brighten my day and occasionally burn me out.</div>
+
+<div class="card">Are you chocolate? Because you make my life sweeter and more addictive.</div>
+<div class="card">Are you Siri? Because you autocomplete my thoughts… poorly.</div>
+<div class="card">Are you a joke? Because I can’t stop laughing at how perfect you are.</div>
+<div class="card">Are you a magnet? Because I feel like a piece of metal about to embarrass myself around you.</div>
+<div class="card">Are you spaghetti? Because I’m tangled in your charm.</div>
+
+<div class="card">Are you my phone charger? Because without you, I’m low energy.</div>
+<div class="card">Are you a snowstorm? Because you just made my heart freeze and panic at the same time.</div>
+<div class="card">Are you a song? Because I keep replaying you in my head, annoyingly.</div>
+<div class="card">Do you like dad jokes? Because I’m about to ruin your life with mine.</div>
+<div class="card">Are you a snack? Because I want to take you everywhere, but mostly at midnight.</div>
+
+<div class="card">Are you a dictionary? Because you add meaning to my nonsense.</div>
+<div class="card">Are you a star? Because I’m pretending to understand astronomy for you.</div>
+<div class="card">Do you like pizza? Because you have a *slice* of my heart… and cheese breath.</div>
+<div class="card">Are you a cat? Because I’m paws-itively drawn to you.</div>
+<div class="card">Are you spaghetti? Because my feelings for you are saucy and messy.</div>
+
+<div class="card">Do you have Wi-Fi? Because I’m feeling a strong connection… and weak signals elsewhere.</div>
+<div class="card">Are you coffee? Because you’ve bean on my mind all day.</div>
+<div class="card">Are you a broom? Because you just swept me off my feet and into awkwardness.</div>
+<div class="card">Are you sugar? Because you make my life unnecessarily sweet and sticky.</div>
+<div class="card">Are you an emoji? Because you make all my texts better.</div>
+
+<div class="card">Are you a magician? Because you’ve turned my sarcasm into admiration.</div>
+<div class="card">Are you a cookie? Because I want to dunk you in my awkwardness.</div>
+<div class="card">Are you a joke? Because every time you’re around, I laugh and regret it.</div>
+<div class="card">Are you a flashlight? Because you illuminate my terrible decisions.</div>
+<div class="card">Are you a phone? Because I’m constantly checking you… like a fool.</div>
+
+<div class="card">Are you a taco? Because you spice up my life and occasionally make it messy.</div>
+<div class="card">Are you a mirror? Because I see myself tripping over my words around you.</div>
+<div class="card">Are you a cupcake? Because you’re sweet and slightly crumbling under my awkwardness.</div>
+<div class="card">Are you a rainbow? Because you make my life colorful… and confusing.</div>
+<div class="card">Are you a dictionary? Because you make my bad jokes make sense.</div>
+
+<div class="card">Are you a penguin? Because you make me waddle with excitement and clumsiness.</div>
+<div class="card">Are you a magician? Because every time you leave, my brain disappears too.</div>
+<div class="card">Are you my phone charger? Because I can’t survive a day without thinking about you.</div>
+<div class="card">Are you cereal? Because you make mornings better and more awkward.</div>
+<div class="card">Are you a moon? Because I feel like I orbit you… awkwardly.</div>
+
+<div class="card">Are you a backpack? Because I want to carry you everywhere, and it’s heavy emotionally.</div>
+<div class="card">Are you spaghetti? Because I feel tangled every time you talk.</div>
+<div class="card">Are you toothpaste? Because you make me try too hard to impress.</div>
+<div class="card">Are you a joke? Because I can’t take you seriously, but I want to.</div>
+<div class="card">Are you a pillow? Because I want to lay my awkwardness on you.</div>
+
+<div class="card">Are you a cactus? Because you’re prickly but I’m stubborn enough to approach.</div>
+<div class="card">Are you a cookie? Because I want to eat you and regret it later.</div>
+<div class="card">Are you a clown? Because you make my heart laugh uncomfortably.</div>
+<div class="card">Are you a rainbow? Because you make me pause awkwardly and stare.</div>
+<div class="card">Are you a pen? Because I want to write bad poetry about you.</div>
+
+<div class="card">Are you cheese? Because you make everything better… and smell funny sometimes.</div>
+<div class="card">Are you a pizza? Because you’ve got a piece of my heart and toppings I don’t understand.</div>
+<div class="card">Are you a dolphin? Because I’m flapping awkwardly around you.</div>
+<div class="card">Are you spaghetti? Because my feelings are tangled and saucy.</div>
+<div class="card">Are you a pancake? Because I’m flipping over you and it’s sticky.</div>
+<div class="card">Are you a Wi-Fi signal? Because I feel weak when you’re not around.</div>
+<div class="card">Are you a pillow? Because I’m falling for you softly… and awkwardly.</div>
+<div class="card">Are you a donut? Because you make my heart hole-y with love.</div>
+<div class="card">Are you a meme? Because I keep showing you to everyone I know.</div>
+<div class="card">Are you ketchup? Because you make my life saucy.</div>
+
+<div class="card">Are you a fridge? Because you just made my heart chill… and confused.</div>
+<div class="card">Are you a sock? Because I’ve lost my other half without you.</div>
+<div class="card">Are you a pineapple? Because you’re sweet with a bit of tough exterior.</div>
+<div class="card">Are you a burrito? Because you wrap my thoughts up in chaos.</div>
+<div class="card">Are you a sandwich? Because I feel stacked with emotions around you.</div>
+
+<div class="card">Are you a book? Because I can’t put you down… literally, I dropped my phone.</div>
+<div class="card">Are you a laser? Because you make my heart jump like it’s on fire.</div>
+<div class="card">Are you a cupcake? Because I want to eat you and then regret it.</div>
+<div class="card">Are you a phone? Because I can’t stop checking you… even when it’s awkward.</div>
+<div class="card">Are you a cloud? Because you make my brain foggy and confused.</div>
+
+<div class="card">Are you a magnet? Because I’m awkwardly sticking to you.</div>
+<div class="card">Are you spaghetti? Because I’m tangled in feelings I don’t understand.</div>
+<div class="card">Are you chocolate? Because I melt around you… and make a mess.</div>
+<div class="card">Are you cheese? Because I’m cheesin’ hard for you.</div>
+<div class="card">Are you a pancake? Because I’m flipping out over you.</div>
+
+<div class="card">Are you a burrito? Because you roll into my heart messily.</div>
+<div class="card">Are you a marshmallow? Because I’m soft and sticky around you.</div>
+<div class="card">Are you a cat? Because I’m awkwardly trying to impress you without scratching.</div>
+<div class="card">Are you a llama? Because I feel spit-tacular when near you.</div>
+<div class="card">Are you a frog? Because I’m hopping into trouble with you.</div>
+
+<div class="card">Are you a donut? Because I hole-heartedly want you.</div>
+<div class="card">Are you bacon? Because you make everything better… even my life choices.</div>
+<div class="card">Are you a tea bag? Because I’m steeping in my awkwardness for you.</div>
+<div class="card">Are you popcorn? Because I’m popping off awkward compliments.</div>
+<div class="card">Are you a jellybean? Because you’re sweet and slightly weird.</div>
+
+<div class="card">Are you a pencil? Because I’m scribbling nonsense in my head about you.</div>
+<div class="card">Are you a marshmallow? Because I’m sticky, soft, and awkward near you.</div>
+<div class="card">Are you a balloon? Because I feel inflated with love and embarrassment.</div>
+<div class="card">Are you a pizza? Because my feelings for you are cheesy and extra.</div>
+<div class="card">Are you a banana? Because you drive me a-peel-ing crazy.</div>
+
+<div class="card">Are you spaghetti? Because I’m hopelessly tangled in thoughts of you.</div>
+<div class="card">Are you a cupcake? Because you’re sweet, but I’ll probably ruin it with awkward jokes.</div>
+<div class="card">Are you a cupcake? Because I’m frosting over my nerves.</div>
+<div class="card">Are you ketchup? Because things are messy but delicious around you.</div>
+<div class="card">Are you a pillow? Because I want to lay my awkwardness on you.</div>
+
+<div class="card">Are you a taco? Because you’ve got me wrapped up in feelings.</div>
+<div class="card">Are you a cookie? Because I want to crumble in front of you.</div>
+<div class="card">Are you a llama? Because you spit fire and I love it.</div>
+<div class="card">Are you a potato? Because you make my life starchy and funny.</div>
+<div class="card">Are you cheese? Because I’m melted by your presence.</div>
+
+<div class="card">Are you chocolate? Because life is bitter without you… mostly me being dramatic.</div>
+<div class="card">Are you a sandwich? Because I’m stuffed with awkward feelings for you.</div>
+<div class="card">Are you a broom? Because you just swept me off my feet clumsily.</div>
+<div class="card">Are you an onion? Because every layer of you makes me cry with laughter.</div>
+<div class="card">Are you a snowflake? Because you make my heart freeze and panic.</div>
+<div class="card">Are you a Wi-Fi signal? Because I feel weak when you’re not around.</div>
+<div class="card">Are you a pillow? Because I’m falling for you softly… and awkwardly.</div>
+<div class="card">Are you a donut? Because you make my heart hole-y with love.</div>
+<div class="card">Are you a meme? Because I keep showing you to everyone I know.</div>
+<div class="card">Are you ketchup? Because you make my life saucy.</div>
+
+<div class="card">Are you a fridge? Because you just made my heart chill… and confused.</div>
+<div class="card">Are you a sock? Because I’ve lost my other half without you.</div>
+<div class="card">Are you a pineapple? Because you’re sweet with a bit of tough exterior.</div>
+<div class="card">Are you a burrito? Because you wrap my thoughts up in chaos.</div>
+<div class="card">Are you a sandwich? Because I feel stacked with emotions around you.</div>
+
+<div class="card">Are you a book? Because I can’t put you down… literally, I dropped my phone.</div>
+<div class="card">Are you a laser? Because you make my heart jump like it’s on fire.</div>
+<div class="card">Are you a cupcake? Because I want to eat you and then regret it.</div>
+<div class="card">Are you a phone? Because I can’t stop checking you… even when it’s awkward.</div>
+<div class="card">Are you a cloud? Because you make my brain foggy and confused.</div>
+
+<div class="card">Are you a magnet? Because I’m awkwardly sticking to you.</div>
+<div class="card">Are you spaghetti? Because I’m tangled in feelings I don’t understand.</div>
+<div class="card">Are you chocolate? Because I melt around you… and make a mess.</div>
+<div class="card">Are you cheese? Because I’m cheesin’ hard for you.</div>
+<div class="card">Are you a pancake? Because I’m flipping out over you.</div>
+
+<div class="card">Are you a burrito? Because you roll into my heart messily.</div>
+<div class="card">Are you a marshmallow? Because I’m soft and sticky around you.</div>
+<div class="card">Are you a cat? Because I’m awkwardly trying to impress you without scratching.</div>
+<div class="card">Are you a llama? Because I feel spit-tacular when near you.</div>
+<div class="card">Are you a frog? Because I’m hopping into trouble with you.</div>
+
+<div class="card">Are you a donut? Because I hole-heartedly want you.</div>
+<div class="card">Are you bacon? Because you make everything better… even my life choices.</div>
+<div class="card">Are you a tea bag? Because I’m steeping in my awkwardness for you.</div>
+<div class="card">Are you popcorn? Because I’m popping off awkward compliments.</div>
+<div class="card">Are you a jellybean? Because you’re sweet and slightly weird.</div>
+
+<div class="card">Are you a pencil? Because I’m scribbling nonsense in my head about you.</div>
+<div class="card">Are you a marshmallow? Because I’m sticky, soft, and awkward near you.</div>
+<div class="card">Are you a balloon? Because I feel inflated with love and embarrassment.</div>
+<div class="card">Are you a pizza? Because my feelings for you are cheesy and extra.</div>
+<div class="card">Are you a banana? Because you drive me a-peel-ing crazy.</div>
+
+<div class="card">Are you spaghetti? Because I’m hopelessly tangled in thoughts of you.</div>
+<div class="card">Are you a cupcake? Because you’re sweet, but I’ll probably ruin it with awkward jokes.</div>
+<div class="card">Are you a cupcake? Because I’m frosting over my nerves.</div>
+<div class="card">Are you ketchup? Because things are messy but delicious around you.</div>
+<div class="card">Are you a pillow? Because I want to lay my awkwardness on you.</div>
+
+<div class="card">Are you a taco? Because you’ve got me wrapped up in feelings.</div>
+<div class="card">Are you a cookie? Because I want to crumble in front of you.</div>
+<div class="card">Are you a llama? Because you spit fire and I love it.</div>
+<div class="card">Are you a potato? Because you make my life starchy and funny.</div>
+<div class="card">Are you cheese? Because I’m melted by your presence.</div>
+
+<div class="card">Are you chocolate? Because life is bitter without you… mostly me being dramatic.</div>
+<div class="card">Are you a sandwich? Because I’m stuffed with awkward feelings for you.</div>
+<div class="card">Are you a broom? Because you just swept me off my feet clumsily.</div>
+<div class="card">Are you an onion? Because every layer of you makes me cry with laughter.</div>
+<div class="card">Are you a snowflake? Because you make my heart freeze and panic.</div>
+<div class="card">Are you ketchup? Because things get messy but better with you.</div>
+<div class="card">Are you a lightbulb? Because you brighten my awkwardness.</div>
+<div class="card">Are you a cat? Because I’m tripping over my words like a kitten.</div>
+<div class="card">Are you a donut? Because I’m hole-heartedly in love with you.</div>
+<div class="card">Are you a banana? Because I’m going a-peel-ing crazy around you.</div>
+
+<div class="card">Are you coffee? Because I’m jittery thinking about you all day.</div>
+<div class="card">Are you a magnet? Because I’m awkwardly stuck to you.</div>
+<div class="card">Are you a pancake? Because I’m flipping over you and making a mess.</div>
+<div class="card">Are you a jellybean? Because you’re sweet and slightly weird, like me.</div>
+<div class="card">Are you a pillow? Because I’m resting all my awkward feelings on you.</div>
+
+<div class="card">Are you chocolate? Because I melt in your presence and it’s messy.</div>
+<div class="card">Are you a cupcake? Because I want to bite into your sweetness.</div>
+<div class="card">Are you spaghetti? Because my feelings for you are tangled and saucy.</div>
+<div class="card">Are you a burrito? Because I’m wrapped up in awkward emotions for you.</div>
+<div class="card">Are you a taco? Because you spice up my life awkwardly.</div>
+
+<div class="card">Are you cheese? Because I’m cheesing hard and it’s awkward.</div>
+<div class="card">Are you a cat? Because I’m paws-itively awkward around you.</div>
+<div class="card">Are you a llama? Because I spit out awkward compliments constantly.</div>
+<div class="card">Are you a donut? Because I’m hole-heartedly flustered by you.</div>
+<div class="card">Are you coffee? Because you keep me up thinking about dumb stuff.</div>
+
+<div class="card">Are you a microwave? Because you heat up my awkwardness fast.</div>
+<div class="card">Are you a rainbow? Because I stare at you awkwardly and question life.</div>
+<div class="card">Are you a sandwich? Because I’m stacked with emotions for you.</div>
+<div class="card">Are you a pencil? Because I’m scribbling nonsense thinking about you.</div>
+<div class="card">Are you a pillow? Because I want to crash awkwardly into you.</div>
+
+<div class="card">Are you a hotdog? Because you’re the whole package and slightly spicy.</div>
+<div class="card">Are you a donut? Because you fill the holes in my awkwardness.</div>
+<div class="card">Are you a taco? Because I’m wrapped up and messy for you.</div>
+<div class="card">Are you a cookie? Because I crumble when near you.</div>
+<div class="card">Are you chocolate? Because I melt every time you exist.</div>
+
+<div class="card">Are you a pancake? Because I’m flipping over my feelings for you.</div>
+<div class="card">Are you spaghetti? Because I’m hopelessly tangled in love and awkwardness.</div>
+<div class="card">Are you a cat? Because I’m clawing for attention clumsily.</div>
+<div class="card">Are you a burrito? Because my heart’s wrapped up in chaos around you.</div>
+<div class="card">Are you a banana? Because I’m slipping into feelings I don’t understand.</div>
+
+<div class="card">Are you a sock? Because I’m missing a piece without you.</div>
+<div class="card">Are you a cupcake? Because I want to eat your sweetness awkwardly.</div>
+<div class="card">Are you a cloud? Because you make my thoughts foggy and silly.</div>
+<div class="card">Are you Wi-Fi? Because I’m connecting awkwardly and inconsistently.</div>
+<div class="card">Are you a pillow? Because I want to rest all my goofy feelings on you.</div>
+
+<div class="card">Are you a jellybean? Because you’re sweet, confusing, and fun.</div>
+<div class="card">Are you a microwave? Because you heat up my clumsy emotions.</div>
+<div class="card">Are you a pancake? Because my heart flips for you awkwardly.</div>
+<div class="card">Are you a donut? Because I’m hole-heartedly into you.</div>
+<div class="card">Are you a burrito? Because life’s messy but delicious with you.</div>
+<div class="card">Are you a taco? Because I’m wrapped up in awkwardness for you.</div>
+<div class="card">Are you a banana? Because I go bananas whenever you’re near.</div>
+<div class="card">Are you spaghetti? Because my heart’s tangled in your charm.</div>
+<div class="card">Are you a cupcake? Because I want to eat my feelings for you.</div>
+<div class="card">Are you a pillow? Because I want to lay all my awkwardness on you.</div>
+
+<div class="card">Are you chocolate? Because I melt and make a mess when near you.</div>
+<div class="card">Are you a donut? Because I’m hole-heartedly obsessed with you.</div>
+<div class="card">Are you a burrito? Because my emotions are wrapped and messy.</div>
+<div class="card">Are you a pancake? Because my heart flips over you daily.</div>
+<div class="card">Are you a cat? Because I’m tripping over my paws around you.</div>
+
+<div class="card">Are you a llama? Because I spit awkward compliments everywhere.</div>
+<div class="card">Are you cheese? Because I’m cheesing too hard and embarrassing myself.</div>
+<div class="card">Are you coffee? Because I’m jittery and awkward around you.</div>
+<div class="card">Are you a sock? Because I’m incomplete without you.</div>
+<div class="card">Are you a cookie? Because I crumble when you’re near.</div>
+
+<div class="card">Are you a rainbow? Because you make me stare awkwardly and question life.</div>
+<div class="card">Are you a microwave? Because you heat up my awkward heart fast.</div>
+<div class="card">Are you a pencil? Because I scribble nonsense thinking about you.</div>
+<div class="card">Are you a sandwich? Because I’m stacked with goofy feelings for you.</div>
+<div class="card">Are you a hotdog? Because you’re the whole package and slightly spicy.</div>
+
+<div class="card">Are you a jellybean? Because life’s sweeter and confusing with you.</div>
+<div class="card">Are you a pillow? Because I want to crash awkwardly into you.</div>
+<div class="card">Are you spaghetti? Because I’m hopelessly tangled in feelings.</div>
+<div class="card">Are you a cupcake? Because I want to eat my emotions for you.</div>
+<div class="card">Are you chocolate? Because I melt at your existence.</div>
+
+<div class="card">Are you a burrito? Because my heart’s wrapped in chaos for you.</div>
+<div class="card">Are you a donut? Because I’m hole-heartedly flustered by you.</div>
+<div class="card">Are you a pancake? Because I flip over my feelings awkwardly.</div>
+<div class="card">Are you a cat? Because I’m tripping and clawing for attention.</div>
+<div class="card">Are you coffee? Because I’m jittery and messy around you.</div>
+
+<div class="card">Are you a taco? Because I’m wrapped up in awkward emotions for you.</div>
+<div class="card">Are you a banana? Because I go bananas thinking about you.</div>
+<div class="card">Are you a pillow? Because I want to rest all my goofy feelings on you.</div>
+<div class="card">Are you chocolate? Because I melt and make a mess near you.</div>
+<div class="card">Are you a donut? Because I’m hole-heartedly obsessed with you.</div>
+
+<div class="card">Are you spaghetti? Because I’m tangled in feelings and awkwardness.</div>
+<div class="card">Are you a burrito? Because life’s messy but delicious with you.</div>
+<div class="card">Are you a cupcake? Because I want to eat my awkward feelings.</div>
+<div class="card">Are you a pancake? Because my heart flips awkwardly for you.</div>
+<div class="card">Are you a cat? Because I trip over my words and paws around you.</div>
+
+<div class="card">Are you a llama? Because I spit my awkwardness everywhere for you.</div>
+<div class="card">Are you cheese? Because I’m cheesing uncontrollably around you.</div>
+<div class="card">Are you a rainbow? Because you make me stare awkwardly and smile.</div>
+<div class="card">Are you a microwave? Because you heat up my goofy heart.</div>
+<div class="card">Are you Wi-Fi? Because I’m connecting awkwardly but happily with you.</div>
+
+  
+
+
+</div>
+
+<div class="desc">
+Funny rizz is about timing, confidence, and not taking yourself too seriously.
+These lines are meant to break tension, spark laughter, and create instant comfort.
+Humor builds attraction when it feels natural and relaxed.
+Use funny rizz to stand out, lighten the mood, and make conversations memorable —
+because laughter is one of the fastest ways to connect.
+</div>
+
+<script>
+const burger=document.getElementById('burger');
+const menu=document.getElementById('menu');
+
+burger.addEventListener('click',e=>{
+  menu.classList.toggle('active');
+  e.stopPropagation();
+});
+
+document.addEventListener('click',e=>{
+  if(!menu.contains(e.target) && !burger.contains(e.target)){
+    menu.classList.remove('active');
+  }
+});
+
+menu.querySelectorAll('a,button').forEach(el=>{
+  el.addEventListener('click',()=>menu.classList.remove('active'));
+});
+
+function toggleMode(){
+  document.body.classList.toggle('light-mode');
+}
+</script>
+
+</body>
+</html>

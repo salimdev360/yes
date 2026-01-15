@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Money Mood Bios</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  font-family:Poppins;
+  padding-top:80px;
+  background:radial-gradient(circle at top,#064e3b,#020617);
+  color:#fff;
+  transition:.4s;
+}
+body.light-mode{
+  background:radial-gradient(circle at top,#ecfdf5,#f0fdf4);
+  color:#052e16;
+}
+
+/* HEADER */
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  height:70px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 20px;
+  background:rgba(2,6,23,.9);
+  backdrop-filter:blur(12px);
+  z-index:1000;
+}
+.brand{
+  font-weight:700;
+  font-size:20px;
+  background:linear-gradient(90deg,#22c55e,#86efac);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* BURGER */
+.burger{width:30px;cursor:pointer}
+.burger span{
+  display:block;height:3px;margin:6px 0;
+  background:#fff;border-radius:10px;
+}
+body.light-mode .burger span{background:#052e16}
+
+/* MENU */
+.menu{
+  position:fixed;
+  top:0;left:-100%;
+  width:260px;height:100vh;
+  padding:90px 20px;
+  background:linear-gradient(180deg,#020617,#064e3b);
+  transition:.4s;z-index:999;
+}
+.menu.active{left:0}
+.menu a,.menu button{
+  display:block;width:100%;
+  padding:14px;margin-bottom:14px;
+  border:none;border-radius:14px;
+  background:none;
+  color:#86efac;font-weight:600;
+  cursor:pointer;text-align:center;
+}
+.menu a:hover,.menu button:hover{
+  transform:translateX(6px);
+  color:#22c55e;
+}
+
+/* BACK */
+.back{
+  text-align:center;
+  margin:25px 0;
+}
+.back a{
+  padding:14px 36px;
+  border-radius:40px;
+  background:linear-gradient(90deg,#22c55e,#86efac);
+  color:#020617;
+  font-weight:600;
+  text-decoration:none;
+}
+
+/* TITLE */
+h1{
+  text-align:center;
+  margin:20px;
+  font-size:2.2em;
+}
+
+/* CARDS */
+.cards{
+  max-width:900px;
+  margin:auto;
+  padding:20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:22px;
+}
+.card{
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(14px);
+  border-radius:22px;
+  padding:26px;
+  font-size:1.05em;
+  transition:.35s;
+}
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 25px 50px rgba(0,0,0,.45);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  <div class="brand">💸 Money Mood</div>
+   <div class="burger" id="burger"><span></span><span></span><span></span></div>
+</header>
+
+<nav class="menu" id="menu">
+  <a href="oabout.html">About</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="ncontacts.html">Contact</a>
+  <button onclick="toggleMode()">Light / Dark</button>
+</nav>
+
+<div class="back"><a href="zigbio.html">⬅ Back</a></div>
+
+<h1>Money Mindset Bios</h1>
+
+<div class="cards">
+   
+  <div class="card">Focused. Funded. Unbothered.</div>
+  <div class="card">Hustle quietly, let success speak.</div>
+  <div class="card">Money mindset, calm soul.</div>
+  <div class="card">Building wealth, not excuses.</div>
+  <div class="card">Dreams cost money — I’m paying.</div>
+  <div class="card">Discipline today, freedom tomorrow.</div>
+  <div class="card">Focused. Funded. Unbothered.</div>
+<div class="card">Hustle quietly, let success speak.</div>
+<div class="card">Money mindset, calm soul.</div>
+<div class="card">Building wealth, not excuses.</div>
+<div class="card">Dreams cost money — I’m paying.</div>
+
+<div class="card">Cash talks, I listen.</div>
+<div class="card">Grind today, shine tomorrow.</div>
+<div class="card">Invest in yourself first.</div>
+<div class="card">Counting blessings and dollars.</div>
+<div class="card">Goals over sleep.</div>
+
+<div class="card">Stacking coins, not regrets.</div>
+<div class="card">Hustle now, relax later.</div>
+<div class="card">Money vibes only.</div>
+<div class="card">Financially fearless.</div>
+<div class="card">Focused on growth, not gossip.</div>
+
+
+<div class="card">Rich in vision, richer in action.</div>
+<div class="card">Bankroll over bullshit.</div>
+<div class="card">Cash flow over drama.</div>
+<div class="card">Grinding silently, winning loudly.</div>
+<div class="card">Money over mediocrity.</div>
+
+<div class="card">Paid in progress, not promises.</div>
+<div class="card">Investing time, collecting results.</div>
+<div class="card">Wealth is a mindset.</div>
+<div class="card">Money is the side effect of my hustle.</div>
+<div class="card">Focused on stacks, not clout.</div>
+
+<div class="card">Profits, not problems.</div>
+<div class="card">Chasing goals, not likes.</div>
+<div class="card">Hustle hard, shine harder.</div>
+<div class="card">Cash in, stress out.</div>
+<div class="card">Rich habits, richer results.</div>
+
+<div class="card">Financial freedom is the mood.</div>
+<div class="card">Coins over complaints.</div>
+<div class="card">Money moves only.</div>
+<div class="card">Hustle smart, live large.</div>
+<div class="card">Grinding quietly, earning visibly.</div>
+
+<div class="card">Paid attention equals paid life.</div>
+<div class="card">Cash mindset, calm heart.</div>
+<div class="card">Work in silence, bank in volume.</div>
+<div class="card">Money energy, magnetic personality.</div>
+<div class="card">Hustle first, rest later.</div>
+
+<div class="card">Focused on profit, not people.</div>
+<div class="card">Financially fluent, socially selective.</div>
+<div class="card">Rich in ambition, wealth follows.</div>
+<div class="card">Coins over conversation.</div>
+<div class="card">Grind with purpose, earn with pride.</div>
+
+<div class="card">Money is a habit, not luck.</div>
+<div class="card">Cashing in on dreams.</div>
+<div class="card">Wealth whisperer.</div>
+<div class="card">Success is my side hustle.</div>
+<div class="card">Paid in persistence.</div>
+
+<div class="card">Bank account over balance.</div>
+<div class="card">Hustle mood always on.</div>
+<div class="card">Chasing dollars, not drama.</div>
+<div class="card">Work ethic > luck.</div>
+<div class="card">Money grows where focus goes.</div>
+
+<div class="card">Saving, stacking, shining.</div>
+<div class="card">Profit over popularity.</div>
+<div class="card">Wealthy mindset, chill soul.</div>
+<div class="card">Cash dreams, quiet schemes.</div>
+<div class="card">Focused on fortune, not followers.</div>
+
+<div class="card">Grind like a boss, chill like a king.</div>
+<div class="card">Money first, distractions later.</div>
+<div class="card">Bankroll before brunch.</div>
+<div class="card">Earn, save, repeat.</div>
+<div class="card">Financially fearless, socially picky.</div>
+
+<div class="card">Cash is the language of freedom.</div>
+<div class="card">Building assets, not arguments.</div>
+<div class="card">Hustle over hype.</div>
+<div class="card">Coins before complaints.</div>
+<div class="card">Money mindset = lifestyle.</div>
+
+<div class="card">Financially focused, mood elevated.</div>
+<div class="card">Work hard, earn harder.</div>
+<div class="card">Quiet grind, loud results.</div>
+<div class="card">Invest in self, collect returns.</div>
+<div class="card">Stacking paper, not problems.</div>
+
+<div class="card">Money energy, nothing less.</div>
+<div class="card">Rich in action, richer in results.</div>
+<div class="card">Grind in silence, flex in style.</div>
+<div class="card">Cash over chaos.</div>
+<div class="card">Hustle mode: always.</div>
+
+<div class="card">Coins over conversation.</div>
+<div class="card">Saving today, slaying tomorrow.</div>
+<div class="card">Focused. Fueled. Financially fit.</div>
+<div class="card">Money talk, silent walk.</div>
+<div class="card">Profit vibes only.</div>
+
+<div class="card">Stack first, stress never.</div>
+<div class="card">Earn, grind, repeat.</div>
+<div class="card">Bankroll mood activated.</div>
+<div class="card">Cash focus, calm mind.</div>
+<div class="card">Wealth is my vibe.</div>
+
+<div class="card">Hustle quietly, earn loudly.</div>
+<div class="card">Money over mediocrity.</div>
+<div class="card">Focused on freedom, not fame.</div>
+<div class="card">Building wealth, breaking limits.</div>
+<div class="card">Grind today, relax tomorrow.</div>
+<div class="card">Focused. Funded. Unbothered.</div>
+<div class="card">Hustle quietly, let success speak.</div>
+<div class="card">Money mindset, calm soul.</div>
+<div class="card">Building wealth, not excuses.</div>
+<div class="card">Dreams cost money — I’m paying.</div>
+
+<div class="card">Cash talks, I listen.</div>
+<div class="card">Grind today, shine tomorrow.</div>
+<div class="card">Invest in yourself first.</div>
+<div class="card">Counting blessings and dollars.</div>
+<div class="card">Goals over sleep.</div>
+
+<div class="card">Stacking coins, not regrets.</div>
+<div class="card">Hustle now, relax later.</div>
+<div class="card">Money vibes only.</div>
+<div class="card">Financially fearless.</div>
+<div class="card">Focused on growth, not gossip.</div>
+
+<div class="card">Rich in vision, richer in action.</div>
+<div class="card">Bankroll over bullshit.</div>
+<div class="card">Cash flow over drama.</div>
+<div class="card">Grinding silently, winning loudly.</div>
+<div class="card">Money over mediocrity.</div>
+
+<div class="card">Paid in progress, not promises.</div>
+<div class="card">Investing time, collecting results.</div>
+<div class="card">Wealth is a mindset.</div>
+<div class="card">Money is the side effect of my hustle.</div>
+<div class="card">Focused on stacks, not clout.</div>
+
+<div class="card">Profits, not problems.</div>
+<div class="card">Chasing goals, not likes.</div>
+<div class="card">Hustle hard, shine harder.</div>
+<div class="card">Cash in, stress out.</div>
+<div class="card">Rich habits, richer results.</div>
+
+<div class="card">Financial freedom is the mood.</div>
+<div class="card">Coins over complaints.</div>
+<div class="card">Money moves only.</div>
+<div class="card">Hustle smart, live large.</div>
+<div class="card">Grinding quietly, earning visibly.</div>
+
+<div class="card">Paid attention equals paid life.</div>
+<div class="card">Cash mindset, calm heart.</div>
+<div class="card">Work in silence, bank in volume.</div>
+<div class="card">Money energy, magnetic personality.</div>
+<div class="card">Hustle first, rest later.</div>
+
+<div class="card">Focused on profit, not people.</div>
+<div class="card">Financially fluent, socially selective.</div>
+<div class="card">Rich in ambition, wealth follows.</div>
+<div class="card">Coins over conversation.</div>
+<div class="card">Grind with purpose, earn with pride.</div>
+
+<div class="card">Money is a habit, not luck.</div>
+<div class="card">Cashing in on dreams.</div>
+<div class="card">Wealth whisperer.</div>
+<div class="card">Success is my side hustle.</div>
+<div class="card">Paid in persistence.</div>
+
+<div class="card">Bank account over balance.</div>
+<div class="card">Hustle mood always on.</div>
+<div class="card">Chasing dollars, not drama.</div>
+<div class="card">Work ethic > luck.</div>
+<div class="card">Money grows where focus goes.</div>
+
+<div class="card">Saving, stacking, shining.</div>
+<div class="card">Profit over popularity.</div>
+<div class="card">Wealthy mindset, chill soul.</div>
+<div class="card">Cash dreams, quiet schemes.</div>
+<div class="card">Focused on fortune, not followers.</div>
+
+<div class="card">Grind like a boss, chill like a king.</div>
+<div class="card">Money first, distractions later.</div>
+<div class="card">Bankroll before brunch.</div>
+<div class="card">Earn, save, repeat.</div>
+<div class="card">Financially fearless, socially picky.</div>
+
+<div class="card">Cash is the language of freedom.</div>
+<div class="card">Building assets, not arguments.</div>
+<div class="card">Hustle over hype.</div>
+<div class="card">Coins before complaints.</div>
+<div class="card">Money mindset = lifestyle.</div>
+
+<div class="card">Financially focused, mood elevated.</div>
+<div class="card">Work hard, earn harder.</div>
+<div class="card">Quiet grind, loud results.</div>
+<div class="card">Invest in self, collect returns.</div>
+<div class="card">Stacking paper, not problems.</div>
+
+<div class="card">Money energy, nothing less.</div>
+<div class="card">Rich in action, richer in results.</div>
+<div class="card">Grind in silence, flex in style.</div>
+<div class="card">Cash over chaos.</div>
+<div class="card">Hustle mode: always.</div>
+
+<div class="card">Coins over conversation.</div>
+<div class="card">Saving today, slaying tomorrow.</div>
+<div class="card">Focused. Fueled. Financially fit.</div>
+<div class="card">Money talk, silent walk.</div>
+<div class="card">Profit vibes only.</div>
+
+<div class="card">Stack first, stress never.</div>
+<div class="card">Earn, grind, repeat.</div>
+<div class="card">Bankroll mood activated.</div>
+<div class="card">Cash focus, calm mind.</div>
+<div class="card">Wealth is my vibe.</div>
+
+<div class="card">Hustle quietly, earn loudly.</div>
+<div class="card">Money over mediocrity.</div>
+<div class="card">Focused on freedom, not fame.</div>
+<div class="card">Building wealth, breaking limits.</div>
+<div class="card">Grind today, relax tomorrow.</div>
+<!-- Batch 1 (1–100) -->
+<div class="card">Focused. Funded. Unbothered.</div>
+<div class="card">Hustle quietly, let success speak.</div>
+<div class="card">Money mindset, calm soul.</div>
+<div class="card">Building wealth, not excuses.</div>
+<div class="card">Dreams cost money — I’m paying.</div>
+<div class="card">Cash talks, I listen.</div>
+<div class="card">Grind today, shine tomorrow.</div>
+<div class="card">Invest in yourself first.</div>
+<div class="card">Counting blessings and dollars.</div>
+<div class="card">Goals over sleep.</div>
+<div class="card">Stacking coins, not regrets.</div>
+<div class="card">Hustle now, relax later.</div>
+<div class="card">Money vibes only.</div>
+<div class="card">Financially fearless.</div>
+<div class="card">Focused on growth, not gossip.</div>
+<div class="card">Rich in vision, richer in action.</div>
+<div class="card">Bankroll over bullshit.</div>
+<div class="card">Cash flow over drama.</div>
+<div class="card">Grinding silently, winning loudly.</div>
+<div class="card">Money over mediocrity.</div>
+<div class="card">Paid in progress, not promises.</div>
+<div class="card">Investing time, collecting results.</div>
+<div class="card">Wealth is a mindset.</div>
+<div class="card">Money is the side effect of my hustle.</div>
+<div class="card">Focused on stacks, not clout.</div>
+<div class="card">Profits, not problems.</div>
+<div class="card">Chasing goals, not likes.</div>
+<div class="card">Hustle hard, shine harder.</div>
+<div class="card">Cash in, stress out.</div>
+<div class="card">Rich habits, richer results.</div>
+<div class="card">Financial freedom is the mood.</div>
+<div class="card">Coins over complaints.</div>
+<div class="card">Money moves only.</div>
+<div class="card">Hustle smart, live large.</div>
+<div class="card">Grinding quietly, earning visibly.</div>
+<div class="card">Paid attention equals paid life.</div>
+<div class="card">Cash mindset, calm heart.</div>
+<div class="card">Work in silence, bank in volume.</div>
+<div class="card">Money energy, magnetic personality.</div>
+<div class="card">Hustle first, rest later.</div>
+<div class="card">Focused on profit, not people.</div>
+<div class="card">Financially fluent, socially selective.</div>
+<div class="card">Rich in ambition, wealth follows.</div>
+<div class="card">Coins over conversation.</div>
+<div class="card">Grind with purpose, earn with pride.</div>
+<div class="card">Money is a habit, not luck.</div>
+<div class="card">Cashing in on dreams.</div>
+<div class="card">Wealth whisperer.</div>
+<div class="card">Success is my side hustle.</div>
+<div class="card">Paid in persistence.</div>
+<div class="card">Bank account over balance.</div>
+<div class="card">Hustle mood always on.</div>
+<div class="card">Chasing dollars, not drama.</div>
+<div class="card">Work ethic > luck.</div>
+<div class="card">Money grows where focus goes.</div>
+<div class="card">Saving, stacking, shining.</div>
+<div class="card">Profit over popularity.</div>
+<div class="card">Wealthy mindset, chill soul.</div>
+<div class="card">Cash dreams, quiet schemes.</div>
+<div class="card">Focused on fortune, not followers.</div>
+<div class="card">Grind like a boss, chill like a king.</div>
+<div class="card">Money first, distractions later.</div>
+<div class="card">Bankroll before brunch.</div>
+<div class="card">Earn, save, repeat.</div>
+<div class="card">Financially fearless, socially picky.</div>
+<div class="card">Cash is the language of freedom.</div>
+<div class="card">Building assets, not arguments.</div>
+<div class="card">Hustle over hype.</div>
+<div class="card">Coins before complaints.</div>
+<div class="card">Money mindset = lifestyle.</div>
+<div class="card">Financially focused, mood elevated.</div>
+<div class="card">Work hard, earn harder.</div>
+<div class="card">Quiet grind, loud results.</div>
+<div class="card">Invest in self, collect returns.</div>
+<div class="card">Stacking paper, not problems.</div>
+<div class="card">Money energy, nothing less.</div>
+<div class="card">Rich in action, richer in results.</div>
+<div class="card">Grind in silence, flex in style.</div>
+<div class="card">Cash over chaos.</div>
+<div class="card">Hustle mode: always.</div>
+<div class="card">Coins over conversation.</div>
+<div class="card">Saving today, slaying tomorrow.</div>
+<div class="card">Focused. Fueled. Financially fit.</div>
+<div class="card">Money talk, silent walk.</div>
+<div class="card">Profit vibes only.</div>
+<div class="card">Stack first, stress never.</div>
+<div class="card">Earn, grind, repeat.</div>
+<div class="card">Bankroll mood activated.</div>
+<div class="card">Cash focus, calm mind.</div>
+<div class="card">Wealth is my vibe.</div>
+<div class="card">Hustle quietly, earn loudly.</div>
+<div class="card">Money over mediocrity.</div>
+<div class="card">Focused on freedom, not fame.</div>
+<div class="card">Building wealth, breaking limits.</div>
+<div class="card">Grind today, relax tomorrow.</div>
+
+<!-- Batch 2 (101–200) -->
+<div class="card">Investing in myself pays best.</div>
+<div class="card">Profit is the new flex.</div>
+<div class="card">Rich vibes only.</div>
+<div class="card">Cash is my energy.</div>
+<div class="card">Hustle, then holiday.</div>
+<div class="card">Bankroll before breakfast.</div>
+<div class="card">Earnings over envy.</div>
+<div class="card">Stacking dreams, not debt.</div>
+<div class="card">Money mood activated.</div>
+<div class="card">Silent grind, loud gains.</div>
+<div class="card">Coins attract calm.</div>
+<div class="card">Focused, funded, fearless.</div>
+<div class="card">Financial freedom first.</div>
+<div class="card">Profit over procrastination.</div>
+<div class="card">Wealth whisperer at work.</div>
+<div class="card">Cash flow state of mind.</div>
+<div class="card">Earn smart, live free.</div>
+<div class="card">Investment in progress.</div>
+<div class="card">Hustle with heart.</div>
+<div class="card">Bank on yourself first.</div>
+<div class="card">Money over mood swings.</div>
+<div class="card">Stack, spend, repeat.</div>
+<div class="card">Financially fit, mind lit.</div>
+<div class="card">Coins over complaints.</div>
+<div class="card">Grind, grow, glow.</div>
+<div class="card">Savings on deck.</div>
+<div class="card">Rich in mindset, richer in results.</div>
+<div class="card">Hustle silently, shine loudly.</div>
+<div class="card">Money energy only.</div>
+<div class="card">Focused on profits, not problems.</div>
+<div class="card">Cash rules everything.</div>
+<div class="card">Bankroll before brunch.</div>
+<div class="card">Hustle then holiday.</div>
+<div class="card">Financially fearless.</div>
+<div class="card">Profit vibes always.</div>
+<div class="card">Earn quietly, live richly.</div>
+<div class="card">Money mindset: 24/7.</div>
+<div class="card">Cash is king, focus is queen.</div>
+<div class="card">Hustle beats luck.</div>
+<div class="card">Savings on point.</div>
+<div class="card">Coins over chaos.</div>
+<div class="card">Focused, funded, free.</div>
+<div class="card">Profit over popularity.</div>
+<div class="card">Financial freedom vibes.</div>
+<div class="card">Stacking success daily.</div>
+<div class="card">Hustle smart, earn fast.</div>
+<div class="card">Cash first, chill later.</div>
+<div class="card">Coins attract calm.</div>
+<div class="card">Grind in silence, win loud.</div>
+<div class="card">Money is a habit.</div>
+<div class="card">Earn more, stress less.</div>
+<div class="card">Savings speak louder than words.</div>
+<div class="card">Focused on fortune.</div>
+<div class="card">Bankroll state of mind.</div>
+<div class="card">Hustle mode: active.</div>
+<div class="card">Profit first, then peace.</div>
+<div class="card">Cash over comfort.</div>
+<div class="card">Invest today, enjoy tomorrow.</div>
+<div class="card">Stack wealth, skip worries.</div>
+<div class="card">Coins over conversation.</div>
+<div class="card">Grind now, shine forever.</div>
+<div class="card">Money energy, nothing less.</div>
+<div class="card">Rich habits, richer life.</div>
+<div class="card">Hustle silently, win visibly.</div>
+<div class="card">Cash mindset, calm life.</div>
+<div class="card">Focused on gains, not gossip.</div>
+<div class="card">Bank account over balance sheet.</div>
+<div class="card">Profit mode: on.</div>
+<div class="card">Financially fit, mentally free.</div>
+<div class="card">Coins before complaints.</div>
+<div class="card">Hustle always, worry never.</div>
+<div class="card">Earn more, brag less.</div>
+<div class="card">Savings first, splurge later.</div>
+<div class="card">Money over mediocrity.</div>
+<div class="card">Focused on results, not recognition.</div>
+<div class="card">Cash over chaos.</div>
+<div class="card">Financially fearless, socially selective.</div>
+<div class="card">Grind, save, repeat.</div>
+<div class="card">Rich mind, calm soul.</div>
+<div class="card">Hustle first, flex later.</div>
+<div class="card">Coins on deck.</div>
+<div class="card">Bankroll before breakfast.</div>
+<div class="card">Profit above all.</div>
+<div class="card">Focused on freedom.</div>
+<div class="card">Financially fluent.</div>
+<div class="card">Earn quietly, live loud.</div>
+<div class="card">Cash energy, always.</div>
+<div class="card">Hustle smart, shine harder.</div>
+<div class="card">Stack first, stress never.</div>
+<div class="card">Bankroll mood activated.</div>
+
+<!-- Batch 3–5 continue same style... -->
+<div class="card">Cash over clutter.</div>
+<div class="card">Grind now, chill later.</div>
+<div class="card">Coins before conversation.</div>
+<div class="card">Focused on wealth, not worries.</div>
+<div class="card">Hustle quietly, earn loudly.</div>
+<div class="card">Money mindset activated.</div>
+<div class="card">Profit over procrastination.</div>
+<div class="card">Financially fit, soul
+
+</div>
+
+<script>
+const b=document.getElementById('burger'),m=document.getElementById('menu');
+b.onclick=e=>{m.classList.toggle('active');e.stopPropagation();}
+document.onclick=e=>{if(!m.contains(e.target)&&!b.contains(e.target))m.classList.remove('active')}
+function toggleMode(){document.body.classList.toggle('light-mode')}
+</script>
+
+</body>
+</html>

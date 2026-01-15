@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>In Love Bios</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+  margin:0;font-family:Poppins;padding-top:80px;
+  background:radial-gradient(circle at top,#4a044e,#020617);
+  color:#fff;transition:.4s;
+}
+body.light-mode{
+  background:radial-gradient(circle at top,#fdf2f8,#fce7f3);
+  color:#4a044e;
+}
+header{
+  position:fixed;top:0;width:100%;height:70px;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 20px;background:rgba(2,6,23,.9);
+  backdrop-filter:blur(12px);
+}
+.brand{
+  font-weight:700;font-size:20px;
+  background:linear-gradient(90deg,#f472b6,#ec4899);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+}
+.burger{width:30px;cursor:pointer}
+.burger span{display:block;height:3px;margin:6px 0;background:#fff;border-radius:10px}
+.menu{
+  position:fixed;top:0;left:-100%;
+  width:260px;height:100vh;padding:90px 20px;
+  background:linear-gradient(180deg,#020617,#4a044e);
+  transition:.4s;
+}
+.menu.active{left:0}
+.menu a,.menu button{
+  display:block;padding:14px;margin-bottom:14px;
+  border:none;border-radius:14px;background:none;
+  color:#f9a8d4;font-weight:600;text-align:center;
+}
+
+.back{text-align:center;margin:25px}
+.back a{
+  padding:14px 36px;border-radius:40px;
+  background:linear-gradient(90deg,#f472b6,#ec4899);
+  color:#020617;font-weight:600;text-decoration:none;
+}
+h1{text-align:center;margin:20px;font-size:2.2em}
+.cards{
+  max-width:900px;margin:auto;padding:20px;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:22px;
+}
+.card{
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(14px);
+  border-radius:22px;padding:26px;
+  transition:.35s;
+}
+.card:hover{transform:translateY(-6px)}
+</style>
+</head>
+
+<body>
+<header>
+  <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  <div class="brand">❤️ In Love</div>
+  <div class="burger" id="burger"><span></span><span></span><span></span></div>
+</header>
+
+<nav class="menu" id="menu">
+  <a href="oabout.html">About</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="ncontacts.html">Contact</a>
+  <button onclick="toggleMode()">Light / Dark</button>
+</nav>
+
+<div class="back"><a href="zigbio.html">⬅ Back</a></div>
+
+<h1>Love Energy Bios</h1>
+
+<div class="cards">
+  <div class="card">Love looks good on me.</div>
+  <div class="card">Chosen. Cherished. Calm.</div>
+  <div class="card">Soft smiles, real feelings.</div>
+  <div class="card">Heart full, mind at peace.</div>
+  <div class="card">In love with life.</div>
+<div class="card">Head over heels, heart wide open.</div>
+<div class="card">Lost in your eyes, found in your smile.</div>
+<div class="card">Love is my favorite adventure.</div>
+<div class="card">Heart belongs to you, no returns.</div>
+<div class="card">Every day feels sweeter with you.</div>
+<div class="card">You are my favorite notification.</div>
+<div class="card">Falling for you, constantly.</div>
+<div class="card">Love louder, worry smaller.</div>
+<div class="card">Your love is my home.</div>
+<div class="card">Swept away by your smile.</div>
+<div class="card">You + me = endless love.</div>
+<div class="card">Love grows here.</div>
+<div class="card">Together is my favorite place.</div>
+<div class="card">Heart stolen, gladly surrendered.</div>
+<div class="card">You make my heart skip beats.</div>
+<div class="card">Love in every heartbeat.</div>
+<div class="card">Soul connected, heart aligned.</div>
+<div class="card">You’re my today and every tomorrow.</div>
+<div class="card">Happily yours.</div>
+<div class="card">Catching feelings, never letting go.</div>
+<div class="card">Love wrapped in your arms.</div>
+<div class="card">Sweet on you, endlessly.</div>
+<div class="card">Heart full, love overflowing.</div>
+<div class="card">My favorite hello, hardest goodbye.</div>
+<div class="card">You make life magical.</div>
+<div class="card">Together we shine brighter.</div>
+<div class="card">All my love, all my life.</div>
+<div class="card">I choose you, always.</div>
+<div class="card">Love is our language.</div>
+<div class="card">Heart beats your name.</div>
+<div class="card">In love and loving it.</div>
+<div class="card">You are my forever mood.</div>
+<div class="card">Home is wherever you are.</div>
+<div class="card">Smitten and not sorry.</div>
+<div class="card">Falling for you every day.</div>
+<div class="card">Love written in the stars.</div>
+<div class="card">Your smile is my sunshine.</div>
+<div class="card">Crazy for your heart.</div>
+<div class="card">You complete my soul.</div>
+<div class="card">Heart full, eyes on you.</div>
+<div class="card">You + me = happiness.</div>
+<div class="card">Living in love, thriving in joy.</div>
+<div class="card">You’re my favorite thought.</div>
+<div class="card">Love loud, hearts proud.</div>
+<div class="card">With you, every moment sparkles.</div>
+<div class="card">My heart, your home.</div>
+<div class="card">Falling in love, over and over.</div>
+<div class="card">You’re my peace and my chaos.</div>
+<div class="card">Love fuels my soul.</div>
+<div class="card">Swept up in your love.</div>
+<div class="card">You’re my happy place.</div>
+<div class="card">Heart belongs to you only.</div>
+<div class="card">Together, always better.</div>
+<div class="card">You make my world glow.</div>
+<div class="card">Love anchored in you.</div>
+<div class="card">Smitten, spellbound, yours.</div>
+<div class="card">You’re my heartbeat in human form.</div>
+<div class="card">Eyes on you, heart in sync.</div>
+<div class="card">Love is simple with you.</div>
+<div class="card">You’re my favorite everything.</div>
+<div class="card">Heartbeats for you alone.</div>
+<div class="card">Forever us.</div>
+<div class="card">Your love, my strength.</div>
+<div class="card">In your arms, I’m home.</div>
+<div class="card">Love wrapped in your smile.</div>
+<div class="card">Every day, loving you more.</div>
+<div class="card">You’re my sweetest addiction.</div>
+<div class="card">My heart, your rhythm.</div>
+<div class="card">With you, love is endless.</div>
+<div class="card">Happily lost in you.</div>
+<div class="card">Soulmates in motion.</div>
+<div class="card">You are my forever vibe.</div>
+<div class="card">Love growing, never fading.</div>
+<div class="card">Your name lives in my heart.</div>
+<div class="card">All I need is you.</div>
+<div class="card">Heart locked, key is yours.</div>
+<div class="card">Endless love, no expiry.</div>
+<div class="card">You + me = perfect chaos.</div>
+<div class="card">Falling hard, staying grounded.</div>
+<div class="card">Love made simple, with you.</div>
+<div class="card">Heart yours, mind too.</div>
+<div class="card">You spark my soul.</div>
+<div class="card">Forever in your orbit.</div>
+<div class="card">You’re my favorite story.</div>
+<div class="card">Eyes locked, hearts connected.</div>
+<div class="card">Your love is my compass.</div>
+<div class="card">In love, in life, in you.</div>
+<div class="card">You make ordinary moments magical.</div>
+<div class="card">Your smile, my muse.</div>
+<div class="card">Heart racing, love chasing.</div>
+<div class="card">You are my constant joy.</div>
+<div class="card">With you, everything glows.</div>
+<div class="card">Soul entwined, love defined.</div>
+<div class="card">Your love is my soundtrack.</div>
+<div class="card">Falling into your arms endlessly.</div>
+<div class="card">You are my forever vibe.</div>
+<div class="card">Heart full, life bright.</div>
+<div class="card">Love with you is effortless.</div>
+<div class="card">You make my heart a home.</div>
+<div class="card">Forever captivated by you.</div>
+<div class="card">You are my favorite chapter.</div>
+<div class="card">In love with your energy.</div>
+<div class="card">Every heartbeat says your name.</div>
+<div class="card">You + me = timeless love.</div>
+<div class="card">Love blooming in your eyes.</div>
+<div class="card">With you, happiness multiplies.</div>
+<div class="card">My heart beats your rhythm.</div>
+<div class="card">You complete my story.</div>
+<div class="card">In your love, I thrive.</div>
+<div class="card">Soul tied, heart locked.</div>
+<div class="card">You are my dream realized.</div>
+<div class="card">Forever smitten by you.</div>
+<div class="card">Your love lights my world.</div>
+<div class="card">Love anchored in your arms.</div>
+<div class="card">With you, everything’s brighter.</div>
+<div class="card">Heart surrendered, fully yours.</div>
+<div class="card">Love without limits.</div>
+<div class="card">You make my soul sing.</div>
+<div class="card">Every day, I choose you.</div>
+<div class="card">Your love is my magic.</div>
+<div class="card">Every moment with you is magic.</div>
+<div class="card">Soul tethered, heart yours.</div>
+<div class="card">Love blooming in your smile.</div>
+<div class="card">You are my daily inspiration.</div>
+<div class="card">Heart beats only for you.</div>
+<div class="card">With you, life tastes sweeter.</div>
+<div class="card">Eyes on you, heart captivated.</div>
+<div class="card">You + me = endless dreams.</div>
+<div class="card">Soul aligned, love everlasting.</div>
+<div class="card">Heart surrendered, joy complete.</div>
+<div class="card">In love with your soul.</div>
+<div class="card">Forever enchanted, endlessly yours.</div>
+<div class="card">You are my perfect forever.</div>
+<div class="card">Heart full, love thriving.</div>
+<div class="card">With you, every second counts.</div>
+<div class="card">Soul intertwined, hearts united.</div>
+<div class="card">Eyes meet, love sparks fly.</div>
+<div class="card">You are my constant happiness.</div>
+<div class="card">Heart racing, love amplified.</div>
+<div class="card">In your arms, I find peace.</div>
+<div class="card">Forever yours, forever mine.</div>
+<div class="card">You make life extraordinary.</div>
+<div class="card">Love anchored in your embrace.</div>
+<div class="card">Soul captivated, heart full.</div>
+<div class="card">Heart tethered, soul content.</div>
+<div class="card">With you, love feels effortless.</div>
+<div class="card">Eyes locked, hearts intertwined.</div>
+<div class="card">You are my happiness personified.</div>
+<div class="card">Forever smitten, heart surrendered.</div>
+<div class="card">Love in every glance, every smile.</div>
+<div class="card">Heart beats, soul sings for you.</div>
+<div class="card">With you, life sparkles endlessly.</div>
+<div class="card">Soul tethered, love secured.</div>
+<div class="card">Eyes meet, hearts ignite.</div>
+<div class="card">You + me = perfect harmony.</div>
+<div class="card">Heart full, love infinite.</div>
+<div class="card">In love, in life, in you always.</div>
+<div class="card">Forever enchanted by your soul.</div>
+<div class="card">Love glowing in every moment.</div>
+<div class="card">Heart racing, happiness amplified.</div>
+<div class="card">With you, every day is brighter.</div>
+<div class="card">Soul aligned, love everlasting.</div>
+<div class="card">You are my favorite thought.</div>
+<div class="card">Eyes locked, hearts entwined.</div>
+<div class="card">Heart surrendered, love unbounded.</div>
+<div class="card">In your love, I thrive daily.</div>
+<div class="card">Forever smitten, endlessly in love.</div>
+<div class="card">You make my heart feel alive.</div>
+<div class="card">Soul intertwined, love amplified.</div>
+<div class="card">Heart full, happiness overflowing.</div>
+<div class="card">With you, life is a fairytale.</div>
+<div class="card">Eyes meet, hearts united.</div>
+<div class="card">You + me = endless bliss.</div>
+<div class="card">Heart tethered, love eternal.</div>
+<div class="card">Forever enchanted, always yours.</div>
+<div class="card">Love anchored in your smile.</div>
+<div class="card">Soul captivated, heart secure.</div>
+<div class="card">In your arms, forever home.</div>
+<div class="card">Heart beats, love blossoms.</div>
+<div class="card">With you, happiness multiplies.</div>
+<div class="card">Eyes locked, hearts aligned.</div>
+<div class="card">You are my heartbeat, my joy.</div>
+<div class="card">Forever lost in your love.</div>
+<div class="card">Love glowing in your presence.</div>
+<div class="card">Heart captured, soul secured.</div>
+<div class="card">You + me = magic together.</div>
+<div class="card">In love, endlessly enchanted.</div>
+<div class="card">Soul tethered, heart surrendered.</div>
+<div class="card">Every glance sparks affection.</div>
+<div class="card">With you, love is limitless.</div>
+<div class="card">Heart anchored, soul thriving.</div>
+<div class="card">Eyes meet, love ignites.</div>
+<div class="card">You are my forever happiness.</div>
+<div class="card">Heart full, soul aligned.</div>
+<div class="card">Forever smitten, never letting go.</div>
+<div class="card">Love glowing, hearts connected.</div>
+<div class="card">In your love, I am whole.</div>
+<div class="card">Heart racing, soul singing.</div>
+<div class="card">You + me = endless magic.</div>
+<div class="card">Eyes locked, hearts intertwined.</div>
+<div class="card">Soul captivated, love flourishing.</div>
+<div class="card">Heart beats, love grows.</div>
+<div class="card">Forever lost in your arms.</div>
+<div class="card">Love glowing in every smile.</div>
+<div class="card">You are my heartbeat, my home.</div>
+<div class="card">In love with you endlessly.</div>
+<div class="card">Heart tethered to your soul.</div>
+<div class="card">Soul aligned, heart captivated.</div>
+<div class="card">With you, life sparkles brighter.</div>
+<div class="card">Forever smitten, heart surrendered.</div>
+<div class="card">Love anchored, soul secure.</div>
+<div class="card">Eyes meet, hearts entwined.</div>
+<div class="card">You are my forever joy.</div>
+<div class="card">Heart full, love overflowing.</div>
+<div class="card">In your arms, forever home.</div>
+<div class="card">Soul connected, love amplified.</div>
+<div class="card">You + me = endless magic.</div>
+<div class="card">Heart racing, love ignited.</div>
+<div class="card">Forever enchanted by you.</div>
+<div class="card">Eyes locked, hearts aligned.</div>
+<div class="card">Love glowing in your presence.</div>
+<div class="card">Heart surrendered, soul content.</div>
+<div class="card">You make my world shine brighter.</div>
+<div class="card">With you, every day sparkles.</div>
+<div class="card">Forever smitten, endlessly in love.</div>
+<div class="card">Heart tethered, soul aligned.</div>
+<div class="card">Love in every heartbeat.</div>
+<div class="card">You + me = forever happiness.</div>
+<div class="card">Soul captivated, heart surrendered.</div>
+<div class="card">Eyes meet, love ignites.</div>
+<div class="card">You are my perfect forever.</div>
+<div class="card">Heart full, soul in sync.</div>
+<div class="card">With you, love feels infinite.</div>
+<div class="card">Eyes locked, hearts entwined.</div>
+<div class="card">Love made simple: it’s us.</div>
+<div class="card">Forever smitten, endlessly yours.</div>
+<div class="card">Heart racing, soul singing.</div>
+<div class="card">You + me = endless happiness.</div>
+<div class="card">In love with your everything.</div>
+<div class="card">Soul tethered, love secured.</div>
+<div class="card">Every heartbeat echoes your name.</div>
+<div class="card">You are my perfect chapter.</div>
+<div class="card">Heart surrendered, love unbounded.</div>
+<div class="card">With you, happiness multiplies.</div>
+<div class="card">Love glowing in every moment.</div>
+<div class="card">Eyes meet, hearts aligned.</div>
+<div class="card">Forever lost in your love.</div>
+<div class="card">Heart anchored, soul thriving.</div>
+<div class="card">You + me = magic.</div>
+<div class="card">Love captured, heart won.</div>
+<div class="card">In your arms, forever home.</div>
+<div class="card">You are my heartbeat.</div>
+<div class="card">Soul intertwined, love infinite.</div>
+<div class="card">Heart beats, love blossoms.</div>
+<div class="card">Forever enchanted by you.</div>
+<div class="card">Eyes locked, hearts forever.</div>
+<div class="card">Love glowing in your smile.</div>
+<div class="card">Heart surrendered, soul content.</div>
+<div class="card">You make my world shine.</div>
+<div class="card">With you, every day sparkles.</div>
+<div class="card">Forever smitten, endlessly in love.</div>
+<div class="card">Heart tethered, soul aligned.</div>
+<div class="card">Love in every heartbeat.</div>
+<div class="card">You + me = endless bliss.</div>
+<div class="card">Soul captivated, heart surrendered.</div>
+<div class="card">Eyes meet, hearts ignite.</div>
+<div class="card">You are my forever joy.</div>
+<div class="card">Heart full, life brighter.</div>
+<div class="card">In your love, I thrive endlessly.</div>
+<div class="card">In love, in awe, with you.</div>
+<div class="card">Heart racing, soul glowing.</div>
+<div class="card">You’re my favorite hello.</div>
+<div class="card">Forever enchanted by you.</div>
+<div class="card">You + me = happiness amplified.</div>
+<div class="card">Love is you.</div>
+<div class="card">My heart beats for us.</div>
+<div class="card">Falling endlessly for you.</div>
+<div class="card">You make life feel like home.</div>
+<div class="card">Love anchored, heart tethered.</div>
+<div class="card">Eyes meet, hearts unite.</div>
+<div class="card">With you, I’m whole.</div>
+<div class="card">Forever yours, endlessly mine.</div>
+<div class="card">Heart captured, happily surrendered.</div>
+<div class="card">Love is simple: it’s you.</div>
+<div class="card">You spark my happiness daily.</div>
+<div class="card">In love with you endlessly.</div>
+<div class="card">Together, always better.</div>
+<div class="card">You are my forever muse.</div>
+<div class="card">Your love completes my soul.</div>
+<div class="card">Heart tethered to yours.</div>
+<div class="card">Love thriving in your presence.</div>
+<div class="card">Falling in love with you again, every day.</div>
+<div class="card">You are my sweetest chapter.</div>
+<div class="card">Eyes on you, heart locked.</div>
+<div class="card">Forever smitten, always yours.</div>
+<div class="card">In your love, I grow.</div>
+<div class="card">Heart beats in your rhythm.</div>
+<div class="card">You make every moment magical.</div>
+<div class="card">Soul captivated, heart surrendered.</div>
+<div class="card">Love is simple: it’s us.</div>
+<div class="card">You + me = endless joy.</div>
+<div class="card">Heart found its home in you.</div>
+<div class="card">Forever caught in your love.</div>
+<div class="card">You make my heart glow.</div>
+<div class="card">In love, in life, with you.</div>
+<div class="card">Soul aligned, hearts intertwined.</div>
+<div class="card">Every day brighter with you.</div>
+<div class="card">Love amplified, heart satisfied.</div>
+<div class="card">You are my heartbeat.</div>
+<div class="card">With you, love feels endless.</div>
+<div class="card">Forever enchanted, eternally yours.</div>
+<div class="card">Your love is my light.</div>
+<div class="card">Heart entwined, soul captivated.</div>
+<div class="card">In your arms, I find home.</div>
+<div class="card">You are my forever favorite.</div>
+<div class="card">Love thriving in every glance.</div>
+<div class="card">Heart races, soul sings for you.</div>
+<div class="card">Falling deeper, loving harder.</div>
+<div class="card">With you, every moment sparkles.</div>
+<div class="card">Soul captivated, love secured.</div>
+<div class="card">Heart anchored in your love.</div>
+<div class="card">You are my happiness, my home.</div>
+<div class="card">Forever lost in your love.</div>
+<div class="card">Eyes locked, hearts aligned.</div>
+<div class="card">Love in every heartbeat.</div>
+<div class="card">You + me = perfect harmony.</div>
+<div class="card">Soul connected, heart surrendered.</div>
+<div class="card">Love is us, always.</div>
+<div class="card">With you, I’m complete.</div>
+<div class="card">Heart full, love eternal.</div>
+<div class="card">Your love is my happiness.</div>
+<div class="card">Falling in love endlessly.</div>
+<div class="card">Forever captivated, always yours.</div>
+<div class="card">You are my favorite everything.</div>
+<div class="card">Heart beats, soul smiles.</div>
+<div class="card">Love growing, never fading.</div>
+<div class="card">Eyes on you, heart in love.</div>
+<div class="card">You are my forever and always.</div>
+<div class="card">Heart tethered, soul aligned.</div>
+<div class="card">With you, life is brighter.</div>
+<div class="card">Forever smitten, endlessly in love.</div>
+<div class="card">You make my heart feel alive.</div>
+<div class="card">Soul intertwined, love defined.</div>
+<div class="card">Every day, I choose love with you.</div>
+<div class="card">You are my heartbeat, my happiness.</div>
+<div class="card">In love, in life, in you always.</div>
+<div class="card">Heart full, soul satisfied.</div>
+<div class="card">Love anchored in your smile.</div>
+<div class="card">Forever enchanted by your love.</div>
+<div class="card">You make every moment special.</div>
+<div class="card">Falling endlessly, loving deeply.</div>
+<div class="card">Soul captivated, heart at peace.</div>
+<div class="card">You + me = eternity.</div>
+<div class="card">Love written in every glance.</div>
+<div class="card">With you, love is simple.</div>
+<div class="card">Heart surrendered, joy complete.</div>
+<div class="card">You are my favorite forever.</div>
+<div class="card">In your love, I thrive daily.</div>
+<div class="card">Eyes locked, hearts bound.</div>
+<div class="card">Forever smitten, never letting go.</div>
+<div class="card">Love glowing in your presence.</div>
+<div class="card">Heart captured, soul secure.</div>
+<div class="card">You make life feel magical.</div>
+<div class="card">Love is endless with you.</div>
+<div class="card">Together, always in love.</div>
+<div class="card">You are my forever light.</div>
+<div class="card">Heart full, love eternal.</div>
+<div class="card">In your arms, I belong.</div>
+<div class="card">Soul aligned, love defined.</div>
+<div class="card">Every day better with you.</div>
+<div class="card">You + me = perfect love story.</div>
+<div class="card">Forever enchanted, heart surrendered.</div>
+<div class="card">Love anchored, happiness secured.</div>
+<div class="card">Heart tethered to your soul.</div>
+<div class="card">With you, life sparkles.</div>
+<div class="card">Eyes meet, hearts unite.</div>
+<div class="card">You are my heartbeat, my home.</div>
+<div class="card">Forever in love with you.</div>
+<div class="card">Heart beats for you always.</div>
+<div class="card">Soul captivated, love overflowing.</div>
+<div class="card">Every glance, a spark of love.</div>
+<div class="card">You are my forever muse.</div>
+<div class="card">Heart full, soul in sync.</div>
+<div class="card">With you, love feels infinite.</div>
+<div class="card">Eyes locked, hearts entwined.</div>
+<div class="card">Love made simple: it’s us.</div>
+<div class="card">Forever smitten, endlessly yours.</div>
+<div class="card">Heart racing, soul singing.</div>
+<div class="card">You + me = endless happiness.</div>
+<div class="card">In love with your everything.</div>
+<div class="card">Soul tethered, love secured.</div>
+<div class="card">Every heartbeat echoes your name.</div>
+<div class="card">You are my perfect chapter.</div>
+<div class="card">Heart surrendered, love unbounded.</div>
+<div class="card">With you, happiness multiplies.</div>
+<div class="card">Love glowing in every moment.</div>
+<div class="card">Eyes meet, hearts aligned.</div>
+<div class="card">Forever lost in your love.</div>
+<div class="card">Heart anchored, soul thriving.</div>
+<div class="card">You + me = magic.</div>
+<div class="card">Love captured, heart won.</div>
+<div class="card">In your arms, forever home.</div>
+<div class="card">You are my heartbeat.</div>
+<div class="card">Soul intertwined, love infinite.</div>
+<div class="card">Heart beats, love blossoms.</div>
+<div class="card">Forever enchanted by you.</div>
+<div class="card">Eyes locked, hearts forever.</div>
+<div class="card">Love glowing in your smile.</div>
+<div class="card">Heart surrendered, soul content.</div>
+<div class="card">You make my world shine.</div>
+<div class="card">With you, every day sparkles.</div>
+<div class="card">Forever smitten, endlessly in love.</div>
+<div class="card">Heart tethered, soul aligned.</div>
+<div class="card">Love in every heartbeat.</div>
+<div class="card">You + me = forever happiness.</div>
+<div class="card">Soul captivated, heart surrendered.</div>
+<div class="card">Eyes meet, love ignites.</div>
+<div class="card">You are my forever joy.</div>
+<div class="card">Heart full, life brighter.</div>
+<div class="card">In your love, I thrive endlessly.</div>
+<div class="card">Forever enchanted, always yours.</div>
+<div class="card">Love anchored in your arms.</div>
+<div class="card">Heart captured, soul secured.</div>
+<div class="card">With you, love feels infinite.</div>
+<div class="card">Eyes locked, hearts united.</div>
+<div class="card">You + me = endless bliss.</div>
+<div class="card">Soul entwined, love flourishing.</div>
+<div class="card">Heart beats, love grows.</div>
+<div class="card">Forever lost in your arms.</div>
+<div class="card">Love glowing, hearts connected.</div>
+<div class="card">You are my heartbeat, my home.</div>
+<div class="card">In love with you, endlessly.</div>
+<div class="card">Heart tethered to your love.</div>
+<div class="card">Soul aligned, heart captivated.</div>
+<div class="card">With you, life sparkles brighter.</div>
+<div class="card">Forever smitten, heart surrendered.</div>
+<div class="card">Love anchored, soul secured.</div>
+<div class="card">Eyes meet, hearts entwined.</div>
+<div class="card">You are my forever happiness.</div>
+<div class="card">Heart full, love overflowing.</div>
+<div class="card">In your arms, forever home.</div>
+<div class="card">Soul connected, love amplified.</div>
+<div class="card">You + me = endless magic.</div>
+<div class="card">Heart racing, love ignited.</div>
+<div class="card">Forever enchanted by you.</div>
+<div class="card">Eyes locked, hearts aligned.</div>
+<div class="card">Love glowing in your presence.</div
+<div class="card">Forever caught in your gaze.</div>
+<div class="card">Heart locked, love unstoppable.</div>
+
+
+<div class="card">Every moment with you is magic.</div>
+<div class="card">Soul tethered, heart yours.</div>
+<div class="card">Love blooming in your smile.</div>
+<div class="card">You are my daily inspiration.</div>
+<div class="card">Heart beats only for you.</div>
+<div class="card">With you, life tastes sweeter.</div>
+<div class="card">Eyes on you, heart captivated.</div>
+<div class="card">You + me = endless dreams.</div>
+<div class="card">Soul aligned, love everlasting.</div>
+<div class="card">Heart surrendered, joy complete.</div>
+<div class="card">In love with your soul.</div>
+<div class="card">Forever enchanted, endlessly yours.</div>
+<div class="card">You are my perfect forever.</div>
+<div class="card">Heart full, love thriving.</div>
+<div class="card">With you, every second counts.</div>
+<div class="card">Soul intertwined, hearts united.</div>
+<div class="card">Eyes meet, love sparks fly.</div>
+<div class="card">You are my constant happiness.</div>
+<div class="card">Heart racing, love amplified.</div>
+<div class="card">In your arms, I find peace.</div>
+<div class="card">Forever yours, forever mine.</div>
+<div class="card">You make life extraordinary.</div>
+<div class="card">Love anchored in your embrace.</div>
+<div class="card">Soul captivated, heart full.</div>
+<div class="card">Heart tethered, soul content.</div>
+<div class="card">With you, love feels effortless.</div>
+<div class="card">Eyes locked, hearts intertwined.</div>
+<div class="card">You are my happiness personified.</div>
+<div class="card">Forever smitten, heart surrendered.</div>
+<div class="card">Love in every glance, every smile.</div>
+<div class="card">Heart beats, soul sings for you.</div>
+<div class="card">With you, life sparkles endlessly.</div>
+<div class="card">Soul tethered, love secured.</div>
+<div class="card">Eyes meet, hearts ignite.</div>
+<div class="card">You + me = perfect harmony.</div>
+<div class="card">Heart full, love infinite.</div>
+<div class="card">In love, in life, in you always.</div>
+<div class="card">Forever enchanted by your soul.</div>
+<div class="card">Love glowing in every moment.</div>
+<div class="card">Heart racing, happiness amplified.</div>
+<div class="card">With you, every day is brighter.</div>
+<div class="card">Soul aligned, love everlasting.</div>
+<div class="card">You are my favorite thought.</div>
+<div class="card">Eyes locked, hearts entwined.</div>
+<div class="card">Heart surrendered, love unbounded.</div>
+<div class="card">In your love, I thrive daily.</div>
+<div class="card">Forever smitten, endlessly in love.</div>
+<div class="card">You make my heart feel alive.</div>
+<div class="card">Soul intertwined, love amplified.</div>
+<div class="card">Heart full, happiness overflowing.</div>
+<div class="card">With you, life is a fairytale.</div>
+<div class="card">Eyes meet, hearts united.</div>
+<div class="card">You + me = endless bliss.</div>
+<div class="card">Heart tethered, love eternal.</div>
+<div class="card">Forever enchanted, always yours.</div>
+<div class="card">Love anchored in your smile.</div>
+<div class="card">Soul captivated, heart secure.</div>
+<div class="card">In your arms, forever home.</div>
+<div class="card">Heart beats, love blossoms.</div>
+<div class="card">With you, happiness multiplies.</div>
+<div class="card">Eyes locked, hearts aligned.</div>
+<div class="card">You are my heartbeat, my joy.</div>
+<div class="card">Forever lost in your love.</div>
+<div class="card">Love glowing in your presence.</div>
+<div class="card">Heart captured, soul secured.</div>
+<div class="card">You + me = magic together.</div>
+<div class="card">In love, endlessly enchanted.</div>
+<div class="card">Soul tethered, heart surrendered.</div>
+<div class="card">Every glance sparks affection.</div>
+<div class="card">With you, love is limitless.</div>
+<div class="card">Heart anchored, soul thriving.</div>
+<div class="card">Eyes meet, love ignites.</div>
+<div class="card">You are my forever happiness.</div>
+<div class="card">Heart full, soul aligned.</div>
+<div class="card">Forever smitten, never letting go.</div>
+<div class="card">Love glowing, hearts connected.</div>
+<div class="card">In your love, I am whole.</div>
+<div class="card">Heart racing, soul singing.</div>
+<div class="card">You + me = endless magic.</div>
+<div class="card">Eyes locked, hearts intertwined.</div>
+<div class="card">Soul captivated, love flourishing.</div>
+<div class="card">Heart beats, love grows.</div>
+<div class="card">Forever lost in your arms.</div>
+<div class="card">Love glowing in every smile.</div>
+<div class="card">You are my heartbeat, my home.</div>
+<div class="card">In love with you endlessly.</div>
+<div class="card">Heart tethered to your soul.</div>
+<div class="card">Soul aligned, heart captivated.</div>
+<div class="card">With you, life sparkles brighter.</div>
+<div class="card">Forever smitten, heart surrendered.</div>
+<div class="card">Love anchored, soul secure.</div>
+<div class="card">Eyes meet, hearts entwined.</div>
+<div class="card">You are my forever joy.</div>
+<div class="card">Heart full, love overflowing.</div>
+<div class="card">In your arms, forever home.</div>
+<div class="card">Soul connected, love amplified.</div>
+<div class="card">You + me = endless magic.</div>
+<div class="card">Heart racing, love ignited.</div>
+<div class="card">Forever enchanted by you.</div>
+<div class="card">Eyes locked, hearts aligned.</div>
+<div class="card">Love glowing in your presence.</div>
+<div class="card">Heart surrendered, soul content.</div>
+<div class="card">You make my world shine brighter.</div>
+<div class="card">With you, every day sparkles.</div>
+<div class="card">Forever smitten, endlessly in love.</div>
+<div class="card">Heart tethered, soul aligned.</div>
+<div class="card">Love in every heartbeat.</div>
+<div class="card">You + me = forever happiness.</div>
+<div class="card">Soul captivated, heart surrendered.</div>
+<div class="card">Eyes meet, love ignites.</div>
+<div class="card">You are my perfect forever.</div>
+<div class="card">Heart full, soul in sync.</div>
+<div class="card">With you, love feels infinite.</div>
+<div class="card">Eyes locked, hearts entwined.</div>
+<div class="card">Love made simple: it’s us.</div>
+<div class="card">Forever smitten, endlessly yours.</div>
+<div class="card">Heart racing, soul singing.</div>
+<div class="card">You + me = endless happiness.</div>
+<div class="card">In love with your everything.</div>
+<div class="card">Soul tethered, love secured.</div>
+<div class="card">Every heartbeat echoes your name.</div>
+<div class="card">You are my perfect chapter.</div>
+<div class="card">Heart surrendered, love unbounded.</div>
+<div class="card">With you, happiness multiplies.</div>
+<div class="card">Love glowing in every moment.</div>
+<div class="card">Eyes meet, hearts aligned.</div>
+<div class="card">Forever lost in your love.</div>
+<div class="card">Heart anchored, soul thriving.</div>
+<div class="card">You + me = magic.</div>
+<div class="card">Love captured, heart won.</div>
+<div class="card">In your arms, forever home.</div>
+<div class="card">You are my heartbeat.</div>
+<div class="card">Soul intertwined, love infinite.</div>
+<div class="card">Heart beats, love blossoms.</div>
+<div class="card">Forever enchanted by you.</div>
+<div class="card">Eyes locked, hearts forever.</div>
+<div class="card">Love glowing in your smile.</div>
+<div class="card">Heart surrendered, soul content.</div>
+<div class="card">You make my world shine.</div>
+<div class="card">With you, every day sparkles.</div>
+<div class="card">Forever smitten, endlessly in love.</div>
+<div class="card">Heart tethered, soul aligned.</div>
+<div class="card">Love in every heartbeat.</div>
+<div class="card">You + me = endless bliss.</div>
+<div class="card">Soul captivated, heart surrendered.</div>
+<div class="card">Eyes meet, hearts ignite.</div>
+<div class="card">You are my forever joy.</div>
+<div class="card">Heart full, life brighter.</div>
+<div class="card">In your love, I thrive endlessly.</div>
+<div class="card">Forever enchanted, always yours.</div>
+<div class="card">Love anchored in your arms.</div>
+<div class="card">Heart captured, soul secured.</div>
+<div class="card">With you, love feels infinite.</div>
+<div class="card">Eyes locked, hearts united.</div>
+<div class="card">You + me = endless bliss.</div>
+<div class="card">Soul entwined, love flourishing.</div>
+<div class="card">Heart beats, love grows.</div>
+<div class="card">Forever lost in your arms.</div>
+<div class="card">Love glowing, hearts connected.</div>
+<div class="card">You are my heartbeat, my home.</div>
+
+
+
+</div>
+
+<script>
+const b=document.getElementById('burger'),m=document.getElementById('menu');
+b.onclick=e=>{m.classList.toggle('active');e.stopPropagation();}
+document.onclick=e=>{if(!m.contains(e.target)&&!b.contains(e.target))m.classList.remove('active')}
+function toggleMode(){document.body.classList.toggle('light-mode')}
+</script>
+</body>
+</html>

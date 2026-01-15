@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love Quotes — Rizz Lines & Quotes</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  transition: background 0.8s, color 0.8s;
+  padding-top:80px;
+  background: radial-gradient(circle at top,#1b1745,#0f0c29);
+  color:#fff;
+}
+body.light-mode{
+  background: radial-gradient(circle at top,#ffe0f0,#c8c4ff);
+  color:#111;
+}
+
+/* Header */
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  height:70px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 20px;
+  background:rgba(15,12,41,.95);
+  backdrop-filter:blur(12px);
+  z-index:1000;
+}
+header .brand{
+  font-weight:700;
+  font-size:20px;
+  color:#ff79c6;
+  margin-top:5px;
+}
+.burger{
+  width:30px;
+  cursor:pointer;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.burger span{
+  height:3px;
+  margin:5px 0;
+  background:#fff;
+  border-radius:5px;
+  transition:0.3s;
+}
+
+/* Burger Menu */
+.menu{
+  position:fixed;
+  top:0;
+  left:-100%;
+  width:260px;
+  height:100vh;
+  padding:90px 20px;
+  background:rgba(20,18,55,.97);
+  transition:0.4s;
+  z-index:1000;
+}
+.menu.active{left:0;}
+.menu a, .menu button{
+  display:block;
+  margin-bottom:16px;
+  text-align:center;
+  text-decoration:none;
+  color:#fff;
+  font-weight:600;
+  background:none;
+  border:none;
+  cursor:pointer;
+  width:100%;
+  padding:12px 0;
+  border-radius:12px;
+  transition: transform 0.2s, color 0.2s;
+}
+.menu a:hover, .menu button:hover{transform:scale(1.05); color:#ff6b81;}
+
+/* Back button */
+.back-btn{
+  display:inline-block;
+  padding:14px 32px;
+  margin:20px auto;
+  border-radius:50px;
+  font-weight:600;
+  border:none;
+  cursor:pointer;
+  background:linear-gradient(45deg,#ff416c,#ff4b2b);
+  color:#fff;
+  font-size:1.1em;
+  transition:all 0.3s;
+  text-decoration:none;
+  text-align:center;
+}
+body.light-mode .back-btn{
+  background:linear-gradient(45deg,#ff8fc1,#ff7f50);
+  color:#111;
+}
+.back-btn:hover{
+  transform:scale(1.05);
+  opacity:0.9;
+}
+
+/* Quotes Container */
+.quotes-container{
+  max-width:900px;
+  margin:40px auto;
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+  padding:0 20px;
+}
+.quote-card{
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(10px);
+  padding:24px;
+  border-radius:20px;
+  font-size:1.2em;
+  line-height:1.6;
+  position:relative;
+  transition: background 0.5s, color 0.5s, transform 0.3s;
+}
+.quote-card:hover{
+  transform: translateY(-5px);
+  background:rgba(255,255,255,.12);
+}
+body.light-mode .quote-card{
+  background:rgba(255,255,255,.2);
+  color:#111;
+}
+.quote-card::before{
+  content:"💖";
+  position:absolute;
+  top:10px;
+  left:10px;
+  font-size:1.5em;
+}
+
+/* Page Title */
+.page-title{
+  text-align:center;
+  font-size:2em;
+  margin:30px 20px 10px 20px;
+  background: linear-gradient(90deg, #ff00cc, #3333ff, #00ffea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 6s infinite linear;
+}
+@keyframes gradientShift {
+  0% { background-position:0% 50%; }
+  50% { background-position:100% 50%; }
+  100% { background-position:0% 50%; }
+}
+
+</style>
+</head>
+<body class="dark-mode">
+
+<header>
+  <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  <div class="brand">💌 Love Quotes</div>
+   <div class="burger" id="burger"><span></span><span></span><span></span></div>
+</header>
+
+<nav class="menu" id="menu">
+  <a href="oabout.html">About</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="ncontacts.html">Contact</a>
+  <button onclick="toggleMode()">Light/Dark Mode</button>
+</nav>
+
+<!-- Back Button -->
+<div style="text-align:center;">
+  <a href="mquotes.html" class="back-btn">⬅ Back to Quotes</a>
+</div>
+
+<!-- Page Title -->
+<h1 class="page-title">✨ Romantic Love Quotes ✨</h1>
+
+<!-- Quotes Section -->
+<div class="quotes-container">
+  <div class="quote-card">“   Love is not about how many days, months, or years you have been together. Love is about how much you love each other every single day.”</div>
+  <div class="quote-card">“   You know you’re in love when you can’t fall asleep because reality is finally better than your dreams.”</div>
+  <div class="quote-card">“   I love you not because of who you are, but because of who I am when I am with you.”</div>
+  <div class="quote-card">“   In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine.”</div>
+  <div class="quote-card">“    The best thing to hold onto in life is each other.”</div>
+  <div class="quote-card">“Love is not about how many days, months, or years you have been together. Love is about how much you love each other every single day.”</div>
+<div class="quote-card">“You know you’re in love when you can’t fall asleep because reality is finally better than your dreams.”</div>
+<div class="quote-card">“I love you not because of who you are, but because of who I am when I am with you.”</div>
+<div class="quote-card">“In all the world, there is no heart for me like yours.”</div>
+<div class="quote-card">“You are my sun, my moon, and all my stars.”</div>
+<div class="quote-card">“Every love story is beautiful, but ours is my favorite.”</div>
+<div class="quote-card">“I fell in love with you because of all the little things you never knew you were doing.”</div>
+<div class="quote-card">“To love and be loved is to feel the sun from both sides.”</div>
+<div class="quote-card">“I swear I couldn’t love you more than I do right now, and yet I know I will tomorrow.”</div>
+<div class="quote-card">“My heart is, and always will be, yours.”</div>
+<div class="quote-card">“You are my today and all of my tomorrows.”</div>
+<div class="quote-card">“I never want to stop making memories with you.”</div>
+<div class="quote-card">“You are the finest, loveliest, tenderest, and most beautiful person I have ever known.”</div>
+<div class="quote-card">“If I had a flower for every time I thought of you, I could walk in my garden forever.”</div>
+<div class="quote-card">“With you, my heart has found its home.”</div>
+<div class="quote-card">“I love you without knowing how, or when, or from where.”</div>
+<div class="quote-card">“You are the love that came without warning; you had my heart before I could say no.”</div>
+<div class="quote-card">“I choose you. And I’ll choose you over and over and over. Without pause, without a doubt.”</div>
+<div class="quote-card">“I want all of you, forever, you and me, every day.”</div>
+<div class="quote-card">“I look at you and see the rest of my life in front of my eyes.”</div>
+<div class="quote-card">“My heart beats for you and only you.”</div>
+<div class="quote-card">“You are my perfect imperfection.”</div>
+<div class="quote-card">“Your love is the best part of my life.”</div>
+<div class="quote-card">“I could start a fire with what I feel for you.”</div>
+<div class="quote-card">“I want to be in your arms, where you hold me tight.”</div>
+<div class="quote-card">“You are my dream come true.”</div>
+<div class="quote-card">“If loving you is a crime, I want to be the most wanted.”</div>
+<div class="quote-card">“You are my favorite place to go when my mind searches for peace.”</div>
+<div class="quote-card">“You are the poetry my heart never knew it needed.”</div>
+<div class="quote-card">“I love you more than words can say.”</div>
+<div class="quote-card">“Love is not just something you feel, it is something you do.”</div>
+<div class="quote-card">“The best thing to hold onto in life is each other.”</div>
+<div class="quote-card">“You are the heartbeat in my chest, the smile on my lips, and the spark in my eyes.”</div>
+<div class="quote-card">“Where there is love there is life.”</div>
+<div class="quote-card">“You are my greatest adventure.”</div>
+<div class="quote-card">“Being in love with you makes every day worth waking up.”</div>
+<div class="quote-card">“I want to be the reason you look down at your phone and smile.”</div>
+<div class="quote-card">“You are the best thing that’s ever been mine.”</div>
+<div class="quote-card">“Forever is a long time, but I wouldn’t mind spending it by your side.”</div>
+<div class="quote-card">“I’ll never finish falling in love with you.”</div>
+<div class="quote-card">“You are my favorite notification.”</div>
+<div class="quote-card">“Just when I think that it is impossible to love you any more, you prove me wrong.”</div>
+<div class="quote-card">“Loving you was like going to war; easy to start but hard to finish. But I’d do it again in a heartbeat.”</div>
+<div class="quote-card">“You are the spark that lights up my heart.”</div>
+<div class="quote-card">“My soul and your soul are forever tangled.”</div>
+<div class="quote-card">“You make my heart smile.”</div>
+<div class="quote-card">“I love you for all that you are, all that you have been, and all you are yet to be.”</div>
+<div class="quote-card">“You are the reason I look forward to every sunrise.”</div>
+<div class="quote-card">“You are my first thought in the morning and my last thought before I sleep.”</div>
+<div class="quote-card">“When I follow my heart, it leads me to you.”</div>
+<div class="quote-card">“In a sea of people, my eyes will always search for you.”</div>
+<div class="quote-card">“You are the rhythm of my heart.”</div>
+<div class="quote-card">“You are the reason I believe in love.”</div>
+<div class="quote-card">“Love is not about how many days, months, or years you have been together. Love is about how much you love each other every single day.”</div>
+<div class="quote-card">“You know you’re in love when you can’t fall asleep because reality is finally better than your dreams.”</div>
+<div class="quote-card">“I love you not because of who you are, but because of who I am when I am with you.”</div>
+<div class="quote-card">“In all the world, there is no heart for me like yours.”</div>
+<div class="quote-card">“You are my sun, my moon, and all my stars.”</div>
+<div class="quote-card">“Every love story is beautiful, but ours is my favorite.”</div>
+<div class="quote-card">“I fell in love with you because of all the little things you never knew you were doing.”</div>
+<div class="quote-card">“To love and be loved is to feel the sun from both sides.”</div>
+<div class="quote-card">“I swear I couldn’t love you more than I do right now, and yet I know I will tomorrow.”</div>
+<div class="quote-card">“My heart is, and always will be, yours.”</div>
+<div class="quote-card">“You are my today and all of my tomorrows.”</div>
+<div class="quote-card">“I never want to stop making memories with you.”</div>
+<div class="quote-card">“You are the finest, loveliest, tenderest, and most beautiful person I have ever known.”</div>
+<div class="quote-card">“If I had a flower for every time I thought of you, I could walk in my garden forever.”</div>
+<div class="quote-card">“With you, my heart has found its home.”</div>
+<div class="quote-card">“I love you without knowing how, or when, or from where.”</div>
+<div class="quote-card">“You are the love that came without warning; you had my heart before I could say no.”</div>
+<div class="quote-card">“I choose you. And I’ll choose you over and over and over.”</div>
+<div class="quote-card">“I want all of you, forever, you and me, every day.”</div>
+<div class="quote-card">“I look at you and see the rest of my life in front of my eyes.”</div>
+<div class="quote-card">“You make my heart smile even on the darkest days.”</div>
+<div class="quote-card">“You are my perfect imperfection.”</div>
+<div class="quote-card">“Your love is the best part of my life.”</div>
+<div class="quote-card">“I could start a fire with what I feel for you.”</div>
+<div class="quote-card">“I want to be in your arms, where you hold me tight.”</div>
+<div class="quote-card">“You are my dream come true.”</div>
+<div class="quote-card">“If loving you is a crime, I want to be the most wanted.”</div>
+<div class="quote-card">“You are my favorite place to go when my mind searches for peace.”</div>
+<div class="quote-card">“You are the poetry my heart never knew it needed.”</div>
+<div class="quote-card">“I love you more than words can say.”</div>
+<div class="quote-card">“Love is not just something you feel, it is something you do.”</div>
+<div class="quote-card">“The best thing to hold onto in life is each other.”</div>
+<div class="quote-card">“You are the heartbeat in my chest.”</div>
+<div class="quote-card">“Where there is love there is life.”</div>
+<div class="quote-card">“You are my greatest adventure.”</div>
+<div class="quote-card">“Being in love with you makes every day worth waking up for.”</div>
+<div class="quote-card">“I want to be the reason you look down at your phone and smile.”</div>
+<div class="quote-card">“You are the best thing that’s ever been mine.”</div>
+<div class="quote-card">“Forever is a long time, but I wouldn’t mind spending it by your side.”</div>
+<div class="quote-card">“I’ll never finish falling in love with you.”</div>
+<div class="quote-card">“You are my favorite notification.”</div>
+<div class="quote-card">“Just when I think it’s impossible to love you more, you prove me wrong.”</div>
+<div class="quote-card">“You are the spark that lights up my heart.”</div>
+<div class="quote-card">“My soul and your soul are forever tangled.”</div>
+<div class="quote-card">“You make my heart smile.”</div>
+<div class="quote-card">“I love you for all that you are, all that you have been, and all you are yet to be.”</div>
+<div class="quote-card">“You are the reason I look forward to every sunrise.”</div>
+<div class="quote-card">“You are my first thought in the morning and my last thought before I sleep.”</div>
+<div class="quote-card">“When I follow my heart, it leads me to you.”</div>
+<div class="quote-card">“In a sea of people, my eyes will always search for you.”</div>
+<div class="quote-card">“You are the rhythm of my heart.”</div>
+<div class="quote-card">“You are the reason I believe in love.”</div>
+<div class="quote-card">“I never want to stop holding your hand.”</div>
+<div class="quote-card">“You are my favorite hello and hardest goodbye.”</div>
+<div class="quote-card">“Your laugh is my favorite sound.”</div>
+<div class="quote-card">“I fall in love with you a little more every day.”</div>
+<div class="quote-card">“You make my heart skip a beat.”</div>
+<div class="quote-card">“I found my home and paradise with you.”</div>
+<div class="quote-card">“You are the magic in my life.”</div>
+<div class="quote-card">“Love is a song that never ends with you.”</div>
+<div class="quote-card">“I want to grow old with you.”</div>
+<div class="quote-card">“Your smile is the key to my heart.”</div>
+<div class="quote-card">“You make every day brighter.”</div>
+<div class="quote-card">“You are my forever person.”</div>
+<div class="quote-card">“I didn’t choose you, my heart did.”</div>
+<div class="quote-card">“With you, forever isn’t long enough.”</div>
+<div class="quote-card">“I love you more than all the stars in the sky.”</div>
+<div class="quote-card">“You are the love I’ve always dreamed of.”</div>
+<div class="quote-card">“Promises are meant to be kept, just like my love for you.”</div>
+<div class="quote-card">“You make my heart feel alive.”</div>
+<div class="quote-card">“My heart beats only for you.”</div>
+<div class="quote-card">“You are my favorite dream.”</div>
+<div class="quote-card">“You are the reason for my smiles.”</div>
+<div class="quote-card">“You are the definition of love to me.”</div>
+<div class="quote-card">“I love you beyond the limits of time and space.”</div>
+<div class="quote-card">“You are the treasure of my heart.”</div>
+<div class="quote-card">“My love for you is boundless.”</div>
+<div class="quote-card">“You are my always and forever.”</div>
+<div class="quote-card">“You are my sun on cloudy days.”</div>
+<div class="quote-card">“You are the warmth in my heart.”</div>
+<div class="quote-card">“You are my sweetest hello.”</div>
+<div class="quote-card">“Your love is like sunshine on a rainy day.”</div>
+<div class="quote-card">“You are my best decision.”</div>
+<div class="quote-card">“You make me a better version of myself.”</div>
+<div class="quote-card">“You are my heart’s anchor.”</div>
+<div class="quote-card">“In your arms, I’ve found my forever.”</div>
+<div class="quote-card">“You are the calm in my storm.”</div>
+<div class="quote-card">“My heart whispers your name.”</div>
+<div class="quote-card">“You are my favorite love story.”</div>
+<div class="quote-card">“I want you today, tomorrow, and forever.”</div>
+<div class="quote-card">“You are my heartbeat’s favorite rhythm.”</div>
+<div class="quote-card">“I love you more than yesterday and less than tomorrow.”</div>
+<div class="quote-card">“You are the song my heart sings.”</div>
+<div class="quote-card">“I love you to the moon and back.”</div>
+<div class="quote-card">“You are my sweetest memory.”</div>
+<div class="quote-card">“You complete my world.”</div>
+<div class="quote-card">“You are my heart’s treasure.”</div>
+<div class="quote-card">“My love for you grows every day.”</div>
+<div class="quote-card">“You are my heart’s joy.”</div>
+<div class="quote-card">“I am yours and you are mine.”</div>
+<div class="quote-card">“My heart is full because of you.”</div>
+<div class="quote-card">“You are my beloved forever.”</div>
+<div class="quote-card">“I love everything about you.”</div>
+<div class="quote-card">“You are my heart’s sanctuary.”</div>
+<div class="quote-card">“My love for you is undying.”</div>
+<div class="quote-card">“You are the reason my heart sings.”</div>
+<div class="quote-card">“I choose you. And I’ll choose you again and again.”</div>
+<div class="quote-card">“My heart beats in rhythm with yours.”</div>
+<div class="quote-card">“You are my favorite thought.”</div>
+<div class="quote-card">“You are the treasure of my heart.”</div>
+<div class="quote-card">“You are the beat of my heart.”</div>
+<div class="quote-card">“I want all of you, forever.”</div>
+<div class="quote-card">“You are my heart’s closest friend.”</div>
+<div class="quote-card">“My world is brighter with you.”</div>
+<div class="quote-card">“You are love itself.”</div>
+<div class="quote-card">“Your love holds me in the storm.”</div>
+<div class="quote-card">“In your eyes, I found home.”</div>
+<div class="quote-card">“You are my forever warmth.”</div>
+<div class="quote-card">“Just your name makes me smile.”</div>
+<div class="quote-card">“You are every reason, every hope, and every dream I’ve ever had.”</div>
+<div class="quote-card">“I never want to stop holding your hand.”</div>
+<div class="quote-card">“You are the calm to my storm.”</div>
+<div<class="quote-card">“You are my heart’s safe place.”</div>
+<div class="quote-card">“I choose you, and I’ll choose you in all lifetimes.”</div>
+<div class="quote-card">“You are the spark in my soul.”</div>
+<div class="quote-card">“Love grew wings on the day I met you.”</div>
+<div class="quote-card">“You are my sweetest destiny.”</div>
+<div class="quote-card">“My soul knows you as its mate.”</div>
+<div class="quote-card">“You are more than a moment — you are my forever.”</div>
+<div class="quote-card">“You glow differently when love touches you.”</div>
+<div class="quote-card">“I want to share all my tomorrows with you.”</div>
+<div class="quote-card">“Your smile is my favorite sunrise.”</div>
+<div class="quote-card">“No distance can lessen my love for you.”</div>
+<div class="quote-card">“You have my whole heart now and always.”</div>
+<div class="quote-card">“You make ordinary moments unforgettable.”</div>
+<div class="quote-card">“You are the melody of my life.”</div>
+<div class="quote-card">“Love is our true destiny.”</div>
+<div class="quote-card">“Your love is the greatest blessing.”</div>
+<div class="quote-card">“I was born to love you.”</div>
+<div class="quote-card">“You turn my dreams into reality.”</div>
+<div class="quote-card">“You are the poetry in my heart.”</div>
+<div class="quote-card">“My heart belongs to only you.”</div>
+<div class="quote-card">“I’ll always choose you, no matter what.”</div>
+<div class="quote-card">“Your love makes everything beautiful.”</div>
+<div class="quote-card">“Our love is written in the stars.”</div>
+<div class="quote-card">“You are the sunshine through my window.”</div>
+<div class="quote-card">“Love whispered in my heart when I met you.”</div>
+<div class="quote-card">“You are my heart’s favorite place.”</div>
+<div class="quote-card">“You are my eternity in a moment.”</div>
+<div class="quote-card">“Your love completes me.”</div>
+<div class="quote-card">“You are the reason for every beat of my heart.”</div>
+<div class="quote-card">“I love you deeper than the ocean.”</div>
+<div class="quote-card">“I’m yours, today and always.”</div>
+<div class="quote-card">“You are the light in my darkness.”</div>
+<div class="quote-card">“Forever started the moment I met you.”</div>
+<div class="quote-card">“Your love is my compass.”</div>
+<div class="quote-card">“You are the joy in my heart.”</div>
+<div class="quote-card">“I love you more than life itself.”</div>
+<div class="quote-card">“Your love gives my soul wings.”</div>
+<div class="quote-card">“You are the warmth of my heart.”</div>
+<div class="quote-card">“You are my sweetest dream come true.”</div>
+<div class="quote-card">“Your love is an endless melody.”</div>
+<div class="quote-card">“You are my heart’s calm.”</div>
+<div class="quote-card">“You are the reason I believe in love forever.”</div>
+<div class="quote-card">“Your love is a beautiful adventure.”</div>
+<div class="quote-card">“You are my happiness, my peace, my home.”</div>
+<div class="quote-card">“My love for you is timeless.”</div>
+<div class="quote-card">“You are my favorite person to live life with.”</div>
+<div class="quote-card">“Your voice is my favorite sound.”</div>
+<div class="quote-card">“You are the story I will tell forever.”</div>
+<div class="quote-card">“I love you more than yesterday and less than tomorrow.”</div>
+<div class="quote-card">“You are the heartbeat of my existence.”</div>
+<div class="quote-card">“I love you without reason, without pause, without doubt.”</div>
+<div class="quote-card">“You are the most beautiful chapter of my life.”</div>
+<div class="quote-card">“Your love is my greatest gift.”</div>
+<div class="quote-card">“You are the compass that guides my heart.”</div>
+<div class="quote-card">“You are my forever and always.”</div>
+<div class="quote-card">“You are love, and nothing less.”</div>
+<div class="quote-card">“You are the warmth in my soul.”</div>
+<div class="quote-card">“You are my heart’s tender whisper.”</div>
+<div class="quote-card">“I love you more than coffee, and that’s saying something.”</div>
+<div class="quote-card">“You are the smile in my heart.”</div>
+<div class="quote-card">“You are the reason for my hope.”</div>
+<div class="quote-card">“When I’m with you, I’m home.”</div>
+<div class="quote-card">“Your love heals every wound.”</div>
+<div class="quote-card">“You are my sweetest peace.”</div>
+<div class="quote-card">“I’ll never stop loving you.”</div>
+<div class="quote-card">“You are the echo in my heart.”</div>
+<div class="quote-card">“You are my love’s true direction.”</div>
+<div class="quote-card">“You are the treasure I always seek.”</div>
+<div class="quote-card">“My heart learned love because of you.”</div>
+<div class="quote-card">“You are my favorite forever.”</div>
+<div class="quote-card">“You are the rhythm of my happiness.”</div>
+<div class="quote-card">“Love is a song only you can hear.”</div>
+<div class="quote-card">“Your love is the answer to every question.”</div>
+<div class="quote-card">“You are my heart’s favorite choice.”</div>
+<div class="quote-card">“You are the dream I still live.”</div>
+<div class="quote-card">“You are the love that changed me.”</div>
+<div class="quote-card">“You are my heart’s dance.”</div>
+<div class="quote-card">“You are the reason for my smile.”</div>
+<div class="quote-card">“You are the warmth that fills my soul.”</div>
+<div class="quote-card">“I love you more than the stars love the night.”</div>
+<div class="quote-card">“You are my forever sunshine.”</div>
+<div class="quote-card">“You are love’s purest form.”</div>
+<div class="quote-card">“You are my heartbeat’s song.”</div>
+<div class="quote-card">“You are my sweetest forever.”</div>
+<div class="quote-card">“Your love is my guiding light.”</div>
+<div class="quote-card">“You are the reason I believe in miracles.”</div>
+<div class="quote-card">“You are my eternal love.”</div>
+<div class="quote-card">“I will love you until the end of time.”</div>
+<div class="quote-card">“You are my heart’s endless joy.”</div>
+<div class="quote-card">“You are my sweetest serenade.”</div>
+<div class="quote-card">“Your love is my silent happiness.”</div>
+<div class="quote-card">“You are the one my heart always chooses.”</div>
+<div class="quote-card">“You are my forever reason to smile.”</div>
+<div class="quote-card">“You are the warmth I need every day.”</div>
+<div class="quote-card">“Your love is my brightest star.”</div>
+<div class="quote-card">“You are my timeless treasure.”</div>
+<div class="quote-card">“Your love is my heart’s home.”</div>
+<div class="quote-card">“You are the heartbeat wrapped in forever.”</div>
+<div class="quote-card">“You are the melody in my soul’s song.”</div>
+<div class="quote-card">“All my love for you is eternal.”</div>
+<div class="quote-card">“You are the reason my heart beats strong.”</div>
+<div class="quote-card">“You are the love I will always choose.”</div>
+<div class="quote-card">“Your love makes every day meaningful.”</div>
+<div class="quote-card">“You are my heart’s tender embrace.”</div>
+<div class="quote-card">“You are the harmony in my life.”</div>
+<div class="quote-card">“I love you with all that I have.”</div>
+<div class="quote-card">“You are my forever melody.”</div>
+<div class="quote-card">“Your love is my heart’s peace.”</div>
+<div class="quote-card">“You are the heartbeat of everything I am.”</div>
+<div class="quote-card">“You are my love’s brightest spark.”</div>
+<div class="quote-card">“My heart belongs to you forever.”</div>
+<div class="quote-card">“Your love is the warmth in my soul.”</div>
+<div class="quote-card">“You are the echo of my heart.”</div>
+<div class="quote-card">“I love you past the limits of time.”</div>
+<div class="quote-card">“Your love is my forever sunrise.”</div>
+<div class="quote-card">“You are my heart’s first and last thought.”</div>
+  <div class="quote-card">“   You know you’re in love when you can’t fall asleep because reality is finally better than your dreams.”</div>
+  <div class="quote-card">“   I love you not because of who you are, but because of who I am when I am with you.”</div>
+  <div class="quote-card">“   In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine.”</div>
+  <div class="quote-card">“    The best thing to hold onto in life is each other.”</div>
+  <div class="quote-card">“Love is not about how many days, months, or years you have been together. Love is about how much you love each other every single day.”</div>
+<div class="quote-card">“You know you’re in love when you can’t fall asleep because reality is finally better than your dreams.”</div>
+<div class="quote-card">“I love you not because of who you are, but because of who I am when I am with you.”</div>
+<div class="quote-card">“In all the world, there is no heart for me like yours.”</div>
+<div class="quote-card">“You are my sun, my moon, and all my stars.”</div>
+<div class="quote-card">“Every love story is beautiful, but ours is my favorite.”</div>
+<div class="quote-card">“I fell in love with you because of all the little things you never knew you were doing.”</div>
+<div class="quote-card">“To love and be loved is to feel the sun from both sides.”</div>
+<div class="quote-card">“I swear I couldn’t love you more than I do right now, and yet I know I will tomorrow.”</div>
+<div class="quote-card">“My heart is, and always will be, yours.”</div>
+<div class="quote-card">“You are my today and all of my tomorrows.”</div>
+<div class="quote-card">“I never want to stop making memories with you.”</div>
+<div class="quote-card">“You are the finest, loveliest, tenderest, and most beautiful person I have ever known.”</div>
+<div class="quote-card">“If I had a flower for every time I thought of you, I could walk in my garden forever.”</div>
+<div class="quote-card">“With you, my heart has found its home.”</div>
+<div class="quote-card">“I love you without knowing how, or when, or from where.”</div>
+<div class="quote-card">“You are the love that came without warning; you had my heart before I could say no.”</div>
+<div class="quote-card">“I choose you. And I’ll choose you over and over and over. Without pause, without a doubt.”</div>
+<div class="quote-card">“I want all of you, forever, you and me, every day.”</div>
+<div class="quote-card">“I look at you and see the rest of my life in front of my eyes.”</div>
+<div class="quote-card">“My heart beats for you and only you.”</div>
+<div class="quote-card">“You are my perfect imperfection.”</div>
+<div class="quote-card">“Your love is the best part of my life.”</div>
+<div class="quote-card">“I could start a fire with what I feel for you.”</div>
+<div class="quote-card">“I want to be in your arms, where you hold me tight.”</div>
+<div class="quote-card">“You are my dream come true.”</div>
+<div class="quote-card">“If loving you is a crime, I want to be the most wanted.”</div>
+<div class="quote-card">“You are my favorite place to go when my mind searches for peace.”</div>
+<div class="quote-card">“You are the poetry my heart never knew it needed.”</div>
+<div class="quote-card">“I love you more than words can say.”</div>
+<div class="quote-card">“Love is not just something you feel, it is something you do.”</div>
+<div class="quote-card">“The best thing to hold onto in life is each other.”</div>
+<div class="quote-card">“You are the heartbeat in my chest, the smile on my lips, and the spark in my eyes.”</div>
+<div class="quote-card">“Where there is love there is life.”</div>
+<div class="quote-card">“You are my greatest adventure.”</div>
+<div class="quote-card">“Being in love with you makes every day worth waking up.”</div>
+<div class="quote-card">“I want to be the reason you look down at your phone and smile.”</div>
+<div class="quote-card">“You are the best thing that’s ever been mine.”</div>
+<div class="quote-card">“Forever is a long time, but I wouldn’t mind spending it by your side.”</div>
+<div class="quote-card">“I’ll never finish falling in love with you.”</div>
+<div class="quote-card">“You are my favorite notification.”</div>
+<div class="quote-card">“Just when I think that it is impossible to love you any more, you prove me wrong.”</div>
+<div class="quote-card">“Loving you was like going to war; easy to start but hard to finish. But I’d do it again in a heartbeat.”</div>
+<div class="quote-card">“You are the spark that lights up my heart.”</div>
+<div class="quote-card">“My soul and your soul are forever tangled.”</div>
+<div class="quote-card">“You make my heart smile.”</div>
+<div class="quote-card">“I love you for all that you are, all that you have been, and all you are yet to be.”</div>
+<div class="quote-card">“You are the reason I look forward to every sunrise.”</div>
+<div class="quote-card">“You are my first thought in the morning and my last thought before I sleep.”</div>
+<div class="quote-card">“When I follow my heart, it leads me to you.”</div>
+<div class="quote-card">“In a sea of people, my eyes will always search for you.”</div>
+<div class="quote-card">“You are the rhythm of my heart.”</div>
+<div class="quote-card">“You are the reason I believe in love.”</div>
+<div class="quote-card">“Love is not about how many days, months, or years you have been together. Love is about how much you love each other every single day.”</div>
+<div class="quote-card">“You know you’re in love when you can’t fall asleep because reality is finally better than your dreams.”</div>
+<div class="quote-card">“I love you not because of who you are, but because of who I am when I am with you.”</div>
+<div class="quote-card">“In all the world, there is no heart for me like yours.”</div>
+<div class="quote-card">“You are my sun, my moon, and all my stars.”</div>
+<div class="quote-card">“Every love story is beautiful, but ours is my favorite.”</div>
+<div class="quote-card">“I fell in love with you because of all the little things you never knew you were doing.”</div>
+<div class="quote-card">“To love and be loved is to feel the sun from both sides.”</div>
+<div class="quote-card">“I swear I couldn’t love you more than I do right now, and yet I know I will tomorrow.”</div>
+<div class="quote-card">“My heart is, and always will be, yours.”</div>
+<div class="quote-card">“You are my today and all of my tomorrows.”</div>
+<div class="quote-card">“I never want to stop making memories with you.”</div>
+<div class="quote-card">“You are the finest, loveliest, tenderest, and most beautiful person I have ever known.”</div>
+<div class="quote-card">“If I had a flower for every time I thought of you, I could walk in my garden forever.”</div>
+<div class="quote-card">“With you, my heart has found its home.”</div>
+<div class="quote-card">“I love you without knowing how, or when, or from where.”</div>
+<div class="quote-card">“You are the love that came without warning; you had my heart before I could say no.”</div>
+<div class="quote-card">“I choose you. And I’ll choose you over and over and over.”</div>
+<div class="quote-card">“I want all of you, forever, you and me, every day.”</div>
+<div class="quote-card">“I look at you and see the rest of my life in front of my eyes.”</div>
+<div class="quote-card">“You make my heart smile even on the darkest days.”</div>
+<div class="quote-card">“You are my perfect imperfection.”</div>
+<div class="quote-card">“Your love is the best part of my life.”</div>
+<div class="quote-card">“I could start a fire with what I feel for you.”</div>
+<div class="quote-card">“I want to be in your arms, where you hold me tight.”</div>
+<div class="quote-card">“You are my dream come true.”</div>
+<div class="quote-card">“If loving you is a crime, I want to be the most wanted.”</div>
+<div class="quote-card">“You are my favorite place to go when my mind searches for peace.”</div>
+<div class="quote-card">“You are the poetry my heart never knew it needed.”</div>
+<div class="quote-card">“I love you more than words can say.”</div>
+<div class="quote-card">“Love is not just something you feel, it is something you do.”</div>
+<div class="quote-card">“The best thing to hold onto in life is each other.”</div>
+<div class="quote-card">“You are the heartbeat in my chest.”</div>
+<div class="quote-card">“Where there is love there is life.”</div>
+<div class="quote-card">“You are my greatest adventure.”</div>
+<div class="quote-card">“Being in love with you makes every day worth waking up for.”</div>
+<div class="quote-card">“I want to be the reason you look down at your phone and smile.”</div>
+<div class="quote-card">“You are the best thing that’s ever been mine.”</div>
+<div class="quote-card">“Forever is a long time, but I wouldn’t mind spending it by your side.”</div>
+<div class="quote-card">“I’ll never finish falling in love with you.”</div>
+<div class="quote-card">“You are my favorite notification.”</div>
+<div class="quote-card">“Just when I think it’s impossible to love you more, you prove me wrong.”</div>
+<div class="quote-card">“You are the spark that lights up my heart.”</div>
+<div class="quote-card">“My soul and your soul are forever tangled.”</div>
+<div class="quote-card">“You make my heart smile.”</div>
+<div class="quote-card">“I love you for all that you are, all that you have been, and all you are yet to be.”</div>
+<div class="quote-card">“You are the reason I look forward to every sunrise.”</div>
+<div class="quote-card">“You are my first thought in the morning and my last thought before I sleep.”</div>
+<div class="quote-card">“When I follow my heart, it leads me to you.”</div>
+<div class="quote-card">“In a sea of people, my eyes will always search for you.”</div>
+<div class="quote-card">“You are the rhythm of my heart.”</div>
+<div class="quote-card">“You are the reason I believe in love.”</div>
+<div class="quote-card">“I never want to stop holding your hand.”</div>
+<div class="quote-card">“You are my favorite hello and hardest goodbye.”</div>
+<div class="quote-card">“Your laugh is my favorite sound.”</div>
+<div class="quote-card">“I fall in love with you a little more every day.”</div>
+<div class="quote-card">“You make my heart skip a beat.”</div>
+<div class="quote-card">“I found my home and paradise with you.”</div>
+<div class="quote-card">“You are the magic in my life.”</div>
+<div class="quote-card">“Love is a song that never ends with you.”</div>
+<div class="quote-card">“I want to grow old with you.”</div>
+<div class="quote-card">“Your smile is the key to my heart.”</div>
+<div class="quote-card">“You make every day brighter.”</div>
+<div class="quote-card">“You are my forever person.”</div>
+<div class="quote-card">“I didn’t choose you, my heart did.”</div>
+<div class="quote-card">“With you, forever isn’t long enough.”</div>
+<div class="quote-card">“I love you more than all the stars in the sky.”</div>
+<div class="quote-card">“You are the love I’ve always dreamed of.”</div>
+<div class="quote-card">“Promises are meant to be kept, just like my love for you.”</div>
+<div class="quote-card">“You make my heart feel alive.”</div>
+<div class="quote-card">“My heart beats only for you.”</div>
+<div class="quote-card">“You are my favorite dream.”</div>
+<div class="quote-card">“You are the reason for my smiles.”</div>
+<div class="quote-card">“You are the definition of love to me.”</div>
+<div class="quote-card">“I love you beyond the limits of time and space.”</div>
+<div class="quote-card">“You are the treasure of my heart.”</div>
+<div class="quote-card">“My love for you is boundless.”</div>
+<div class="quote-card">“You are my always and forever.”</div>
+<div class="quote-card">“You are my sun on cloudy days.”</div>
+<div class="quote-card">“You are the warmth in my heart.”</div>
+<div class="quote-card">“You are my sweetest hello.”</div>
+<div class="quote-card">“Your love is like sunshine on a rainy day.”</div>
+<div class="quote-card">“You are my best decision.”</div>
+<div class="quote-card">“You make me a better version of myself.”</div>
+<div class="quote-card">“You are my heart’s anchor.”</div>
+<div class="quote-card">“In your arms, I’ve found my forever.”</div>
+<div class="quote-card">“You are the calm in my storm.”</div>
+<div class="quote-card">“My heart whispers your name.”</div>
+<div class="quote-card">“You are my favorite love story.”</div>
+<div class="quote-card">“I want you today, tomorrow, and forever.”</div>
+<div class="quote-card">“You are my heartbeat’s favorite rhythm.”</div>
+<div class="quote-card">“I love you more than yesterday and less than tomorrow.”</div>
+<div class="quote-card">“You are the song my heart sings.”</div>
+<div class="quote-card">“I love you to the moon and back.”</div>
+<div class="quote-card">“You are my sweetest memory.”</div>
+<div class="quote-card">“You complete my world.”</div>
+<div class="quote-card">“You are my heart’s treasure.”</div>
+<div class="quote-card">“My love for you grows every day.”</div>
+<div class="quote-card">“You are my heart’s joy.”</div>
+<div class="quote-card">“I am yours and you are mine.”</div>
+<div class="quote-card">“My heart is full because of you.”</div>
+<div class="quote-card">“You are my beloved forever.”</div>
+<div class="quote-card">“I love everything about you.”</div>
+<div class="quote-card">“You are my heart’s sanctuary.”</div>
+<div class="quote-card">“My love for you is undying.”</div>
+<div class="quote-card">“You are the reason my heart sings.”</div>
+<div class="quote-card">“I choose you. And I’ll choose you again and again.”</div>
+<div class="quote-card">“My heart beats in rhythm with yours.”</div>
+<div class="quote-card">“You are my favorite thought.”</div>
+<div class="quote-card">“You are the treasure of my heart.”</div>
+<div class="quote-card">“You are the beat of my heart.”</div>
+<div class="quote-card">“I want all of you, forever.”</div>
+<div class="quote-card">“You are my heart’s closest friend.”</div>
+<div class="quote-card">“My world is brighter with you.”</div>
+<div class="quote-card">“You are love itself.”</div>
+<div class="quote-card">“Your love holds me in the storm.”</div>
+<div class="quote-card">“In your eyes, I found home.”</div>
+<div class="quote-card">“You are my forever warmth.”</div>
+<div class="quote-card">“Just your name makes me smile.”</div>
+<div class="quote-card">“You are every reason, every hope, and every dream I’ve ever had.”</div>
+<div class="quote-card">“I never want to stop holding your hand.”</div>
+<div class="quote-card">“You are the calm to my storm.”</div>
+<divclass="quote-card">“You are my heart’s safe place.”</div>
+<div class="quote-card">“I choose you, and I’ll choose you in all lifetimes.”</div>
+<div class="quote-card">“You are the spark in my soul.”</div>
+<div class="quote-card">“Love grew wings on the day I met you.”</div>
+<div class="quote-card">“You are my sweetest destiny.”</div>
+<div class="quote-card">“My soul knows you as its mate.”</div>
+<div class="quote-card">“You are more than a moment — you are my forever.”</div>
+<div class="quote-card">“You glow differently when love touches you.”</div>
+<div class="quote-card">“I want to share all my tomorrows with you.”</div>
+<div class="quote-card">“Your smile is my favorite sunrise.”</div>
+<div class="quote-card">“No distance can lessen my love for you.”</div>
+<div class="quote-card">“You have my whole heart now and always.”</div>
+<div class="quote-card">“You make ordinary moments unforgettable.”</div>
+<div class="quote-card">“You are the melody of my life.”</div>
+<div class="quote-card">“Love is our true destiny.”</div>
+<div class="quote-card">“Your love is the greatest blessing.”</div>
+<div class="quote-card">“I was born to love you.”</div>
+<div class="quote-card">“You turn my dreams into reality.”</div>
+<div class="quote-card">“You are the poetry in my heart.”</div>
+<div class="quote-card">“My heart belongs to only you.”</div>
+<div class="quote-card">“I’ll always choose you, no matter what.”</div>
+<div class="quote-card">“Your love makes everything beautiful.”</div>
+<div class="quote-card">“Our love is written in the stars.”</div>
+<div class="quote-card">“You are the sunshine through my window.”</div>
+<div class="quote-card">“Love whispered in my heart when I met you.”</div>
+<div class="quote-card">“You are my heart’s favorite place.”</div>
+<div class="quote-card">“You are my eternity in a moment.”</div>
+<div class="quote-card">“Your love completes me.”</div>
+<div class="quote-card">“You are the reason for every beat of my heart.”</div>
+<div class="quote-card">“I love you deeper than the ocean.”</div>
+<div class="quote-card">“I’m yours, today and always.”</div>
+<div class="quote-card">“You are the light in my darkness.”</div>
+<div class="quote-card">“Forever started the moment I met you.”</div>
+<div class="quote-card">“Your love is my compass.”</div>
+<div class="quote-card">“You are the joy in my heart.”</div>
+<div class="quote-card">“I love you more than life itself.”</div>
+<div class="quote-card">“Your love gives my soul wings.”</div>
+<div class="quote-card">“You are the warmth of my heart.”</div>
+<div class="quote-card">“You are my sweetest dream come true.”</div>
+<div class="quote-card">“Your love is an endless melody.”</div>
+<div class="quote-card">“You are my heart’s calm.”</div>
+<div class="quote-card">“You are the reason I believe in love forever.”</div>
+<div class="quote-card">“Your love is a beautiful adventure.”</div>
+<div class="quote-card">“You are my happiness, my peace, my home.”</div>
+<div class="quote-card">“My love for you is timeless.”</div>
+<div class="quote-card">“You are my favorite person to live life with.”</div>
+<div class="quote-card">“Your voice is my favorite sound.”</div>
+<div class="quote-card">“You are the story I will tell forever.”</div>
+<div class="quote-card">“I love you more than yesterday and less than tomorrow.”</div>
+<div class="quote-card">“You are the heartbeat of my existence.”</div>
+<div class="quote-card">“I love you without reason, without pause, without doubt.”</div>
+<div class="quote-card">“You are the most beautiful chapter of my life.”</div>
+<div class="quote-card">“Your love is my greatest gift.”</div>
+<div class="quote-card">“You are the compass that guides my heart.”</div>
+<div class="quote-card">“You are my forever and always.”</div>
+<div class="quote-card">“You are love, and nothing less.”</div>
+<div class="quote-card">“You are the warmth in my soul.”</div>
+<div class="quote-card">“You are my heart’s tender whisper.”</div>
+<div class="quote-card">“I love you more than coffee, and that’s saying something.”</div>
+<div class="quote-card">“You are the smile in my heart.”</div>
+<div class="quote-card">“You are the reason for my hope.”</div>
+<div class="quote-card">“When I’m with you, I’m home.”</div>
+<div class="quote-card">“Your love heals every wound.”</div>
+<div class="quote-card">“You are my sweetest peace.”</div>
+<div class="quote-card">“I’ll never stop loving you.”</div>
+<div class="quote-card">“You are the echo in my heart.”</div>
+<div class="quote-card">“You are my love’s true direction.”</div>
+<div class="quote-card">“You are the treasure I always seek.”</div>
+<div class="quote-card">“My heart learned love because of you.”</div>
+<div class="quote-card">“You are my favorite forever.”</div>
+<div class="quote-card">“You are the rhythm of my happiness.”</div>
+<div class="quote-card">“Love is a song only you can hear.”</div>
+<div class="quote-card">“Your love is the answer to every question.”</div>
+<div class="quote-card">“You are my heart’s favorite choice.”</div>
+<div class="quote-card">“You are the dream I still live.”</div>
+<div class="quote-card">“You are the love that changed me.”</div>
+<div class="quote-card">“You are my heart’s dance.”</div>
+<div class="quote-card">“You are the reason for my smile.”</div>
+<div class="quote-card">“You are the warmth that fills my soul.”</div>
+<div class="quote-card">“I love you more than the stars love the night.”</div>
+<div class="quote-card">“You are my forever sunshine.”</div>
+<div class="quote-card">“You are love’s purest form.”</div>
+<div class="quote-card">“You are my heartbeat’s song.”</div>
+<div class="quote-card">“You are my sweetest forever.”</div>
+<div class="quote-card">“Your love is my guiding light.”</div>
+<div class="quote-card">“You are the reason I believe in miracles.”</div>
+<div class="quote-card">“You are my eternal love.”</div>
+<div class="quote-card">“I will love you until the end of time.”</div>
+<div class="quote-card">“You are my heart’s endless joy.”</div>
+<div class="quote-card">“You are my sweetest serenade.”</div>
+<div class="quote-card">“Your love is my silent happiness.”</div>
+<div class="quote-card">“You are the one my heart always chooses.”</div>
+<div class="quote-card">“You are my forever reason to smile.”</div>
+<div class="quote-card">“You are the warmth I need every day.”</div>
+<div class="quote-card">“Your love is my brightest star.”</div>
+<div class="quote-card">“You are my timeless treasure.”</div>
+<div class="quote-card">“Your love is my heart’s home.”</div>
+<div class="quote-card">“You are the heartbeat wrapped in forever.”</div>
+<div class="quote-card">“You are the melody in my soul’s song.”</div>
+<div class="quote-card">“All my love for you is eternal.”</div>
+<div class="quote-card">“You are the reason my heart beats strong.”</div>
+<div class="quote-card">“You are the love I will always choose.”</div>
+<div class="quote-card">“Your love makes every day meaningful.”</div>
+<div class="quote-card">“You are my heart’s tender embrace.”</div>
+<div class="quote-card">“You are the harmony in my life.”</div>
+<div class="quote-card">“I love you with all that I have.”</div>
+<div class="quote-card">“You are my forever melody.”</div>
+<div class="quote-card">“Your love is my heart’s peace.”</div>
+<div class="quote-card">“You are the heartbeat of everything I am.”</div>
+<div class="quote-card">“You are my love’s brightest spark.”</div>
+<div class="quote-card">“My heart belongs to you forever.”</div>
+<div class="quote-card">“Your love is the warmth in my soul.”</div>
+<div class="quote-card">“You are the echo of my heart.”</div>
+<div class="quote-card">“I love you past the limits of time.”</div>
+<div class="quote-card">“Your love is my forever sunrise.”</div>
+<div class="quote-card">“You are my heart’s first and last thought.”</div>
+
+  
+  <div class="quote-card">“    Love is composed of a single soul inhabiting two bodies.”</div>
+  <div class="quote-card">“    You don’t love someone for their looks or their clothes or for their fancy car, but because they sing a song only you can hear.”</div>
+  <div class="quote-card">“    Every love story is beautiful, but ours is my favorite.”</div>
+  <div class="quote-card">“    To love and be loved is to feel the sun from both sides.”</div>
+  <div class="quote-card">“    I swear I couldn’t love you more than I do right now, and yet I know I will tomorrow.”</div>
+</div>
+
+<script>
+const burger = document.getElementById('burger');
+const menu = document.getElementById('menu');
+
+// Toggle burger menu
+burger.addEventListener('click', function(event){
+  menu.classList.toggle("active");
+  event.stopPropagation(); // prevent immediate close
+});
+
+// Close menu if clicked outside
+document.addEventListener('click', function(event){
+  if(!menu.contains(event.target) && !burger.contains(event.target)){
+    menu.classList.remove("active");
+  }
+});
+
+// Menu links close menu when clicked
+const links = menu.querySelectorAll('a, button');
+links.forEach(link => {
+  link.addEventListener('click', function(event){
+    menu.classList.remove("active");
+  });
+});
+
+// Light/Dark Mode
+function toggleMode(){
+  document.body.classList.toggle('light-mode');
+  document.body.classList.toggle('dark-mode');
+}
+</script>
+
+</body>
+</html>

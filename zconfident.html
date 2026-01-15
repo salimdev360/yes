@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Confident Rizz Lines — Rizz Generator</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  padding-top:80px;
+  background: linear-gradient(160deg,#12010f,#060014);
+  color:#fff;
+  transition:.5s;
+}
+body.light-mode{
+  background: linear-gradient(160deg,#ffffff,#f3f4f6);
+  color:#111;
+}
+
+/* HEADER */
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  height:70px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 20px;
+  background:rgba(15,0,25,.92);
+  backdrop-filter:blur(12px);
+  z-index:1000;
+}
+body.light-mode header{background:#ffffffee;}
+
+.brand{
+  font-weight:700;
+  font-size:20px;
+  background:linear-gradient(90deg,#ff3d81,#ff8fab);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* BURGER */
+.burger{
+  width:30px;
+  cursor:pointer;
+}
+.burger span{
+  display:block;
+  height:3px;
+  margin:6px 0;
+  background:#fff;
+  border-radius:10px;
+}
+body.light-mode .burger span{background:#111;}
+
+/* MENU */
+.menu{
+  position:fixed;
+  top:0;
+  left:-100%;
+  width:260px;
+  height:100vh;
+  padding:90px 20px;
+  background:linear-gradient(180deg,#140014,#070010);
+  transition:.4s;
+  z-index:1000;
+}
+body.light-mode .menu{background:#fff;}
+.menu.active{left:0;}
+
+.menu a,.menu button{
+  display:block;
+  width:100%;
+  padding:14px;
+  margin-bottom:14px;
+  border-radius:14px;
+  border:none;
+  background:none;
+  color:#ff5a9e;
+  font-weight:600;
+  cursor:pointer;
+  text-align:center;
+  transition:.25s;
+}
+body.light-mode .menu a,
+body.light-mode .menu button{color:#be185d;}
+.menu a:hover,.menu button:hover{
+  transform:translateX(6px);
+  color:#fb7185;
+}
+
+/* BACK */
+.back-btn{
+  display:inline-block;
+  margin:25px auto;
+  padding:14px 36px;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:600;
+  background:linear-gradient(90deg,#ff3d81,#ff8fab);
+  color:#020617;
+  transition:.3s;
+}
+.back-btn:hover{transform:scale(1.05);}
+body.light-mode .back-btn{color:#fff}
+
+/* TITLE */
+.page-title{
+  text-align:center;
+  font-size:2.3em;
+  margin:25px 15px;
+  background:linear-gradient(90deg,#ff3d81,#ff8fab,#fb7185);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* CARDS */
+.cards{
+  max-width:900px;
+  margin:auto;
+  padding:0 20px 40px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:22px;
+}
+.card{
+  background:linear-gradient(145deg,#1a0018,#0b0010);
+  padding:28px;
+  border-radius:22px;
+  font-size:1.05em;
+  text-align:center;
+  transition:.35s;
+  box-shadow:0 0 0 rgba(0,0,0,0);
+}
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 25px 45px rgba(0,0,0,.5);
+}
+body.light-mode .card{
+  background:linear-gradient(145deg,#f9fafb,#e5e7eb);
+}
+
+/* DESCRIPTION */
+.desc{
+  max-width:850px;
+  margin:10px auto 40px;
+  padding:0 25px;
+  font-size:.95em;
+  line-height:1.7;
+  opacity:.92;
+  text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="burger" id="burger">
+    <span></span><span></span><span></span>
+  </div>
+  <div class="brand">🔥 Confident Rizz</div>
+   <div class="burger" id="burger">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<nav class="menu" id="menu">
+  <a href="oabout.html">About</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="ncontacts.html">Contact</a>
+  <button onclick="toggleMode()">Light / Dark Mode</button>
+</nav>
+
+<div style="text-align:center">
+  <a href="zrizzlines.html" class="back-btn">⬅ Back to Rizz Lines</a>
+</div>
+
+<h1 class="page-title">Confident Rizz Lines</h1>
+
+<div class="cards">
+<div class="card">I know what I want — and you caught my attention.</div>
+<div class="card">I don’t usually stare, but you changed that.</div>
+<div class="card">You look like someone worth knowing.</div>
+<div class="card">I won’t pretend — you stood out immediately.</div>
+<div class="card">I like your vibe. It’s confident.</div>
+<div class="card">You walk like you know your value.</div>
+<div class="card">I noticed you without trying.</div>
+<div class="card">You have presence. That’s rare.</div>
+<div class="card">I’m not guessing — you’re attractive.</div>
+<div class="card">You make confidence look easy.</div>
+
+<div class="card">You don’t blend in, and I respect that.</div>
+<div class="card">I could tell you were different right away.</div>
+<div class="card">You carry yourself well.</div>
+<div class="card">I like how natural you are.</div>
+<div class="card">You have a calm that pulls people in.</div>
+<div class="card">You’re exactly my type of energy.</div>
+<div class="card">I don’t usually approach, but here we are.</div>
+<div class="card">You have an aura I can’t ignore.</div>
+<div class="card">You walk in and the room changes.</div>
+<div class="card">You make everything else fade away.</div>
+
+<div class="card">I don’t need to guess — you’re captivating.</div>
+<div class="card">You’ve got that rare kind of charm.</div>
+<div class="card">I like the way you hold yourself.</div>
+<div class="card">You’re magnetic without even trying.</div>
+<div class="card">I can tell you’re confident without words.</div>
+<div class="card">You stand out naturally.</div>
+<div class="card">You make being attractive look effortless.</div>
+<div class="card">I noticed you the second you walked in.</div>
+<div class="card">There’s something about you I can’t shake off.</div>
+<div class="card">You’ve got a presence that’s unforgettable.</div>
+
+<div class="card">I don’t usually approach people this fast.</div>
+<div class="card">You have a way of drawing attention without trying.</div>
+<div class="card">You move with a confidence most people lack.</div>
+<div class="card">I can tell you know your worth.</div>
+<div class="card">You’ve got style, charm, and presence all in one.</div>
+<div class="card">You’re exactly my kind of person.</div>
+<div class="card">You carry yourself like you already know your value.</div>
+<div class="card">I like how easy it is to look at you.</div>
+<div class="card">You’ve got a vibe that’s hard to forget.</div>
+<div class="card">I respect how naturally you stand out.</div>
+
+<div class="card">You make the room feel different when you enter.</div>
+<div class="card">I’ve never met someone with energy like yours.</div>
+<div class="card">You’ve got a confidence that’s magnetic.</div>
+<div class="card">I can feel your presence from across the room.</div>
+<div class="card">You don’t have to try to be noticed.</div>
+<div class="card">I like the way you move, it’s effortless.</div>
+<div class="card">You’ve got a calm that makes people look twice.</div>
+<div class="card">You make even silence feel meaningful.</div>
+<div class="card">I like how you own the space you’re in.</div>
+<div class="card">You make confidence look smooth.</div>
+
+<div class="card">I don’t usually compliment strangers, but here we are.</div>
+<div class="card">You have an aura that’s hard to resist.</div>
+<div class="card">You move like someone who’s comfortable in their own skin.</div>
+<div class="card">I can’t ignore your energy.</div>
+<div class="card">You’ve got style without even trying.</div>
+<div class="card">I like how natural you are.</div>
+<div class="card">You carry yourself like you know your worth.</div>
+<div class="card">You make it hard to look anywhere else.</div>
+<div class="card">You’ve got a rare kind of charm.</div>
+<div class="card">I respect how effortlessly you stand out.</div>
+
+<div class="card">You make confidence look effortless.</div>
+<div class="card">I like how your energy fills the room.</div>
+<div class="card">You’re someone people notice immediately.</div>
+<div class="card">I don’t need to try — you’re already captivating.</div>
+<div class="card">You’ve got that magnetic energy I admire.</div>
+<div class="card">I like how easy it is to be around you.</div>
+<div class="card">You’ve got a presence that’s unforgettable.</div>
+<div class="card">You move like someone who knows their worth.</div>
+<div class="card">I respect your natural confidence.</div>
+<div class="card">You stand out in every way.</div>
+
+<div class="card">You’ve got style, charm, and presence all together.</div>
+<div class="card">I don’t approach often, but I had to here.</div>
+<div class="card">You make people take notice without trying.</div>
+<div class="card">I can feel your energy from a mile away.</div>
+<div class="card">You’ve got an aura that draws attention.</div>
+<div class="card">You move with effortless charm.</div>
+<div class="card">I like how calm and confident you are.</div>
+<div class="card">You make confidence feel natural.</div>
+<div class="card">You’re someone people remember instantly.</div>
+<div class="card">I respect how smoothly you own yourself.</div>
+
+<div class="card">You’ve got a presence that makes people stop and look.</div>
+<div class="card">I don’t usually say this, but you’re captivating.</div>
+<div class="card">You have a rare kind of energy.</div>
+<div class="card">You make it hard to look away.</div>
+<div class="card">You move like you’re in control of the room.</div>
+<div class="card">I like how effortlessly you command attention.</div>
+<div class="card">You’ve got style and confidence combined.</div>
+<div class="card">I notice the little things that make you stand out.</div>
+<div class="card">You’ve got a vibe that’s unforgettable.</div>
+<div class="card">You make being confident look natural.</div>
+<div class="card">I know what I want — and you caught my attention.</div>
+<div class="card">I don’t usually stare, but you changed that.</div>
+<div class="card">You look like someone worth knowing.</div>
+<div class="card">I won’t pretend — you stood out immediately.</div>
+<div class="card">I like your vibe. It’s confident.</div>
+<div class="card">You walk like you know your value.</div>
+<div class="card">I noticed you without trying.</div>
+<div class="card">You have presence. That’s rare.</div>
+<div class="card">I’m not guessing — you’re attractive.</div>
+<div class="card">You make confidence look easy.</div>
+
+<div class="card">You don’t blend in, and I respect that.</div>
+<div class="card">I could tell you were different right away.</div>
+<div class="card">You carry yourself well.</div>
+<div class="card">I like how natural you are.</div>
+<div class="card">You have a calm that pulls people in.</div>
+<div class="card">You’re exactly my type of energy.</div>
+<div class="card">I don’t usually approach, but here we are.</div>
+<div class="card">You have an aura I can’t ignore.</div>
+<div class="card">You walk in and the room changes.</div>
+<div class="card">You make everything else fade away.</div>
+
+<div class="card">I don’t need to guess — you’re captivating.</div>
+<div class="card">You’ve got that rare kind of charm.</div>
+<div class="card">I like the way you hold yourself.</div>
+<div class="card">You’re magnetic without even trying.</div>
+<div class="card">I can tell you’re confident without words.</div>
+<div class="card">You stand out naturally.</div>
+<div class="card">You make being attractive look effortless.</div>
+<div class="card">I noticed you the second you walked in.</div>
+<div class="card">There’s something about you I can’t shake off.</div>
+<div class="card">You’ve got a presence that’s unforgettable.</div>
+
+<div class="card">I don’t usually approach people this fast.</div>
+<div class="card">You have a way of drawing attention without trying.</div>
+<div class="card">You move with a confidence most people lack.</div>
+<div class="card">I can tell you know your worth.</div>
+<div class="card">You’ve got style, charm, and presence all in one.</div>
+<div class="card">You’re exactly my kind of person.</div>
+<div class="card">You carry yourself like you already know your value.</div>
+<div class="card">I like how easy it is to look at you.</div>
+<div class="card">You’ve got a vibe that’s hard to forget.</div>
+<div class="card">I respect how naturally you stand out.</div>
+
+<div class="card">You make the room feel different when you enter.</div>
+<div class="card">I’ve never met someone with energy like yours.</div>
+<div class="card">You’ve got a confidence that’s magnetic.</div>
+<div class="card">I can feel your presence from across the room.</div>
+<div class="card">You don’t have to try to be noticed.</div>
+<div class="card">I like the way you move, it’s effortless.</div>
+<div class="card">You’ve got a calm that makes people look twice.</div>
+<div class="card">You make even silence feel meaningful.</div>
+<div class="card">I like how you own the space you’re in.</div>
+<div class="card">You make confidence look smooth.</div>
+
+<div class="card">I don’t usually compliment strangers, but here we are.</div>
+<div class="card">You have an aura that’s hard to resist.</div>
+<div class="card">You move like someone who’s comfortable in their own skin.</div>
+<div class="card">I can’t ignore your energy.</div>
+<div class="card">You’ve got style without even trying.</div>
+<div class="card">I like how natural you are.</div>
+<div class="card">You carry yourself like you know your worth.</div>
+<div class="card">You make it hard to look anywhere else.</div>
+<div class="card">You’ve got a rare kind of charm.</div>
+<div class="card">I respect how effortlessly you stand out.</div>
+
+<div class="card">You make confidence look effortless.</div>
+<div class="card">I like how your energy fills the room.</div>
+<div class="card">You’re someone people notice immediately.</div>
+<div class="card">I don’t need to try — you’re already captivating.</div>
+<div class="card">You’ve got that magnetic energy I admire.</div>
+<div class="card">I like how easy it is to be around you.</div>
+<div class="card">You’ve got a presence that’s unforgettable.</div>
+<div class="card">You move like someone who knows their worth.</div>
+<div class="card">I respect your natural confidence.</div>
+<div class="card">You stand out in every way.</div>
+
+<div class="card">You’ve got style, charm, and presence all together.</div>
+<div class="card">I don’t approach often, but I had to here.</div>
+<div class="card">You make people take notice without trying.</div>
+<div class="card">I can feel your energy from a mile away.</div>
+<div class="card">You’ve got an aura that draws attention.</div>
+<div class="card">You move with effortless charm.</div>
+<div class="card">I like how calm and confident you are.</div>
+<div class="card">You make confidence feel natural.</div>
+<div class="card">You’re someone people remember instantly.</div>
+<div class="card">I respect how smoothly you own yourself.</div>
+
+<div class="card">You’ve got a presence that makes people stop and look.</div>
+<div class="card">I don’t usually say this, but you’re captivating.</div>
+<div class="card">You have a rare kind of energy.</div>
+<div class="card">You make it hard to look away.</div>
+<div class="card">You move like you’re in control of the room.</div>
+<div class="card">I like how effortlessly you command attention.</div>
+<div class="card">You’ve got style and confidence combined.</div>
+<div class="card">I notice the little things that make you stand out.</div>
+<div class="card">You’ve got a vibe that’s unforgettable.</div>
+<div class="card">You make being confident look natural.</div>
+<div class="card">You make every glance feel intentional.</div>
+<div class="card">I like how naturally your presence fills the room.</div>
+<div class="card">You’ve got energy that draws people in.</div>
+<div class="card">I notice how smooth you move.</div>
+<div class="card">You carry confidence without showing off.</div>
+<div class="card">I like how effortless your charm is.</div>
+<div class="card">You stand out even without trying.</div>
+<div class="card">I can’t ignore your energy.</div>
+<div class="card">You move like you belong anywhere.</div>
+<div class="card">I like the calm strength in your vibe.</div>
+
+<div class="card">You make people turn their heads naturally.</div>
+<div class="card">I notice how easily you attract attention.</div>
+<div class="card">You’ve got presence people remember.</div>
+<div class="card">I like the smooth confidence you carry.</div>
+<div class="card">You make everyone else fade into the background.</div>
+<div class="card">I notice how poised you are.</div>
+<div class="card">You move like a natural leader.</div>
+<div class="card">I like how confident your energy feels.</div>
+<div class="card">You’ve got a rare kind of magnetism.</div>
+<div class="card">I notice how comfortable you are in your skin.</div>
+
+<div class="card">You don’t try to impress — it just happens.</div>
+<div class="card">I like how your energy commands attention.</div>
+<div class="card">You make confidence look effortless.</div>
+<div class="card">I notice how smooth your aura is.</div>
+<div class="card">You’ve got an allure that’s impossible to ignore.</div>
+<div class="card">I like the calm power you radiate.</div>
+<div class="card">You stand out in every room you enter.</div>
+<div class="card">I notice the effortless way you draw people in.</div>
+<div class="card">You move with a natural rhythm that’s magnetic.</div>
+<div class="card">I like how self-assured you seem without trying.</div>
+
+<div class="card">You’ve got a pull that’s undeniable.</div>
+<div class="card">I notice how easily people notice you.</div>
+<div class="card">You make attention feel natural.</div>
+<div class="card">I like the subtle confidence you carry.</div>
+<div class="card">You radiate charm without effort.</div>
+<div class="card">I notice your energy the second you enter.</div>
+<div class="card">You move like someone who’s in control.</div>
+<div class="card">I like how effortlessly you captivate.</div>
+<div class="card">You have that rare spark people notice.</div>
+<div class="card">I notice how calm yet magnetic you are.</div>
+
+<div class="card">You make people remember you instantly.</div>
+<div class="card">I like the way your presence feels alive.</div>
+<div class="card">You’ve got a smooth energy that pulls people in.</div>
+<div class="card">I notice how natural your charm is.</div>
+<div class="card">You carry yourself like someone who belongs anywhere.</div>
+<div class="card">I like how calm confidence comes so naturally to you.</div>
+<div class="card">You make attraction feel effortless.</div>
+<div class="card">I notice how composed and magnetic you are.</div>
+<div class="card">You’ve got a presence that people can’t forget.</div>
+<div class="card">I like how your energy quietly dominates the room.</div>
+
+<div class="card">You move with a smooth confidence that’s rare.</div>
+<div class="card">I notice how effortlessly you catch attention.</div>
+<div class="card">You make calm power look sexy.</div>
+<div class="card">I like the subtle way you captivate.</div>
+<div class="card">You’ve got style, presence, and charm all together.</div>
+<div class="card">I notice how natural your allure is.</div>
+<div class="card">You radiate confidence without words.</div>
+<div class="card">I like how magnetic your energy feels.</div>
+<div class="card">You make every room feel alive.</div>
+<div class="card">I notice how poised and self-assured you are.</div>
+
+<div class="card">You have an energy that’s impossible to ignore.</div>
+<div class="card">I like the calm authority you carry.</div>
+<div class="card">You’ve got a presence that stands out effortlessly.</div>
+<div class="card">I notice how magnetic your aura is.</div>
+<div class="card">You make attraction feel natural.</div>
+<div class="card">I like the subtle way you dominate attention.</div>
+<div class="card">You move like you already own the room.</div>
+<div class="card">I notice how effortlessly people gravitate toward you.</div>
+<div class="card">You’ve got a smooth confidence that’s addictive.</div>
+<div class="card">I like how comfortable and self-assured you are.</div>
+<div class="card">You make everyone else fade into the background.</div>
+<div class="card">I like how magnetic your presence feels.</div>
+<div class="card">You’ve got a calm power that’s impossible to ignore.</div>
+<div class="card">I notice how effortlessly you pull attention.</div>
+<div class="card">You carry yourself with smooth confidence.</div>
+<div class="card">I like how natural your charm is.</div>
+<div class="card">You radiate a subtle, irresistible aura.</div>
+<div class="card">I notice the calm dominance in your presence.</div>
+<div class="card">You make confidence feel sexy and effortless.</div>
+<div class="card">I like how easily people gravitate toward you.</div>
+
+<div class="card">You move like someone who’s in control of every room.</div>
+<div class="card">I notice the effortless allure in your energy.</div>
+<div class="card">You make charm feel natural.</div>
+<div class="card">I like how confident and smooth you seem.</div>
+<div class="card">You’ve got a rare, magnetic pull.</div>
+<div class="card">I notice how people can’t ignore your presence.</div>
+<div class="card">You radiate calm and smooth confidence.</div>
+<div class="card">I like how natural your energy feels.</div>
+<div class="card">You move like you already own the space.</div>
+<div class="card">I notice how effortlessly charm comes to you.</div>
+
+<div class="card">You make being noticed look natural.</div>
+<div class="card">I like the calm authority you carry.</div>
+<div class="card">You radiate energy that sticks with people.</div>
+<div class="card">I notice the effortless way you dominate attention.</div>
+<div class="card">You move with smooth confidence that’s unforgettable.</div>
+<div class="card">I like how magnetic your presence feels.</div>
+<div class="card">You stand out without trying at all.</div>
+<div class="card">I notice the calm power in your aura.</div>
+<div class="card">You make attraction look effortless.</div>
+<div class="card">I like how composed and self-assured you are.</div>
+
+<div class="card">You’ve got charm, confidence, and style all in one.</div>
+<div class="card">I notice how easily people are drawn to you.</div>
+<div class="card">You make confidence look smooth and sexy.</div>
+<div class="card">I like how naturally you captivate attention.</div>
+<div class="card">You radiate energy that’s impossible to ignore.</div>
+<div class="card">I notice the effortless way you shine.</div>
+<div class="card">You make calm confidence feel magnetic.</div>
+<div class="card">I like how composed and poised you are.</div>
+<div class="card">You stand out in every room you enter.</div>
+<div class="card">I notice the subtle power in your presence.</div>
+
+<div class="card">You move with a smooth, captivating energy.</div>
+<div class="card">I like how naturally your confidence shows.</div>
+<div class="card">You radiate charm without effort.</div>
+<div class="card">I notice how magnetic your aura is.</div>
+<div class="card">You make attraction feel effortless.</div>
+<div class="card">I like the calm dominance you carry.</div>
+<div class="card">You move like someone who owns the room.</div>
+<div class="card">I notice the effortless way people notice you.</div>
+<div class="card">You’ve got a smooth, confident pull that’s addictive.</div>
+<div class="card">I like how self-assured and magnetic you are.</div>
+<div class="card">You make everyone else fade into the background.</div>
+<div class="card">I like how magnetic your presence feels.</div>
+<div class="card">You’ve got a calm power that’s impossible to ignore.</div>
+<div class="card">I notice how effortlessly you pull attention.</div>
+<div class="card">You carry yourself with smooth confidence.</div>
+<div class="card">I like how natural your charm is.</div>
+<div class="card">You radiate a subtle, irresistible aura.</div>
+<div class="card">I notice the calm dominance in your presence.</div>
+<div class="card">You make confidence feel sexy and effortless.</div>
+<div class="card">I like how easily people gravitate toward you.</div>
+
+<div class="card">You move like someone who’s in control of every room.</div>
+<div class="card">I notice the effortless allure in your energy.</div>
+<div class="card">You make charm feel natural.</div>
+<div class="card">I like how confident and smooth you seem.</div>
+<div class="card">You’ve got a rare, magnetic pull.</div>
+<div class="card">I notice how people can’t ignore your presence.</div>
+<div class="card">You radiate calm and smooth confidence.</div>
+<div class="card">I like how natural your energy feels.</div>
+<div class="card">You move like you already own the space.</div>
+<div class="card">I notice how effortlessly charm comes to you.</div>
+
+<div class="card">You make being noticed look natural.</div>
+<div class="card">I like the calm authority you carry.</div>
+<div class="card">You radiate energy that sticks with people.</div>
+<div class="card">I notice the effortless way you dominate attention.</div>
+<div class="card">You move with smooth confidence that’s unforgettable.</div>
+<div class="card">I like how magnetic your presence feels.</div>
+<div class="card">You stand out without trying at all.</div>
+<div class="card">I notice the calm power in your aura.</div>
+<div class="card">You make attraction look effortless.</div>
+<div class="card">I like how composed and self-assured you are.</div>
+
+<div class="card">You’ve got charm, confidence, and style all in one.</div>
+<div class="card">I notice how easily people are drawn to you.</div>
+<div class="card">You make confidence look smooth and sexy.</div>
+<div class="card">I like how naturally you captivate attention.</div>
+<div class="card">You radiate energy that’s impossible to ignore.</div>
+<div class="card">I notice the effortless way you shine.</div>
+<div class="card">You make calm confidence feel magnetic.</div>
+<div class="card">I like how composed and poised you are.</div>
+<div class="card">You stand out in every room you enter.</div>
+<div class="card">I notice the subtle power in your presence.</div>
+
+<div class="card">You move with a smooth, captivating energy.</div>
+<div class="card">I like how naturally your confidence shows.</div>
+<div class="card">You radiate charm without effort.</div>
+<div class="card">I notice how magnetic your aura is.</div>
+<div class="card">You make attraction feel effortless.</div>
+<div class="card">I like the calm dominance you carry.</div>
+<div class="card">You move like someone who owns the room.</div>
+<div class="card">I notice the effortless way people notice you.</div>
+<div class="card">You’ve got a smooth, confident pull that’s addictive.</div>
+<div class="card">I like how self-assured and magnetic you are.</div>
+
+
+</div>
+
+<div class="desc">
+Confident rizz is rooted in self-belief and presence. These lines reflect certainty, strength,
+and calm dominance. Confidence doesn’t need approval or validation — it simply exists.
+Use these lines when you want to lead the conversation, command attention naturally,
+and express assurance without arrogance. True confidence is quiet, grounded, and impossible
+to ignore.
+</div>
+
+<script>
+const burger=document.getElementById('burger');
+const menu=document.getElementById('menu');
+
+burger.addEventListener('click',e=>{
+  menu.classList.toggle('active');
+  e.stopPropagation();
+});
+
+document.addEventListener('click',e=>{
+  if(!menu.contains(e.target) && !burger.contains(e.target)){
+    menu.classList.remove('active');
+  }
+});
+
+menu.querySelectorAll('a,button').forEach(el=>{
+  el.addEventListener('click',()=>menu.classList.remove('active'));
+});
+
+function toggleMode(){
+  document.body.classList.toggle('light-mode');
+}
+</script>
+
+</body>
+</html>

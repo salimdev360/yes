@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pickup Lines — Rizz Lines</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  font-family:Poppins,sans-serif;
+  padding-top:80px;
+  background:radial-gradient(circle at top,#1b1745,#0f0c29);
+  color:#fff;
+  transition:.6s;
+}
+body.light-mode{
+  background:radial-gradient(circle at top,#e6e4ff,#ffe3f1);
+  color:#111;
+}
+
+/* HEADER */
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  height:70px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 20px;
+  background:rgba(15,12,41,.95);
+  backdrop-filter:blur(12px);
+  z-index:1000;
+}
+.brand{
+  font-weight:700;
+  font-size:20px;
+  background:linear-gradient(90deg,#ff79c6,#7c7cff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* BURGER */
+.burger{width:30px;cursor:pointer}
+.burger span{
+  display:block;
+  height:3px;
+  margin:6px 0;
+  background:#fff;
+  border-radius:10px;
+}
+body.light-mode .burger span{background:#111}
+
+/* MENU */
+.menu{
+  position:fixed;
+  top:0;left:-100%;
+  width:260px;
+  height:100vh;
+  padding:90px 20px;
+  background:linear-gradient(180deg,#0f0c29,#1b1745);
+  transition:.4s;
+}
+.menu.active{left:0}
+.menu a,.menu button{
+  display:block;
+  width:100%;
+  margin-bottom:14px;
+  padding:14px;
+  border:none;
+  border-radius:14px;
+  background:none;
+  color:#fff;
+  font-weight:600;
+  cursor:pointer;
+}
+.menu a:hover,.menu button:hover{
+  transform:translateX(6px);
+  color:#ff79c6;
+}
+
+/* PAGE TITLE */
+h1{
+  text-align:center;
+  margin:30px 20px 10px;
+  font-size:2.4em;
+}
+.subtitle{
+  text-align:center;
+  opacity:.85;
+  margin-bottom:30px;
+}
+
+/* CARDS */
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:24px;
+}
+.card{
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(14px);
+  border-radius:24px;
+  padding:28px;
+  transition:.35s;
+}
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 25px 50px rgba(0,0,0,.45);
+}
+.card h3{
+  margin-bottom:12px;
+  color:#ff79c6;
+}
+
+/* FOOTER / EXPLAIN */
+.explain{
+  max-width:900px;
+  margin:50px auto;
+  background:rgba(255,255,255,.07);
+  backdrop-filter:blur(12px);
+  padding:28px;
+  border-radius:22px;
+  line-height:1.7;
+  text-align:center;
+}
+body.light-mode .card,
+body.light-mode .explain{
+  background:rgba(255,255,255,.4);
+}
+.back-btn{
+  display:inline-block;
+  margin:20px;
+  padding:12px 28px;
+  background:linear-gradient(45deg,#7c7cff,#ff79c6);
+  color:#fff;
+  font-weight:600;
+  border-radius:50px;
+  text-decoration:none;
+  transition:.3s;
+}
+.back-btn:hover{
+  transform:scale(1.05);
+  opacity:.9;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="burger" id="burger">
+    <span></span><span></span><span></span>
+  </div>
+  <div class="brand">💘 Pickup Lines</div>
+   <div class="burger" id="burger">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<nav class="menu" id="menu">
+  <a href="lforth.html">Home</a>
+  <a href="zrizzlines.html">Rizz Lines</a>
+  <a href="tipsandadvise.html">Tips & Advice</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="ncontacts.html">Contact</a>
+  <button onclick="toggleMode()">Light / Dark Mode</button>
+</nav>
+
+<!-- Back Button -->
+<div style="text-align:center; margin-top:120px;">
+  <a href="lforth.html" class="back-btn">⬅ Back to Main</a>
+</div>
+
+<h1>Pickup Lines to Charm</h1>
+<p class="subtitle">Use them smartly — confidence beats script</p>
+
+<div class="container">
+  <div class="card">
+    <h3>Are You a Magician?</h3>
+    <p>Because whenever I look at you, everyone else disappears.</p>
+  </div>
+
+  <div class="card">
+    <h3>Do You Have a Map?</h3>
+    <p>I just got lost in your eyes.</p>
+  </div>
+
+  <div class="card">
+    <h3>Is Your Name Wi-Fi?</h3>
+    <p>Because I feel a connection.</p>
+  </div>
+
+  <div class="card">
+    <h3>Are You French?</h3>
+    <p>Because Eiffel for you.</p>
+  </div>
+  
+
+  <div class="card">
+    <h3>If You Were a Vegetable</h3>
+    <p>You’d be a cute-cumber.</p>
+  </div>
+
+  <div class="card">
+    <h3>Time Traveler</h3>
+    <p>Because I see you in my future.</p>
+  </div>
+
+  <div class="card">
+    <h3>You Must Be Tired</h3>
+    <p>Because you’ve been running through my mind all day.</p>
+  </div>
+
+  <div class="card">
+    <h3>Are You Copper & Tellurium?</h3>
+    <p>Because you’re Cu-Te.</p>
+  </div>
+<div class="card">
+  <h3>If You Were a Vegetable</h3>
+  <p>You’d be a cute-cumber.</p>
+</div>
+
+<div class="card">
+  <h3>Time Traveler</h3>
+  <p>Because I see you in my future.</p>
+</div>
+
+<div class="card">
+  <h3>You Must Be Tired</h3>
+  <p>Because you’ve been running through my mind all day.</p>
+</div>
+
+<div class="card">
+  <h3>Are You Copper & Tellurium?</h3>
+  <p>Because you’re Cu-Te.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Planet?</h3>
+  <p>Because my world revolves around you.</p>
+</div>
+
+<div class="card">
+  <h3>Do You Have a Map?</h3>
+  <p>I keep getting lost in your smile.</p>
+</div>
+
+<div class="card">
+  <h3>Are You Chocolate?</h3>
+  <p>Because life is sweeter with you.</p>
+</div>
+
+<div class="card">
+  <h3>You Must Be Gravity</h3>
+  <p>Because you’re pulling me in.</p>
+</div>
+
+<div class="card">
+  <h3>Are You an Angel?</h3>
+  <p>Because heaven is missing one.</p>
+</div>
+
+<div class="card">
+  <h3>Snowflake Kisses</h3>
+  <p>If kisses were snowflakes, I’d send you a blizzard.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Rainbow?</h3>
+  <p>Because you bring color to my life.</p>
+</div>
+
+<div class="card">
+  <h3>Do You Have a Name?</h3>
+  <p>Or can I call you mine?</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Star?</h3>
+  <p>Because I see you shining from afar.</p>
+</div>
+
+<div class="card">
+  <h3>You Must Be the Ocean</h3>
+  <p>Because I’m lost at sea in your eyes.</p>
+</div>
+
+<div class="card">
+  <h3>Are You Coffee?</h3>
+  <p>Because you make my mornings better.</p>
+</div>
+
+<div class="card">
+  <h3>If I Were a Cat</h3>
+  <p>I’d spend all 9 lives with you.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Key?</h3>
+  <p>Because you unlock my heart.</p>
+</div>
+
+<div class="card">
+  <h3>You Must Be a Comet</h3>
+  <p>Because you light up my sky.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Camera?</h3>
+  <p>Every time I see you, I smile.</p>
+</div>
+
+<div class="card">
+  <h3>Do You Believe in Love at First Sight?</h3>
+  <p>Or should I walk by again?</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Magician?</h3>
+  <p>Because every moment with you is magical.</p>
+</div>
+
+<div class="card">
+  <h3>You Must Be Fire</h3>
+  <p>Because you set my heart ablaze.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Lighthouse?</h3>
+  <p>Because you guide me through the storm.</p>
+</div>
+
+<div class="card">
+  <h3>If You Were a Song</h3>
+  <p>You’d be my favorite melody.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Book?</h3>
+  <p>Because I can’t put you down.</p>
+</div>
+
+<div class="card">
+  <h3>You Must Be a Diamond</h3>
+  <p>Because you shine so bright.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Treasure?</h3>
+  <p>Because I’ve been searching for you.</p>
+</div>
+
+<div class="card">
+  <h3>Do You Have a Compass?</h3>
+  <p>Because you always point me to happiness.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Candle?</h3>
+  <p>Because you light up the dark.</p>
+</div>
+
+<div class="card">
+  <h3>You Must Be Starlight</h3>
+  <p>Because you brighten my night.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Butterfly?</h3>
+  <p>Because you make my heart flutter.</p>
+</div>
+
+<div class="card">
+  <h3>If I Were a Painter</h3>
+  <p>I’d paint my world with you.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Magnet?</h3>
+  <p>Because I’m attracted to you.</p>
+</div>
+
+<div class="card">
+  <h3>Do You Have a Spark Plug?</h3>
+  <p>Because you ignite my heart.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Pearl?</h3>
+  <p>Because you’re rare and beautiful.</p>
+</div>
+
+<div class="card">
+  <h3>You Must Be a Melody</h3>
+  <p>Because you’re stuck in my head.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Flame?</h3>
+  <p>Because you light up my soul.</p>
+</div>
+
+<div class="card">
+  <h3>Do You Have a Mirror?</h3>
+  <p>Because I see my future with you.</p>
+</div>
+<div class="card">
+  <h3>Are You a Rainbow?</h3>
+  <p>Because you appear after every storm in my heart.</p>
+</div>
+
+<div class="card">
+  <h3>If You Were a Star</h3>
+  <p>You’d be the brightest in my sky.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Puzzle?</h3>
+  <p>Because I feel complete with you.</p>
+</div>
+
+<div class="card">
+  <h3>You Must Be a Lighthouse</h3>
+  <p>Because you guide me to safe shores.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Firework?</h3>
+  <p>Because you make my heart explode with joy.</p>
+</div>
+
+<div class="card">
+  <h3>If You Were a Flower</h3>
+  <p>You’d be a rose in full bloom.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Candle?</h3>
+  <p>Because you brighten every dark corner of my life.</p>
+</div>
+
+<div class="card">
+  <h3>You Must Be a Song</h3>
+  <p>Because you play on repeat in my mind.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Treasure?</h3>
+  <p>Because I feel lucky just finding you.</p>
+</div>
+
+<div class="card">
+  <h3>If I Were a Poet</h3>
+  <p>I’d write all my verses about you.</p>
+</div>
+
+<div class="card">
+  <h3>Are You Gravity?</h3>
+  <p>Because I can’t help falling for you.</p>
+</div>
+
+<div class="card">
+  <h3>Do You Have a Map?</h3>
+  <p>Because I keep getting lost in your eyes.</p>
+</div>
+
+<div class="card">
+  <h3>You Must Be the Sun</h3>
+  <p>Because you light up my entire day.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Cloud?</h3>
+  <p>Because you make everything feel soft and dreamy.</p>
+</div>
+
+<div class="card">
+  <h3>If You Were a Drink</h3>
+  <p>You’d be a perfect blend of sweet and strong.</p>
+</div>
+
+<div class="card">
+  <h3>Are You Music?</h3>
+  <p>Because you make my heart dance.</p>
+</div>
+
+<div class="card">
+  <h3>You Must Be Chocolate</h3>
+  <p>Because I can’t resist your sweetness.</p>
+</div>
+
+<div class="card">
+  <h3>Are You the Moon?</h3>
+  <p>Because you make my darkest nights beautiful.</p>
+</div>
+
+<div class="card">
+  <h3>If I Were a Painter</h3>
+  <p>I’d paint every sky with your colors.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Key?</h3>
+  <p>Because you unlock something special in me.</p>
+</div>
+
+<div class="card">
+  <h3>You Must Be Coffee</h3>
+  <p>Because you keep me awake with excitement.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Mirror?</h3>
+  <p>Because I see my happiness reflected in you.</p>
+</div>
+
+<div class="card">
+  <h3>If You Were a Star</h3>
+  <p>You’d guide my every step in the night.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Magnet?</h3>
+  <p>Because I’m irresistibly drawn to you.</p>
+</div>
+
+<div class="card">
+  <h3>You Must Be Lightning</h3>
+  <p>Because you strike me with awe every time.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Dream?</h3>
+  <p>Because reality feels better when you’re near.</p>
+</div>
+
+<div class="card">
+  <h3>If I Were a Writer</h3>
+  <p>Every story would have you as the hero.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Starfish?</h3>
+  <p>Because you’ve stolen my heart in every way.</p>
+</div>
+
+<div class="card">
+  <h3>You Must Be the Ocean</h3>
+  <p>Because I’m lost in your depths.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Snowflake?</h3>
+  <p>Because you’re unique and magical.</p>
+</div>
+
+<div class="card">
+  <h3>If You Were a Movie</h3>
+  <p>It’d be a romantic masterpiece.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Star Map?</h3>
+  <p>Because you show me the way to love.</p>
+</div>
+
+<div class="card">
+  <h3>You Must Be the Breeze</h3>
+  <p>Because you make everything feel lighter.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Rainbow?</h3>
+  <p>Because you bring color into my life.</p>
+</div>
+
+<div class="card">
+  <h3>If I Were a Chef</h3>
+  <p>I’d cook every dish inspired by you.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Pearl?</h3>
+  <p>Because your value is beyond words.</p>
+</div>
+
+<div class="card">
+  <h3>You Must Be a Candle</h3>
+  <p>Because you brighten the darkest rooms.</p>
+</div>
+
+<div class="card">
+  <h3>Are You Lightning?</h3>
+  <p>Because my heart races when you’re near.</p>
+</div>
+
+<div class="card">
+  <h3>If You Were a Dessert</h3>
+  <p>You’d be irresistible and sweet.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Balloon?</h3>
+  <p>Because you lift me higher than I’ve ever been.</p>
+</div>
+
+<div class="card">
+  <h3>You Must Be a Lighthouse</h3>
+  <p>Because I’m guided by your light.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Compass?</h3>
+  <p>Because you point me in the right direction.</p>
+</div>
+
+<div class="card">
+  <h3>If You Were a Book</h3>
+  <p>I’d read you over and over again.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Potion?</h3>
+  <p>Because you’ve enchanted me completely.</p>
+</div>
+
+<div class="card">
+  <h3>You Must Be a Cloud</h3>
+  <p>Because you make my days feel lighter.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Star Cluster?</h3>
+  <p>Because I can’t stop staring at your brilliance.</p>
+</div>
+
+<div class="card">
+  <h3>If You Were a Song</h3>
+  <p>You’d be my favorite track on repeat.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Sunset?</h3>
+  <p>Because every moment with you is beautiful.</p>
+</div>
+
+<div class="card">
+  <h3>You Must Be a Rainbow</h3>
+  <p>Because my world is brighter with you.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Spark?</h3>
+  <p>Because you light up my life instantly.</p>
+</div>
+
+<div class="card">
+  <h3>If I Were a Star</h3>
+  <p>I’d shine just to be near you.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Treasure Chest?</h3>
+  <p>Because finding you feels like hitting gold.</p>
+</div>
+
+<div class="card">
+  <h3>You Must Be Fireworks</h3>
+  <p>Because you make my heart explode with excitement.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Feather?</h3>
+  <p>Because you make my soul feel light.</p>
+</div>
+
+<div class="card">
+  <h3>If You Were a Cloud</h3>
+  <p>You’d float softly into my heart.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Candlelight?</h3>
+  <p>Because you make everything warm and cozy.</p>
+</div>
+
+<div class="card">
+  <h3>You Must Be the Moonlight</h3>
+  <p>Because you guide me through dark nights.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Starry Sky?</h3>
+  <p>Because I could look at you forever.</p>
+</div>
+
+<div class="card">
+  <h3>If You Were a Dream</h3>
+  <p>You’d be the sweetest one I’ve ever had.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Diamond?</h3>
+  <p>Because your sparkle is unmatched.</p>
+</div>
+
+<div class="card">
+  <h3>You Must Be a Rose</h3>
+  <p>Because you’re the most beautiful in the garden.</p>
+</div>
+
+<div class="card">
+  <h3>Are You a Rainbow?</h3>
+  <p>Because you appear
+
+  <div class="card">
+    <h3>Do You Believe in Love at First Sight?</h3>
+    <p>Or should I walk by again?</p>
+  </div>
+
+  <div class="card">
+    <h3>Excuse Me</h3>
+    <p>But I think you dropped something: my jaw.</p>
+  </div>
+</div>
+
+<section class="explain">
+  <strong>About Pickup Lines</strong><br><br>
+  Pickup lines are fun, creative ways to break the ice, but they work best when combined with confidence and genuine personality. This page gives you a variety of lines, from funny to flirty, that you can use in social settings, chats, or social media. Remember, delivery and context are key — never force a line. Rizz isn’t just words, it’s your energy, presence, and timing. Experiment, adapt, and have fun while being yourself.
+</section>
+
+<script>
+const burger=document.getElementById('burger');
+const menu=document.getElementById('menu');
+
+burger.onclick=e=>{
+  menu.classList.toggle('active');
+  e.stopPropagation();
+};
+
+document.onclick=e=>{
+  if(!menu.contains(e.target)&&!burger.contains(e.target)){
+    menu.classList.remove('active');
+  }
+};
+
+function toggleMode(){
+  document.body.classList.toggle('light-mode');
+}
+</script>
+
+</body>
+</html>

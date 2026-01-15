@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heart Broken Bios</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+  margin:0;font-family:Poppins;padding-top:80px;
+  background:radial-gradient(circle at top,#450a0a,#020617);
+  color:#fff;transition:.4s;
+}
+body.light-mode{
+  background:radial-gradient(circle at top,#fff1f2,#ffe4e6);
+  color:#450a0a;
+}
+header{
+  position:fixed;top:0;width:100%;height:70px;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 20px;background:rgba(2,6,23,.9);
+  backdrop-filter:blur(12px);z-index:1000;
+}
+.brand{
+  font-weight:700;font-size:20px;
+  background:linear-gradient(90deg,#fb7185,#fecdd3);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+}
+.burger{width:30px;cursor:pointer}
+.burger span{display:block;height:3px;margin:6px 0;background:#fff;border-radius:10px}
+body.light-mode .burger span{background:#450a0a}
+
+.menu{
+  position:fixed;top:0;left:-100%;
+  width:260px;height:100vh;padding:90px 20px;
+  background:linear-gradient(180deg,#020617,#450a0a);
+  transition:.4s;z-index:999;
+}
+.menu.active{left:0}
+.menu a,.menu button{
+  display:block;width:100%;padding:14px;margin-bottom:14px;
+  border:none;border-radius:14px;background:none;
+  color:#fecdd3;font-weight:600;text-align:center;cursor:pointer;
+}
+.menu a:hover,.menu button:hover{transform:translateX(6px);color:#fb7185}
+
+.back{text-align:center;margin:25px 0}
+.back a{
+  padding:14px 36px;border-radius:40px;
+  background:linear-gradient(90deg,#fb7185,#fecdd3);
+  color:#020617;font-weight:600;text-decoration:none;
+}
+
+h1{text-align:center;margin:20px;font-size:2.2em}
+
+.cards{
+  max-width:900px;margin:auto;padding:20px;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:22px;
+}
+.card{
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(14px);
+  border-radius:22px;padding:26px;
+  transition:.35s;font-size:1.05em;
+}
+.card:hover{transform:translateY(-6px);box-shadow:0 25px 50px rgba(0,0,0,.45)}
+</style>
+</head>
+
+<body>
+<header>
+  <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  <div class="brand">💔 Heart Broken</div>
+  <div class="burger" id="burger"><span></span><span></span><span></span></div>
+</header>
+
+<nav class="menu" id="menu">
+  <a href="oabout.html">About</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="ncontacts.html">Contact</a>
+  <button onclick="toggleMode()">Light / Dark</button>
+</nav>
+
+<div class="back"><a href="zigbio.html">⬅ Back</a></div>
+
+<h1>Healing Era Bios</h1>
+
+<div class="cards">
+
+
+  <div class="card">Healing quietly.</div>
+  <div class="card">Soft heart, stronger boundaries.</div>
+  <div class="card">Loved deeply. Learned deeply.</div>
+  <div class="card">Pain taught me peace.</div>
+  <div class="card">Still standing, just wiser.</div>
+  <div class="card">Growth doesn’t need noise.</div>
+  <div class="card">Healing quietly.</div>
+<div class="card">Soft heart, stronger boundaries.</div>
+<div class="card">Loved deeply. Learned deeply.</div>
+<div class="card">Heart bruised, not broken.</div>
+<div class="card">Lost but slowly finding myself.</div>
+<div class="card">Mending, one day at a time.</div>
+<div class="card">Silent strength, quiet healing.</div>
+<div class="card">Pain teaches, heart listens.</div>
+<div class="card">Broken pieces, building me.</div>
+<div class="card">Love came, love left, I remain.</div>
+
+<div class="card">Heart heavy, soul steady.</div>
+<div class="card">Fading hurt, growing hope.</div>
+<div class="card">Bruised but not defeated.</div>
+<div class="card">Learning to love myself again.</div>
+<div class="card">Silent heart, loud lessons.</div>
+<div class="card">Tears today, strength tomorrow.</div>
+<div class="card">Falling apart, slowly rising.</div>
+<div class="card">Scarred but not shattered.</div>
+<div class="card">Lost love, found me.</div>
+<div class="card">Heart hurts, soul heals.</div>
+
+<div class="card">Painful endings, better beginnings.</div>
+<div class="card">Broken heart, strong spirit.</div>
+<div class="card">Taught by love, hardened by loss.</div>
+<div class="card">Healing in progress.</div>
+<div class="card">Quietly reclaiming myself.</div>
+<div class="card">Love leaves, lessons stay.</div>
+<div class="card">Mending soul, one heartbeat at a time.</div>
+<div class="card">Bruised hearts still beat.</div>
+<div class="card">Soft but unbroken.</div>
+<div class="card">Learning from goodbye.</div>
+
+<div class="card">Pain fades, self-love remains.</div>
+<div class="card">Heart aching, mind awake.</div>
+<div class="card">Lost love, gained wisdom.</div>
+<div class="card">Silent tears, loud growth.</div>
+<div class="card">Healing slowly, living fully.</div>
+<div class="card">Wounded but wiser.</div>
+<div class="card">Broken, yet beautiful.</div>
+<div class="card">Falling down, rising stronger.</div>
+<div class="card">Tears water the soul.</div>
+<div class="card">Heart heavy, eyes forward.</div>
+
+<div class="card">Letting go, moving on.</div>
+<div class="card">Shattered, still shining.</div>
+<div class="card">Soft heart, strong armor.</div>
+<div class="card">Pain today, power tomorrow.</div>
+<div class="card">Learning to love my scars.</div>
+<div class="card">Heart ache, soul awake.</div>
+<div class="card">Broken but learning to bloom.</div>
+<div class="card">Mourning love, embracing me.</div>
+<div class="card">Silent heartbreak, loud growth.</div>
+<div class="card">Learning to smile again.</div>
+
+<div class="card">Past love, present healing.</div>
+<div class="card">Painful lessons, lasting strength.</div>
+<div class="card">Heart shattered, mind focused.</div>
+<div class="card">Soft soul, stronger boundaries.</div>
+<div class="card">Love lost, self found.</div>
+<div class="card">Mending quietly, living fully.</div>
+<div class="card">Bruised but brave.</div>
+<div class="card">Healing is my rebellion.</div>
+<div class="card">Lost love, found me.</div>
+<div class="card">Tears fade, lessons stay.</div>
+
+<div class="card">Heartbroken but hopeful.</div>
+<div class="card">Pain leaves, wisdom stays.</div>
+<div class="card">Love hurts, self-love heals.</div>
+<div class="card">Falling apart, growing strong.</div>
+<div class="card">Silent heartache, loud growth.</div>
+<div class="card">Bruised heart, resilient soul.</div>
+<div class="card">Healing, not hiding.</div>
+<div class="card">Scarred but surviving.</div>
+<div class="card">Soft heart, strong soul.</div>
+<div class="card">Learning from the ache.</div>
+
+<div class="card">Heart empty, mind full.</div>
+<div class="card">Pain teaches, love follows.</div>
+<div class="card">Falling slowly, rising steadily.</div>
+<div class="card">Lost in love, found myself.</div>
+<div class="card">Broken heart, growing mind.</div>
+<div class="card">Quiet tears, loud strength.</div>
+<div class="card">Love ended, growth continues.</div>
+<div class="card">Heart bruised, hope renewed.</div>
+<div class="card">Tears today, power tomorrow.</div>
+<div class="card">Mourning love, embracing life.</div>
+
+<div class="card">Soft heart, healed mind.</div>
+<div class="card">Pain passes, strength remains.</div>
+<div class="card">Learning to love again.</div>
+<div class="card">Heart heavy, spirit strong.</div>
+<div class="card">Broken pieces, whole soul.</div>
+<div class="card">Healing quietly, living loudly.</div>
+<div class="card">Heart hurt, mind alert.</div>
+<div class="card">Falling down, rising higher.</div>
+<div class="card">Love gone, wisdom stays.</div>
+<div class="card">Bruised but beautiful.</div>
+
+<div class="card">Heart shattered, hope intact.</div>
+<div class="card">Silent pain, strong soul.</div>
+<div class="card">Healing heart, peaceful mind.</div>
+<div class="card">Painful endings, brighter beginnings.</div>
+<div class="card">Broken but brave.</div>
+<div class="card">Love lost, self discovered.</div>
+<div class="card">Quiet healing, loud growth.</div>
+<div class="card">Tears fade, lessons remain.</div>
+<div class="card">Soft heart, brave mind.</div>
+<div class="card">Heart bruised, spirit rising.</div>
+
+<div class="card">Healing is a process, not a race.</div>
+<div class="card">Wounded but growing.</div>
+<div class="card">Falling apart, building strength.</div>
+<div class="card">Lost love, gained me.</div>
+<div class="card">Heart ache, mind awake.</div>
+<div class="card">Scarred but surviving.</div>
+<div class="card">Silent heartbreak, inner growth.</div>
+<div class="card">Broken heart, steady soul.</div>
+<div class="card">Pain fades, wisdom stays.</div>
+<div class="card">Healing quietly, loving fiercely.</div>
+<!-- BATCH 1 -->
+<div class="card">Healing quietly.</div>
+<div class="card">Soft heart, stronger boundaries.</div>
+<div class="card">Loved deeply. Learned deeply.</div>
+<div class="card">Heart bruised, not broken.</div>
+<div class="card">Lost but slowly finding myself.</div>
+<div class="card">Mending, one day at a time.</div>
+<div class="card">Silent strength, quiet healing.</div>
+<div class="card">Pain teaches, heart listens.</div>
+<div class="card">Broken pieces, building me.</div>
+<div class="card">Love came, love left, I remain.</div>
+<div class="card">Heart heavy, soul steady.</div>
+<div class="card">Fading hurt, growing hope.</div>
+<div class="card">Bruised but not defeated.</div>
+<div class="card">Learning to love myself again.</div>
+<div class="card">Silent heart, loud lessons.</div>
+<div class="card">Tears today, strength tomorrow.</div>
+<div class="card">Falling apart, slowly rising.</div>
+<div class="card">Scarred but not shattered.</div>
+<div class="card">Lost love, found me.</div>
+<div class="card">Heart hurts, soul heals.</div>
+<div class="card">Painful endings, better beginnings.</div>
+<div class="card">Broken heart, strong spirit.</div>
+<div class="card">Taught by love, hardened by loss.</div>
+<div class="card">Healing in progress.</div>
+<div class="card">Quietly reclaiming myself.</div>
+<div class="card">Love leaves, lessons stay.</div>
+<div class="card">Mending soul, one heartbeat at a time.</div>
+<div class="card">Bruised hearts still beat.</div>
+<div class="card">Soft but unbroken.</div>
+<div class="card">Learning from goodbye.</div>
+<div class="card">Pain fades, self-love remains.</div>
+<div class="card">Heart aching, mind awake.</div>
+<div class="card">Lost love, gained wisdom.</div>
+<div class="card">Silent tears, loud growth.</div>
+<div class="card">Healing slowly, living fully.</div>
+<div class="card">Wounded but wiser.</div>
+<div class="card">Broken, yet beautiful.</div>
+<div class="card">Falling down, rising stronger.</div>
+<div class="card">Tears water the soul.</div>
+<div class="card">Heart heavy, eyes forward.</div>
+<div class="card">Letting go, moving on.</div>
+<div class="card">Shattered, still shining.</div>
+<div class="card">Soft heart, strong armor.</div>
+<div class="card">Pain today, power tomorrow.</div>
+<div class="card">Learning to love my scars.</div>
+<div class="card">Heart ache, soul awake.</div>
+<div class="card">Broken but learning to bloom.</div>
+<div class="card">Mourning love, embracing me.</div>
+<div class="card">Silent heartbreak, loud growth.</div>
+<div class="card">Learning to smile again.</div>
+<div class="card">Past love, present healing.</div>
+<div class="card">Painful lessons, lasting strength.</div>
+<div class="card">Heart shattered, mind focused.</div>
+<div class="card">Soft soul, stronger boundaries.</div>
+<div class="card">Love lost, self found.</div>
+<div class="card">Mending quietly, living fully.</div>
+<div class="card">Bruised but brave.</div>
+<div class="card">Healing is my rebellion.</div>
+<div class="card">Lost love, found me.</div>
+<div class="card">Tears fade, lessons stay.</div>
+<div class="card">Heartbroken but hopeful.</div>
+<div class="card">Pain leaves, wisdom stays.</div>
+<div class="card">Love hurts, self-love heals.</div>
+<div class="card">Falling apart, growing strong.</div>
+<div class="card">Silent heartache, loud growth.</div>
+<div class="card">Bruised heart, resilient soul.</div>
+<div class="card">Healing, not hiding.</div>
+<div class="card">Scarred but surviving.</div>
+<div class="card">Soft heart, strong soul.</div>
+<div class="card">Learning from the ache.</div>
+<div class="card">Heart empty, mind full.</div>
+<div class="card">Pain teaches, love follows.</div>
+<div class="card">Falling slowly, rising steadily.</div>
+<div class="card">Lost in love, found myself.</div>
+<div class="card">Broken heart, growing mind.</div>
+<div class="card">Quiet tears, loud strength.</div>
+<div class="card">Love ended, growth continues.</div>
+<div class="card">Heart bruised, hope renewed.</div>
+<div class="card">Tears today, power tomorrow.</div>
+<div class="card">Mourning love, embracing life.</div>
+<div class="card">Soft heart, healed mind.</div>
+<div class="card">Pain passes, strength remains.</div>
+<div class="card">Learning to love again.</div>
+<div class="card">Heart heavy, spirit strong.</div>
+<div class="card">Broken pieces, whole soul.</div>
+<div class="card">Healing quietly, living loudly.</div>
+<div class="card">Heart hurt, mind alert.</div>
+<div class="card">Falling down, rising higher.</div>
+<div class="card">Love gone, wisdom stays.</div>
+<div class="card">Bruised but beautiful.</div>
+<div class="card">Heart shattered, hope intact.</div>
+<div class="card">Silent pain, strong soul.</div>
+<div class="card">Healing heart, peaceful mind.</div>
+<div class="card">Painful endings, brighter beginnings.</div>
+<div class="card">Broken but brave.</div>
+<div class="card">Love lost, self discovered.</div>
+<div class="card">Quiet healing, loud growth.</div>
+<div class="card">Tears fade, lessons remain.</div>
+<div class="card">Soft heart, brave mind.</div>
+<div class="card">Heart bruised, spirit rising.</div>
+<div class="card">Healing is a process, not a race.</div>
+<div class="card">Wounded but growing.</div>
+<div class="card">Falling apart, building strength.</div>
+<div class="card">Lost love, gained me.</div>
+<div class="card">Heart ache, mind awake.</div>
+<div class="card">Scarred but surviving.</div>
+<div class="card">Silent heartbreak, inner growth.</div>
+<div class="card">Broken heart, steady soul.</div>
+<div class="card">Pain fades, wisdom stays.</div>
+<div class="card">Healing quietly, loving fiercely.</div>
+
+<!-- BATCH 2 -->
+<div class="card">Soft heart, bold steps.</div>
+<div class="card">Bruised but unbroken.</div>
+<div class="card">Learning to trust again.</div>
+<div class="card">Love ended, self elevated.</div>
+<div class="card">Heart torn, soul mending.</div>
+<div class="card">Quiet strength, loud healing.</div>
+<div class="card">Heartbreak teaches patience.</div>
+<div class="card">Mending in solitude.</div>
+<div class="card">Scars show my story.</div>
+<div class="card">Fading pain, rising soul.</div>
+<div class="card">Love lost, lessons gained.</div>
+<div class="card">Broken but rebuilding.</div>
+<div class="card">Soft but resilient.</div>
+<div class="card">Healing is my superpower.</div>
+<div class="card">Painful memories, stronger self.</div>
+<div class="card">Tears water my growth.</div>
+<div class="card">Heart aching, mind learning.</div>
+<div class="card">Love left, self stayed.</div>
+<div class="card">Quietly stronger every day.</div>
+<div class="card">Bruised heart, steady mind.</div>
+<div class="card">Healing soul, open eyes.</div>
+<div class="card">Soft heart, tough lessons.</div>
+<div class="card">Love fades, I grow.</div>
+<div class="card">Silent pain, loud wisdom.</div>
+<div class="card">Heartbroken, not hopeless.</div>
+<div class="card">Scars remind me I survived.</div>
+<div class="card">Heart healed slowly.</div>
+<div class="card">Broken to beautiful.</div>
+<div class="card">Learning to smile again.</div>
+<div class="card">Pain passed, strength remains.</div>
+<div class="card">Heart mended, soul strong.</div>
+<div class="card">Lost love, gained strength.</div>
+<div class="card">Soft soul, resilient heart.</div>
+<div class="card">Heart hurt, lessons learned.</div>
+<div class="card">Healing at my pace.</div>
+<div class="card">Bruised but blossoming.</div>
+<div class="card">Painful past, peaceful present.</div>
+<div class="card">Tears fade, hope remains.</div>
+<div class="card">Soft heart, hard lessons.</div>
+<div class="card">Heartbroken, slowly thriving.</div>
+<div class="card">Silent pain, strong soul.</div>
+<div class="card">Wounded but awake.</div>
+<div class="card">Healing my own way.</div>
+<div class="card">Bruised heart, bright future.</div>
+<div class="card">Soft heart, brave soul.</div>
+<div class="card">Love gone, self found.</div>
+<div class="card">Pain teaches, heart listens.</div>
+<div class="card">Mending slowly, living fully.</div>
+<div class="card">Broken, still beautiful.</div>
+<div class="card">Heart healed, lessons kept.</div>
+<div class="card">Faded love, strong self.</div>
+<div class="card">Soft heart, strong mind.</div>
+<div class="card">Heartbroken but hopeful.</div>
+<div class="card">Silent healing, loud growth.</div>
+<div class="card">Wounds fade, wisdom stays.</div>
+<div class="card">Broken heart, brave spirit.</div>
+<div class="card">Healing quietly, loving fiercely.</div>
+<div class="card">Scarred but surviving.</div>
+<div class="card">Love lost, strength gained.</div>
+<div class="card">Heart hurting, soul thriving.</div>
+<div class="card">Silent tears, steady growth.</div>
+<div class="card">Mending heart, open mind.</div>
+<div class="card">Soft heart, resilient soul.</div>
+<div class="card">Bruised but unbroken.</div>
+<div class="card">Healing one step at a time.</div>
+<div class="card">Heart heavy, spirit rising.</div>
+<div class="card">Love ended, self healed.</div>
+<div class="card">Pain fades, courage grows.</div>
+<div class="card">Broken heart, strong soul.</div>
+<div class="card">Healing quietly, living loudly.</div>
+<div class="card">Heart hurting, mind learning.</div>
+<div class="card">Lost love, found strength.</div>
+<div class="card">Scarred but surviving.</div>
+<div class="card">Soft soul, bold heart.</div>
+<div class="card">Healing in silence.</div>
+<div class="card">Painful memories, peaceful present.</div>
+<div class="card">Tears fade, wisdom stays.</div>
+<div class="card">Heart mending, soul thriving.</div>
+<div class="card">Love gone, self found.</div>
+<div class="card">Soft heart, steady mind.</div>
+<div class="card">Bruised heart, bright future.</div>
+<div class="card">Healing slowly, living fully.</div>
+<div class="card">Silent heartbreak, inner strength.</div>
+<div class="card">Heart shattered, hope intact.</div>
+<div class="card">Love lost, lessons learned.</div>
+<div class="card">Pain fades, strength remains.</div>
+<div class="card">Soft heart, hard-earned wisdom.</div>
+<div class="card">Healing quietly, thriving openly.</div>
+<div class="card">Broken to beautiful.</div>
+<div class="card">Heart heavy, soul strong.</div>
+<div class="card">Learning to smile again.</div>
+<div class="card">Bruised but brave.</div>
+<div class="card">Healing at my own pace.</div>
+<div class="card">Heart hurt, mind awake.</div>
+<div class="card">Silent tears, loud growth.</div>
+<div class="card">Fading pain, rising soul.</div>
+<div class="card">Soft heart, resilient spirit.</div>
+<div class="card">Mending quietly, living boldly.</div>
+<div class="card">Love ended, self discovered.</div>
+<div class="card">Heartbroken, not hopeless.</div>
+<div class="card">Bruised but blossoming.</div>
+<div class="card">Healing one heartbeat at a time.</div>
+<div class="card">Pain teaches, soul listens.</div>
+<div class="card">Silent heartbreak, steady growth.</div>
+<div class="card">Heart scarred, mind awake.</div>
+<div class="card">Fading love, rising self.</div>
+<div class="card">Soft heart, strong spirit.</div>
+<div class="card">Bruised soul, brighter future.</div>
+<div class="card">Healing quietly, thriving daily.</div>
+<div class="card">Heart hurt, lessons learned.</div>
+<div class="card">Broken but beautiful.</div>
+<div class="card">Love lost, strength found.</div>
+<div class="card">Silent pain, loud wisdom.</div>
+<div class="card">Soft heart, bold soul.</div>
+<div class="card">Heart mending, mind healing.</div>
+<div class="card">Pain fades, courage grows.</div>
+<div class="card">Healing at my pace, not yours.</div>
+<div class="card">Scarred but surviving.</div>
+<div class="card">Love gone, self discovered.</div>
+<div class="card">Bruised heart, bright soul.</div>
+<div class="card">Silent tears, steady rise.</div>
+<div class="card">Heartbroken, slowly thriving.</div>
+<div class="card">Soft heart, strong mind.</div>
+<div class="card">Mending quietly, living fully.</div>
+<div class="card">Fading hurt, rising hope.</div>
+<div class="card">Heart heavy, soul strong.</div>
+<div class="card">Broken pieces, whole self.</div>
+<div class="card">Healing one day at a time.</div>
+<div class="card">Love left, lessons remain.</div>
+<div class="card">Bruised but brave.</div>
+<div class="card">Soft heart, resilient mind.</div>
+<div class="card">Silent heartbreak, steady soul.</div>
+<div class="card">Heart shattered, hope alive.</div>
+<div class="card">Painful memories, peaceful heart.</div>
+<div class="card">Healing slowly, thriving boldly.</div>
+<div class="card">Heart heavy, mind awake.</div>
+<div class="card">Love lost, self reclaimed.</div>
+<div class="card">Soft soul, strong heart.</div>
+<div class="card">Bruised but building strength.</div>
+<div class="card">Silent tears, inner growth.</div>
+<div class="card">Heart hurt, soul mending.</div>
+<div class="card">Healing quietly, loving fully.</div>
+<div class="card">Broken but stronger.</div>
+<div class="card">Love faded, self found.</div>
+<div class="card">Soft heart, brave soul.</div>
+<div class="card">Bruised but resilient.</div>
+<div class="card">Heart scarred, mind awake.</div>
+<div class="card">Healing at my pace.</div>
+<div class="card">Pain fades, strength remains.</div>
+<div class="card">Heart heavy, soul rising.</div>
+<div class="card">Broken, but beautiful.</div>
+<div class="card">Silent heartbreak, steady growth.</div>
+<div class="card">Love lost, wisdom gained.</div>
+<div class="card">Soft heart, strong spirit.</div>
+<div class="card">Mending quietly, living boldly.</div>
+<div class="card">Bruised but flourishing.</div>
+<div class="card">Heart hurt, lessons learned.</div>
+<div class="card">Healing slowly, thriving fully.</div>
+<div class="card">Fading pain, brighter self.</div>
+<div class="card">Soft soul, bold heart.</div>
+<div class="card">Heartbroken, slowly healing.</div>
+<div class="card">Silent pain, steady growth.</div>
+<div class="card">Love ended, self found.</div>
+<div class="card">Bruised but brave.</div>
+<div class="card">Heart scarred, soul strong.</div>
+<div class="card">Healing quietly, living fully.</div>
+<div class="card">Pain teaches, heart grows.</div>
+<div class="card">Soft heart, resilient mind.</div>
+<div class="card">Broken, but building strength.</div>
+<div class="card">Love faded, self discovered.</div>
+<div class="card">Silent heartbreak, steady soul.</div>
+<div class="card">Heart mending, mind healing.</div>
+<div class="card">Healing one heartbeat at a time.</div>
+<div class="card">Bruised but flourishing.</div>
+<div class="card">Soft heart, strong spirit.</div>
+<div class="card">Heart hurt, lessons learned.</div>
+<div class="card">Mending quietly, thriving daily.</div>
+<div class="card">Fading love, rising self.</div>
+<div class="card">Heartbroken, slowly thriving.</div>
+<div class="card">Bruised but resilient.</div>
+<div class="card">Soft heart, brave soul.</div>
+<div class="card">Healing quietly, living boldly.</div>
+<div class="card">Love gone, self reclaimed.</div>
+<div class="card">Heart scarred, soul strong.</div>
+<div class="card">Silent tears, steady growth.</div>
+<div class="card">Broken but stronger.</div>
+<div class="card">Pain fades, strength remains.</div>
+<div class="card">Heart heavy, mind awake.</div>
+<div class="card">Soft soul, resilient heart.</div>
+<div class="card">Mending quietly, thriving fully.</div>
+<div class="card">Bruised but beautiful.</div>
+<div class="card">Heart hurt, lessons learned.</div>
+<div class="card">Healing slowly, thriving boldly.</div>
+<div class="card">Love lost, wisdom gained.</div>
+<div class="card">Soft heart, strong spirit.</div>
+<div class="card">Broken, but growing.</div>
+<div class="card">Heart heavy, soul strong.</div>
+<div class="card">Silent heartbreak, steady rise.</div>
+<div class="card">Fading pain, brighter self.</div>
+<div class="card">Healing quietly, living fully.</div>
+<div class="card">Bruised but thriving.</div>
+<div class="card">Soft heart, bold soul.</div>
+<div class="card">Heart scarred, mind awake.</div>
+<div class="card">Love ended, self found.</div>
+<div class="card">Pain fades, courage grows.</div>
+<div class="card">Healing one step at a time.</div>
+<div class="card">Heart hurt, soul thriving.</div>
+<div class="card">Silent tears, steady growth.</div>
+<div class="card">Bruised but resilient.</div>
+<div class="card">Soft heart, strong mind.</div>
+<div class="card">Heart mending, lessons learned.</div>
+<div class="card">Healing quietly, thriving fully.</div>
+<div class="card">Love gone, self reclaimed.</div>
+<div class="card">Heartbroken, slowly healing.</div>
+<div class="card">Bruised but brave.</div>
+<div class="card">Soft heart, resilient soul.</div>
+<div class="card">Healing one heartbeat at a time.</div>
+<div class="card">Pain fades, wisdom stays.</div>
+<div class="card">Heart heavy, soul strong.</div>
+<div class="card">Broken but building strength.</div>
+<div class="card">Silent heartbreak, steady soul.</div>
+<div class="card">Love lost, self found.</div>
+<div class="card">Soft heart, strong spirit.</div>
+<div class="card">Mending quietly, thriving daily.</div>
+<div class="card">Bruised but flourishing.</div>
+<div class="card">Heart hurt, lessons learned.</div>
+<div class="card">Healing slowly, living fully.</div>
+<div class="card">Fading pain, brighter self.</div>
+<div class="card">Soft soul, bold heart.</div>
+<div class="card">Heartbroken, slowly thriving.</div>
+<div class="card">Silent pain, steady growth.</div>
+<div class="card">Love ended, self discovered.</div>
+<div class="card">Bruised but resilient.</div>
+<div class="card">Soft heart, brave soul.</div>
+<div class="card">Healing quietly, living boldly.</div>
+<div class="card">Love gone, wisdom gained.</div>
+<div class="card">Heart scarred, soul strong.</div>
+<div class="card">Silent tears, steady rise.</div>
+<div class="card">Broken but stronger.</div>
+<div class="card">Pain fades, strength remains.</div>
+<div class="card">Heart heavy, mind awake.</div>
+<div class="card">Soft soul, resilient heart.</div>
+<div class="card">Mending quietly, thriving fully.</div>
+<div class="card">Bruised but beautiful.</div>
+<div class="card">Heart hurt, lessons learned.</div>
+<div class="card">Healing slowly, thriving boldly.</div>
+<div class="card">Love lost, wisdom gained.</div>
+<div class="card">Soft heart, strong spirit.</div>
+<div class="card">Broken, but growing.</div>
+<div class="card">Heart heavy, soul strong.</div>
+<div class="card">Silent heartbreak, steady rise.</div>
+<div class="card">Fading pain, brighter self.</div>
+<div class="card">Healing quietly, living fully.</div>
+<div class="card">Bruised but thriving.</div>
+<div class="card">Soft heart, bold soul.</div>
+<div class="card">Heart scarred, mind awake.</div>
+<div class="card">Love ended, self found.</div>
+<div class="card">Pain fades, courage grows.</div>
+<div class="card">Healing one step at a time.</div>
+<div class="card">Heart hurt, soul thriving.</div>
+<div class="card">Silent tears, steady growth.</div>
+<div class="card">Bruised but resilient.</div>
+<div class="card">Soft heart, strong mind.</div>
+<div class="card">Heart mending, lessons learned.</div>
+<div class="card">Healing quietly, thriving fully.</div>
+<div class="card">Love gone, self reclaimed.</div>
+<div class="card">Heartbroken, slowly healing.</div>
+<div class="card">Bruised but brave.</div>
+<div class="card">Soft heart, resilient soul.</div>
+<div class="card">Healing one heartbeat at a time.</div>
+<div class="card">Pain fades, wisdom stays.</div>
+<div class="card">Heart heavy, soul strong.</div>
+<div class="card">Broken but building strength.</div>
+<div class="card">Silent heartbreak, steady soul.</div>
+<div class="card">Love lost, self found.</div>
+<div class="card">Soft heart, strong spirit.</div>
+<div class="card">Mending quietly, thriving daily.</div>
+<div class="card">Bruised but flourishing.</div>
+<div class="card">Heart hurt, lessons learned.</div>
+<div class="card">Healing slowly, living fully.</div>
+<div class="card">Fading pain, brighter self.</div>
+<div class="card">Soft soul, bold heart.</div>
+<div class="card">Heartbroken, slowly thriving.</div>
+<div class="card">Silent pain, steady growth.</div>
+<div class="card">Love ended, self discovered.</div>
+<div class="card">Bruised but resilient.</div>
+<div class="card">Soft heart, brave soul.</div>
+<div class="card">Healing quietly, living boldly.</div>
+<div class="card">Love gone, wisdom gained.</div>
+<div class="card">Heart scarred, soul strong.</div>
+<div class="card">Silent tears, steady rise.</div>
+<div class="card">Broken but stronger.</div>
+<div class="card">Pain fades, strength remains.</div>
+<div class="card">Heart heavy, mind awake.</div>
+<div class="card">Soft soul, resilient heart.</div>
+<div class="card">Mending quietly, thriving fully.</div>
+<div class="card">Bruised but beautiful.</div>
+<div class="card">Heart hurt, lessons learned.</div>
+<div class="card">Healing slowly, thriving boldly.</div>
+<div class="card">Love lost, wisdom gained.</div>
+<div class="card">Soft heart, strong spirit.</div>
+<div class="card">Broken, but growing.</div>
+<div class="card">Heart heavy, soul strong.</div>
+<div class="card">Silent heartbreak, steady rise.</div>
+<div class="card">Fading pain, brighter self.</div>
+<div class="card">Healing quietly, living fully.</div>
+<div class="card">Bruised but thriving.</div>
+<div class="card">Soft heart, bold soul.</div>
+<div class="card">Heart scarred, mind awake.</div>
+<div class="card">Love ended, self found.</div>
+<div class="card">Pain fades, courage grows.</div>
+<div class="card">Healing one step at a time.</div>
+<div class="card">Heart hurt, soul thriving.</div>
+<div class="card">Silent tears, steady growth.</div>
+<div class="card">Bruised but resilient.</div>
+<div class="card">Soft heart, strong mind.</div>
+<div class="card">Heart mending, lessons learned.</div>
+<div class="card">Healing quietly, thriving fully.</div>
+<div class="card">Love gone, self reclaimed.</div>
+<div class="card">Heartbroken, slowly healing.</div>
+<div class="card">Bruised but brave.</div>
+<div class="card">Soft heart, resilient soul.</div>
+<div class="card">Healing one heartbeat at a time.</div>
+<div class="card">Pain fades, wisdom stays.</div>
+<div class="card">Heart heavy, soul strong.</div>
+<div class="card">Broken but building strength.</div>
+<div class="card">Silent heartbreak, steady soul.</div>
+<div class="card">Love lost, self found.</div>
+<div class="card">Soft heart, strong spirit.</div>
+<div class="card">Mending quietly, thriving daily.</div>
+<div class="card">Bruised but flourishing.</div>
+<div class="card">Heart hurt, lessons learned.</div>
+<div class="card">Healing slowly, living fully.</div>
+<div class="card">Fading pain, brighter self.</div>
+<div class="card">Soft soul, bold heart.</div>
+<div class="card">Heartbroken, slowly thriving.</div>
+<div class="card">Silent pain, steady growth.</div>
+<div class="card">Love ended, self discovered.</div>
+<div class="card">Bruised but resilient.</div>
+<div class="card">Soft heart, brave soul.</div>
+<div class="card">Healing quietly, living boldly.</div>
+<div class="card">Love gone, wisdom gained.</div>
+<div class="card">Heart scarred, soul strong.</div>
+<div class="card">Silent tears, steady rise.</div>
+<div class="card">Broken but stronger.</div>
+<div class="card">Pain fades, strength remains.</div>
+<div class="card">Heart heavy, mind awake.</div>
+<div class="card">Soft soul, resilient heart.</div>
+<div class="card">Mending quietly, thriving fully.</div>
+<div class="card">Bruised but beautiful.</div>
+<div class="card">Heart hurt, lessons learned.</div>
+<div class="card">Healing slowly, thriving boldly.</div>
+<div class="card">Love lost, wisdom gained.</div>
+<div class="card">Soft heart, strong spirit.</div>
+<div class="card">Broken, but growing.</div>
+<div class="card">Heart heavy, soul strong.</div>
+<div class="card">Silent heartbreak, steady rise.</div>
+<div class="card">Fading pain, brighter self.</div>
+<div class="card">Healing quietly, living fully.</div>
+<div class="card">Bruised but thriving.</div>
+<div class="card">Soft heart, bold soul.</div>
+<div class="card">Heart scarred, mind awake.</div>
+<div class="card">Love ended, self found.</div>
+<div class="card">Pain fades, courage grows.</div>
+<div class="card">Healing one step at a time.</div>
+<div class="card">Heart hurt, soul thriving.</div>
+<div class="card">Silent tears, steady growth.</div>
+<div class="card">Bruised but resilient.</div>
+<div class="card">Soft heart, strong mind.</div>
+<div class="card">Heart mending, lessons learned.</div>
+<div class="card">Healing quietly, thriving fully.</div>
+<div class="card">Love gone, self reclaimed.</div>
+<div class="card">Heartbroken, slowly healing.</div>
+<div class="card">Bruised but brave.</div>
+<div class="card">Soft heart, resilient soul.</div>
+<div class="card">Healing one heartbeat at a time.</div>
+<div class="card">Pain fades, wisdom stays.</div>
+<div class="card">Heart heavy, soul strong.</div>
+<div class="card">Broken but building strength.</div>
+<div class="card">Silent heartbreak, steady soul.</div>
+<div class="card">Love lost, self found.</div>
+<div class="card">Soft heart, strong spirit.</div>
+<div class="card">Mending quietly, thriving daily.</div>
+<div class="card">Bruised but flourishing.</div>
+<div class="card">Heart hurt, lessons learned.</div>
+<div class="card">Healing slowly, living fully.</div>
+<div class="card">Fading pain, brighter self.</div>
+<div class="card">Soft soul, bold heart.</div>
+<div class="card">Heartbroken, slowly thriving.</div>
+<div class="card">Silent pain, steady growth.</div>
+<div class="card">Love ended, self discovered.</div>
+<div class="card">Bruised but resilient.</div>
+<div class="card">Soft heart, brave soul.</div>
+<div class="card">Healing quietly, living boldly.</div>
+<div class="card">Love gone, wisdom gained.</div>
+<div class="card">Heart scarred, soul strong.</div>
+<div class="card">Silent tears, steady rise.</div>
+<div class="card">Broken but stronger.</div>
+<div class="card">Pain fades, strength remains.</div>
+<div class="card">Heart heavy, mind awake.</div>
+<div class="card">Soft soul, resilient heart.</div>
+<div class="card">Mending quietly, thriving fully.</div>
+<div class="card">Bruised but beautiful.</div>
+<div class="card">Heart hurt, lessons learned.</div>
+<div class="card">Healing slowly, thriving boldly.</div>
+<div class="card">Love lost, wisdom gained.</div>
+<div class="card">Soft heart, strong spirit.</div>
+<div class="card">Broken, but growing.</div>
+<div class="card">Heart heavy, soul strong.</div>
+<div class="card">Silent heartbreak, steady rise.</div>
+<div class="card">Fading pain, brighter self.</div>
+<div class="card">Healing quietly, living fully.</div>
+<div class="card">Bruised but thriving.</div>
+<div class="card">Soft heart, bold soul.</div>
+<div class="card">Heart scarred, mind awake.</div>
+<div class="card">Love ended, self found.</div>
+<div class="card">Pain fades, courage grows.</div>
+<div class="card">Healing one step at a time.</div>
+<div class="card">Heart hurt, soul thriving.</div>
+<div class="card">Silent tears, steady growth.</div>
+<div class="card">Bruised but resilient.</div>
+<div class="card">Soft heart, strong mind.</div>
+<div class="card">Heart mending, lessons learned.</div>
+<div class="card">Healing quietly, thriving fully.</div>
+<div class="card">Love gone, self reclaimed.</div>
+<div class="card">Heartbroken, slowly healing.</div>
+<div class="card">Bruised but brave.</div>
+<div class="card">Soft heart, resilient soul.</div>
+<div class="card">Healing one heartbeat at a time.</div>
+<div class="card">Pain fades, wisdom stays.</div>
+<div class="card">Heart heavy, soul strong.</div>
+<div class="card">Broken but building strength.</div>
+<div class="card">Silent heartbreak, steady soul.</div>
+<div class="card">Love lost, self found.</div>
+<div class="card">Soft heart, strong spirit.</div>
+<div class="card">Mending quietly, thriving daily.</div>
+<div class="card">Bruised but flourishing.</div>
+<div class="card">Heart hurt, lessons learned.</div>
+<div class="card">Healing slowly, living fully.</div>
+<div class="card">Fading pain, brighter self.</div>
+<div class="card">Soft soul, bold heart.</div>
+<div class="card">Heartbroken, slowly thriving.</div>
+<div class="card">Silent pain, steady growth.</div>
+<div class="card">Love ended, self discovered.</div>
+<div class="card">Bruised but resilient.</div>
+<div class="card">Soft heart, brave soul.</div>
+<div class="card">Healing quietly, living boldly.</div>
+<div class="card">Love gone, wisdom gained.</div>
+<div class="card">Heart scarred, soul strong.</div>
+<div class="card">Silent tears, steady rise.</div>
+<div class="card">Broken but stronger.</div>
+<div class="card">Pain fades, strength remains.</div>
+<div class="card">Heart heavy, mind awake.</div>
+<div class="card">Soft soul, resilient heart.</div>
+<div class="card">Mending quietly, thriving fully.</div>
+<div class="card">Bruised but beautiful.</div>
+<div class="card">Heart hurt, lessons learned.</div>
+<div class="card">Healing slowly, thriving boldly.</div>
+<div class="card">Love lost, wisdom gained.</div>
+<div class="card">Soft heart, strong spirit.</div>
+<div class="card">Broken, but growing.</div>
+<div class="card">Heart heavy, soul strong.</div>
+<div class="card">Silent heartbreak, steady rise.</div>
+<div class="card">Fading pain, brighter self.</div>
+<div class="card">Healing quietly, living fully.</div>
+<div class="card">Bruised but thriving.</div>
+<div class="card">Soft heart, bold soul.</div>
+<div class="card">Heart scarred, mind awake.</div>
+<div class="card">Love ended, self found.</div>
+<div class="card">Pain fades, courage grows.</div>
+<div class="card">Healing one step at a time.</div>
+<div class="card">Heart hurt, soul thriving.</div>
+<div class="card">Silent tears, steady growth.</div>
+<div class="card">Bruised but resilient.</div>
+<div class="card">Soft heart, strong mind.</div>
+<div class="card">Heart mending, lessons learned.</div>
+<div class="card">Healing quietly, thriving fully.</div>
+<div class="card">Love gone, self reclaimed.</div>
+<div class="card">Heartbroken, slowly healing.</div>
+<div class="card">Bruised but brave.</div>
+<div class="card">Soft heart, resilient soul.</div>
+<div class="card">Healing one heartbeat at a time.</div>
+<div class="card">Pain fades, wisdom stays.</div>
+<div class="card">Heart heavy, soul strong.</div>
+<div class="card">Broken but building strength.</div>
+<div class="card">Silent heartbreak, steady soul.</div>
+<div class="card">Love lost, self found.</div>
+<div class="card">Soft heart, strong spirit.</div>
+<div class="card">Mending quietly, thriving daily.</div>
+<div class="card">Bruised but flourishing.</div>
+<div class="card">Heart hurt, lessons learned.</div>
+<div class="card">Healing slowly, living fully.</div>
+<div class="card">Fading pain, brighter self.</div>
+<div class="card">Soft soul, bold heart.</div>
+<div class="card">Heartbroken, slowly thriving.</div>
+<div class="card">Silent pain, steady growth.</div>
+<div class="card">Love ended, self discovered.</div>
+<div class="card">Bruised but resilient.</div>
+<div class="card">Soft heart, brave soul.</div>
+<div class="card">Healing quietly, living boldly.</div>
+<div class="card">Love gone, wisdom gained.</div>
+<div class="card">Heart scarred, soul strong.</div>
+<div class="card">Silent tears, steady rise.</div>
+<div class="card">Broken but stronger.</div>
+<div class="card">Pain fades, strength remains.</div>
+<div class="card">Heart heavy, mind awake.</div>
+<div class="card">Soft soul, resilient heart.</div>
+<div class="card">Mending quietly, thriving fully.</div>
+<div class="card">Bruised but beautiful.</div>
+<div class="card">Heart hurt, lessons learned.</div>
+<div class="card">Healing
+
+</div>
+
+<script>
+const b=document.getElementById('burger'),m=document.getElementById('menu');
+b.onclick=e=>{m.classList.toggle('active');e.stopPropagation();}
+document.onclick=e=>{if(!m.contains(e.target)&&!b.contains(e.target))m.classList.remove('active')}
+function toggleMode(){document.body.classList.toggle('light-mode')}
+</script>
+</body>
+</html>

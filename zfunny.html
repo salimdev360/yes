@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Funny Quotes — Rizz Lines & Quotes</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  padding-top:80px;
+  background: linear-gradient(135deg,#ffec6d,#fcbf49,#ff6f91);
+  color:#111;
+  transition: background 0.8s, color 0.8s;
+}
+body.dark-mode{
+  background: linear-gradient(135deg,#1b1745,#0f0c29);
+  color:#fff;
+}
+
+/* Header */
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  height:70px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 20px;
+  background:rgba(255,255,255,0.95);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+  transition: background 0.5s;
+}
+body.dark-mode header{
+  background: rgba(15,12,41,0.95);
+}
+header .brand{
+  font-weight:700;
+  font-size:20px;
+  color:#ff416c;
+}
+.burger{
+  width:30px;
+  cursor:pointer;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.burger span{
+  height:3px;
+  margin:5px 0;
+  background:#111;
+  border-radius:5px;
+  transition:0.3s;
+}
+body.dark-mode .burger span{
+  background:#fff;
+}
+
+/* Burger Menu */
+.menu{
+  position:fixed;
+  top:0;
+  left:-100%;
+  width:260px;
+  height:100vh;
+  padding:90px 20px;
+  background:rgba(255,255,255,.95);
+  transition:0.4s;
+  z-index:1000;
+}
+body.dark-mode .menu{
+  background:rgba(20,18,55,.97);
+}
+.menu.active{left:0;}
+.menu a, .menu button{
+  display:block;
+  margin-bottom:16px;
+  text-align:center;
+  text-decoration:none;
+  color:#ff416c;
+  font-weight:600;
+  background:none;
+  border:none;
+  cursor:pointer;
+  width:100%;
+  padding:12px 0;
+  border-radius:12px;
+  transition: transform 0.2s, color 0.2s;
+}
+.menu a:hover, .menu button:hover{
+  transform:scale(1.05);
+  color:#ff8c42;
+}
+
+/* Back button */
+.back-btn{
+  display:inline-block;
+  padding:14px 32px;
+  margin:20px auto;
+  border-radius:50px;
+  font-weight:600;
+  border:none;
+  cursor:pointer;
+  background:linear-gradient(45deg,#f9d423,#ff4e50);
+  color:#111;
+  font-size:1.1em;
+  transition:all 0.3s;
+  text-decoration:none;
+  text-align:center;
+}
+body.dark-mode .back-btn{
+  background:linear-gradient(45deg,#ff416c,#ff4b2b);
+  color:#fff;
+}
+.back-btn:hover{
+  transform:scale(1.05) rotate(-2deg);
+  opacity:0.9;
+}
+
+/* Quotes Container */
+.quotes-container{
+  max-width:900px;
+  margin:40px auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px;
+  padding:0 20px;
+}
+.quote-card{
+  background:linear-gradient(135deg,#ffec6d,#fcbf49);
+  padding:24px;
+  border-radius:20px;
+  font-size:1.15em;
+  font-weight:500;
+  color:#111;
+  position:relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor:default;
+}
+.quote-card:hover{
+  transform: translateY(-5px) rotate(-1deg) scale(1.03);
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+body.dark-mode .quote-card{
+  background: linear-gradient(135deg,#ff416c,#ff4b2b);
+  color:#fff;
+}
+.quote-card::before{
+  content:"😂";
+  position:absolute;
+  top:10px;
+  left:10px;
+  font-size:1.3em;
+}
+
+/* Page Title */
+.page-title{
+  text-align:center;
+  font-size:2.2em;
+  margin:30px 20px 10px 20px;
+  background: linear-gradient(90deg,#f9d423,#ff4e50,#ff6f91);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 5s infinite linear;
+}
+@keyframes gradientShift {
+  0% { background-position:0% 50%; }
+  50% { background-position:100% 50%; }
+  100% { background-position:0% 50%; }
+}
+</style>
+</head>
+<body class="light-mode">
+
+<header>
+  <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  <div class="brand">🤣 Funny Vibes</div>
+   <div class="burger" id="burger"><span></span><span></span><span></span></div>
+</header>
+
+<nav class="menu" id="menu">
+  <a href="oabout.html">About</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="ncontacts.html">Contact</a>
+  <button onclick="toggleMode()">Light/Dark Mode</button>
+</nav>
+
+<!-- Back Button -->
+<div style="text-align:center;">
+  <a href="mquotes.html" class="back-btn">⬅ Back to Quotes</a>
+</div>
+
+<!-- Page Title -->
+<h1 class="page-title">😂 Laugh Out Loud Quotes 😂</h1>
+
+<!-- Quotes Section -->
+<div class="quotes-container">
+  <div class="quote-card">“I'm on a seafood diet. I see food, and I eat it.”</div>
+  <div class="quote-card">“Why don’t scientists trust atoms? Because they make up everything!”</div>
+  <div class="quote-card">“I told my computer I needed a break, and it said: 'No problem, I’ll go to sleep.'”</div>
+  <div class="quote-card">“I used to think I was indecisive, but now I’m not too sure.”</div>
+  <div class="quote-card">“Life is short. Smile while you still have teeth.”</div>
+  <div class="quote-card">“I'm on a seafood diet. I see food, and I eat it.”</div>
+  <div class="quote-card">“Why don’t scientists trust atoms? Because they make up everything!”</div>
+  <div class="quote-card">“I told my computer I needed a break, and it said: 'No problem, I’ll go to sleep.'”</div>
+  <div class="quote-card">“I used to think I was indecisive, but now I’m not too sure.”</div>
+  
+  <div class="quote-card">“Are you a marshmallow? Because you make life soft and sweet.”</div>
+<div class="quote-card">“Are you a rainbow? Because my life is brighter with you.”</div>
+<div class="quote-card">“Are you a cupcake? Because you’re sweet enough to eat.”</div>
+<div class="quote-card">“Are you a smile? Because you brighten up my day.”</div>
+<div class="quote-card">“Are you a donut? Because life is better with you.”</div>
+<div class="quote-card">“Are you a cookie? Because you make life sweeter.”</div>
+<div class="quote-card">“Are you a magnet? Because I’m drawn to you.”</div>
+<div class="quote-card">“Are you a rainbow? Because you’re a spectrum of happiness.”</div>
+<div class="quote-card">“Are you a star? Because you light up my nights.”</div>
+<div class="quote-card">“Are you a balloon? Because I’m floating with joy around you.”</div>
+<div class="quote-card">“Are you a cupcake? Because you make life delicious.”</div>
+<div class="quote-card">“Are you a cookie? Because I’m feeling crumby without you.”</div>
+<div class="quote-card">“Are you a cloud? Because you make my day lighter.”</div>
+<div class="quote-card">“Are you a pen? Because you write happiness into my life.”</div>
+<div class="quote-card">“Are you a magnet? Because you pull at my heartstrings.”</div>
+<div class="quote-card">“Are you chocolate? Because life is sweeter with you.”</div>
+<div class="quote-card">“Are you a sunbeam? Because you brighten my world.”</div>
+<div class="quote-card">“Are you a coffee? Because I can’t start my day without you.”</div>
+<div class="quote-card">“Are you a pizza? Because I’m cheesy about you.”</div>
+<div class="quote-card">“Are you a cloud? Because you make me feel light.”</div>
+<div class="quote-card">“Are you a donut? Because I’m sweet on you.”</div>
+<div class="quote-card">“Are you a rainbow? Because you color my world.”</div>
+<div class="quote-card">“Are you a cupcake? Because you make life tasty.”</div>
+<div class="quote-card">“Are you a cookie? Because you complete my batch.”</div>
+<div class="quote-card">“Are you a candle? Because you light up my heart.”</div>
+<div class="quote-card">“Are you a cupcake? Because life is better with you.”</div>
+<div class="quote-card">“Are you a rainbow? Because you make everything brighter.”</div>
+<div class="quote-card">“Are you a smile? Because you make me happy.”</div>
+<div class="quote-card">“Are you a balloon? Because I’m rising with joy around you.”</div>
+<div class="quote-card">“Are you a cupcake? Because you’re delightful.”</div>
+<div class="quote-card">“Are you chocolate? Because you sweeten my day.”</div>
+<div class="quote-card">“Are you a cookie? Because you make everything better.”</div>
+<div class="quote-card">“Are you a gummy bear? Because you stick in my heart.”</div>
+<div class="quote-card">“Are you a lollipop? Because I’m stuck on you.”</div>
+<div class="quote-card">“Are you a cookie? Because life is crumby without you.”</div>
+<div class="quote-card">“Are you a balloon? Because you make me float.”</div>
+<div class="quote-card">“Are you a rainbow? Because you make me see colors.”</div>
+<div class="quote-card">“Are you coffee? Because I’m addicted to you.”</div>
+<div class="quote-card">“Are you a sun? Because you shine on me.”</div>
+<div class="quote-card">“Are you a donut? Because I want you whole-heartedly.”</div>
+<div class="quote-card">“Are you ice cream? Because you make life sweeter.”</div>
+<div class="quote-card">“Are you a candy? Because I can’t resist you.”</div>
+<div class="quote-card">“Are you a pencil? Because you draw out the best in me.”</div>
+<div class="quote-card">“Are you a cupcake? Because you complete my frosting.”</div>
+<div class="quote-card">“Are you a marshmallow? Because life is softer with you.”</div>
+<div class="quote-card">“Are you a rainbow? Because you brighten my sky.”</div>
+<div class="quote-card">“Are you a chocolate bar? Because I’m nuts for you.”</div>
+<div class="quote-card">“Are you a cookie? Because you make me crumble with love.”</div>
+<div class="quote-card">“Are you a cloud? Because I’m floating on you.”</div>
+<div class="quote-card">“Are you a star? Because you twinkle in my heart.”</div>
+<div class="quote-card">“Are you a balloon? Because you lift me up.”</div>
+<div class="quote-card">“Are you a cupcake? Because I’m sweet on you.”</div>
+<div class="quote-card">“Are you a gummy bear? Because I want to stick with you forever.”</div>
+<div class="quote-card">“Are you a chocolate? Because you melt my heart.”</div>
+<div class="quote-card">“Are you a donut? Because I want to fill my life with you.”</div>
+<div class="quote-card">“Are you a cookie? Because I want to share my life with you.”</div>
+<div class="quote-card">“Are you a cupcake? Because life tastes better with you.”</div>
+<div class="quote-card">“Are you a rainbow? Because I follow you wherever you go.”</div>
+<div class="quote-card">“Are you popcorn? Because I’m popping with joy when I see you.”</div>
+<div class="quote-card">“Are you a marshmallow? Because I want to roast with you.”</div>
+<div class="quote-card">“Are you a sunbeam? Because you warm my heart.”</div>
+<div class="quote-card">“Are you a candle? Because you light up my darkness.”</div>
+<div class="quote-card">“Are you a cupcake? Because you make my day.”</div>
+<div class="quote-card">“Are you chocolate? Because I can’t get enough of you.”</div>
+<div class="quote-card">“Are you a donut? Because you complete my mornings.”</div>
+<div class="quote-card">“Are you a cookie? Because I want to share my sweetness.”</div>
+<div class="quote-card">“Are you a rainbow? Because you make everything better.”</div>
+<div class="quote-card">“Are you a cupcake? Because I’m frosting over my feelings.”</div>
+<div class="quote-card">“Are you a chocolate bar? Because I’m wrapped up in you.”</div>
+<div class="quote-card">“Are you a candy? Because I can’t resist your sweetness.”</div>
+<div class="quote-card">“Are you a marshmallow? Because you’re soft and sweet on my heart.”</div>
+<div class="quote-card">“Are you a rainbow? Because you bring color to my life.”</div>
+<div class="quote-card">“Are you a cookie? Because I’m dunking into love with you.”</div>
+<div class="quote-card">“Are you a cupcake? Because I’m craving your sweetness.”</div>
+<div class="quote-card">“Are you a chocolate? Because you make my world sweeter.”</div>
+<div class="quote-card">“Are you a balloon? Because I’m floating in love with you.”</div>
+<div class="quote-card">“Are you a sun? Because you brighten every day.”</div>
+<div class="quote-card">“Are you popcorn? Because you make life fun.”</div>
+<div class="quote-card">“Are you a candy? Because I’m sweet on you.”</div>
+<div class="quote-card">“Are you a cupcake? Because life tastes better with you.”</div>
+<div class="quote-card">“Are you a donut? Because you fill my heart.”</div>
+<div class="quote-card">“Are you a rainbow? Because you brighten my world.”</div>
+<div class="quote-card">“Are you a cookie? Because you make life delicious.”</div>
+<div class="quote-card">“Are you chocolate? Because I melt whenever I see you.”</div>
+<div class="quote-card">“Are you a marshmallow? Because you make everything soft and sweet.”</div>
+<div class="quote-card">“Are you a cupcake? Because you make life a treat.”</div>
+<div class="quote-card">“Are you a balloon? Because you lift my spirits.”</div>
+<div class="quote-card">“Are you a candy bar? Because I’m craving you.”</div>
+<div class="quote-card">“Are you a rainbow? Because I follow your colors.”</div>
+<div class="quote-card">“Are you a cookie? Because I can’t stop thinking about you.”</div>
+<div class="quote-card">“Are you chocolate? Because you make everything better.”</div>
+<div class="quote-card">“I’m not arguing, I’m just explaining why I’m right… again.”</div>
+<div class="quote-card">“I like long walks… to the fridge.”</div>
+<div class="quote-card">“Some mornings, I wake up grumpy. Some afternoons, I nap and wake up even grumpier.”</div>
+<div class="quote-card">“I’m not clumsy. The floor just hates me, the table and chairs are bullies, and the walls get in my way.”</div>
+<div class="quote-card">“I whisper to my Wi-Fi, ‘please connect’… and it listens sometimes.”</div>
+<div class="quote-card">“I’m not addicted to coffee. We’re just in a committed relationship.”</div>
+<div class="quote-card">“I don’t trip, I do random floor inspections.”</div>
+<div class="quote-card">“I may be wrong, but I doubt it.”</div>
+<div class="quote-card">“I don’t need anger management. I need people to stop pissing me off.”</div>
+<div class="quote-card">“I pretend to work. They pretend to pay me.”</div>
+<div class="quote-card">“I don’t always lose my phone, but when I do, it’s on silent.”</div>
+<div class="quote-card">“I tried to be normal once. Worst two minutes of my life.”</div>
+<div class="quote-card">“I’m not lazy, I’m just extremely relaxed in anticipation of doing nothing.”</div>
+<div class="quote-card">“I dance like no one is watching, mostly because no one is.”</div>
+<div class="quote-card">“I can resist everything except temptation… and snacks.”</div>
+<div class="quote-card">“I smile because I have no idea what’s happening.”</div>
+<div class="quote-card">“I don’t need a mood ring. My face says it all.”</div>
+<div class="quote-card">“I tried to be a morning person. I failed miserably.”</div>
+<div class="quote-card">“I like to party… with my blanket and snacks.”</div>
+<div class="quote-card">“I talk to myself because sometimes I need expert advice.”</div>
+<div class="quote-card">“I have a black belt in keeping it together… barely.”</div>
+<div class="quote-card">“I put my phone on airplane mode, but it refuses to take off.”</div>
+<div class="quote-card">“I don’t need therapy, I need more snacks.”</div>
+<div class="quote-card">“I don’t always lose my keys, but when I do, I’m late.”</div>
+<div class="quote-card">“I wake up awesome. Then reality hits.”</div>
+<div class="quote-card">“I’m on a 30-day diet. I’ve lost 15 days already.”</div>
+<div class="quote-card">“I don’t snore. I dream I’m a motorcycle.”</div>
+<div class="quote-card">“I’m silently correcting your grammar.”</div>
+<div class="quote-card">“I like my coffee like I like my humor: dark and strong.”</div>
+<div class="quote-card">“I have enough money to last my lifetime… if I die next week.”</div>
+<div class="quote-card">“I am on a seafood diet. I see food, I eat it.”</div>
+<div class="quote-card">“I speak fluent sarcasm and nonsense.”</div>
+<div class="quote-card">“I’m not arguing, I’m just discussing in a very loud manner.”</div>
+<div class="quote-card">“I can’t adult today. Tomorrow doesn’t look good either.”</div>
+<div class="quote-card">“I’m multitasking: I can nap and procrastinate at the same time.”</div>
+<div class="quote-card">“I’m not lazy, I’m just energy efficient.”</div>
+<div class="quote-card">“I’m on a whiskey diet. I’ve lost three days already.”</div>
+<div class="quote-card">“I put my scale in the corner. It’s my ‘do not disturb’ zone.”</div>
+<div class="quote-card">“I whisper ‘wtf’ to myself at least 20 times a day.”</div>
+<div class="quote-card">“I’m allergic to mornings and responsibilities.”</div>
+<div class="quote-card">“I’m not bossy, I just have leadership skills you don’t understand yet.”</div>
+<div class="quote-card">“I dance like a potato.”</div>
+<div class="quote-card">“I’m not shy, I’m just conserving my energy for important stuff.”</div>
+<div class="quote-card">“I’m on a coffee diet. No coffee, no motivation.”</div>
+<div class="quote-card">“I have CDO. It’s like OCD but in perfect order.”</div>
+<div class="quote-card">“I’m so good at sleeping that I can do it with my eyes closed.”</div>
+<div class="quote-card">“I am not lazy. I am on standby mode.”</div>
+<div class="quote-card">“I like my bed more than most people.”</div>
+<div class="quote-card">“I run on caffeine, sarcasm, and inappropriate thoughts.”</div>
+<div class="quote-card">“I don’t trip over things. I do random floor inspections.”</div>
+<div class="quote-card">“I’m not crazy. My reality is just different than yours.”</div>
+<div class="quote-card">“I’m not arguing, I’m just explaining why I’m right… louder.”</div>
+<div class="quote-card">“I can resist everything except chocolate and memes.”</div>
+<div class="quote-card">“I’m not lazy, I just rest before I get tired.”</div>
+<div class="quote-card">“I’m not weird, I’m limited edition.”</div>
+<div class="quote-card">“I’m not arguing, I’m just explaining why I’m right… again.”</div>
+<div class="quote-card">“I like long walks… to the fridge.”</div>
+<div class="quote-card">“Some mornings, I wake up grumpy. Some afternoons, I nap and wake up even grumpier.”</div>
+<div class="quote-card">“I’m not clumsy. The floor just hates me, the table and chairs are bullies, and the walls get in my way.”</div>
+<div class="quote-card">“I whisper to my Wi-Fi, ‘please connect’… and it listens sometimes.”</div>
+<div class="quote-card">“I’m not addicted to coffee. We’re just in a committed relationship.”</div>
+<div class="quote-card">“I don’t trip, I do random floor inspections.”</div>
+<div class="quote-card">“I may be wrong, but I doubt it.”</div>
+<div class="quote-card">“I don’t need anger management. I need people to stop pissing me off.”</div>
+<div class="quote-card">“I pretend to work. They pretend to pay me.”</div>
+<div class="quote-card">“I don’t always lose my phone, but when I do, it’s on silent.”</div>
+<div class="quote-card">“I tried to be normal once. Worst two minutes of my life.”</div>
+<div class="quote-card">“I’m not lazy, I’m just extremely relaxed in anticipation of doing nothing.”</div>
+<div class="quote-card">“I dance like no one is watching, mostly because no one is.”</div>
+<div class="quote-card">“I can resist everything except temptation… and snacks.”</div>
+<div class="quote-card">“I smile because I have no idea what’s happening.”</div>
+<div class="quote-card">“I don’t need a mood ring. My face says it all.”</div>
+<div class="quote-card">“I tried to be a morning person. I failed miserably.”</div>
+<div class="quote-card">“I like to party… with my blanket and snacks.”</div>
+<div class="quote-card">“I talk to myself because sometimes I need expert advice.”</div>
+<div class="quote-card">“I have a black belt in keeping it together… barely.”</div>
+<div class="quote-card">“I put my phone on airplane mode, but it refuses to take off.”</div>
+<div class="quote-card">“I don’t need therapy, I need more snacks.”</div>
+<div class="quote-card">“I don’t always lose my keys, but when I do, I’m late.”</div>
+<div class="quote-card">“I wake up awesome. Then reality hits.”</div>
+<div class="quote-card">“I’m on a 30-day diet. I’ve lost 15 days already.”</div>
+<div class="quote-card">“I don’t snore. I dream I’m a motorcycle.”</div>
+<div class="quote-card">“I’m silently correcting your grammar.”</div>
+<div class="quote-card">“I like my coffee like I like my humor: dark and strong.”</div>
+<div class="quote-card">“I have enough money to last my lifetime… if I die next week.”</div>
+<div class="quote-card">“I am on a seafood diet. I see food, I eat it.”</div>
+<div class="quote-card">“I speak fluent sarcasm and nonsense.”</div>
+<div class="quote-card">“I’m not arguing, I’m just discussing in a very loud manner.”</div>
+<div class="quote-card">“I can’t adult today. Tomorrow doesn’t look good either.”</div>
+<div class="quote-card">“I’m multitasking: I can nap and procrastinate at the same time.”</div>
+<div class="quote-card">“I’m not lazy, I’m just energy efficient.”</div>
+<div class="quote-card">“I’m on a whiskey diet. I’ve lost three days already.”</div>
+<div class="quote-card">“I put my scale in the corner. It’s my ‘do not disturb’ zone.”</div>
+<div class="quote-card">“I whisper ‘wtf’ to myself at least 20 times a day.”</div>
+<div class="quote-card">“I’m allergic to mornings and responsibilities.”</div>
+<div class="quote-card">“I’m not bossy, I just have leadership skills you don’t understand yet.”</div>
+<div class="quote-card">“I dance like a potato.”</div>
+<div class="quote-card">“I’m not shy, I’m just conserving my energy for important stuff.”</div>
+<div class="quote-card">“I’m on a coffee diet. No coffee, no motivation.”</div>
+<div class="quote-card">“I have CDO. It’s like OCD but in perfect order.”</div>
+<div class="quote-card">“I’m so good at sleeping that I can do it with my eyes closed.”</div>
+<div class="quote-card">“I am not lazy. I am on standby mode.”</div>
+<div class="quote-card">“I like my bed more than most people.”</div>
+<div class="quote-card">“I run on caffeine, sarcasm, and inappropriate thoughts.”</div>
+<div class="quote-card">“I don’t trip over things. I do random floor inspections.”</div>
+<div class="quote-card">“I’m not crazy. My reality is just different than yours.”</div>
+<div class="quote-card">“I’m not arguing, I’m just explaining why I’m right… louder.”</div>
+<div class="quote-card">“I can resist everything except chocolate and memes.”</div>
+<div class="quote-card">“I’m not lazy, I just rest before I get tired.”</div>
+<div class="quote-card">“I’m not weird, I’m limited edition.”</div>
+<div class="quote-card">“I am not lazy, I just enjoy doing nothing.”</div>
+<div class="quote-card">“I don’t need an inspirational quote. I need coffee.”</div>
+<div class="quote-card">“I don’t always do my homework, but when I do, I still get it wrong.”</div>
+<div class="quote-card">“I’m on a seafood diet. I see food, I eat food… twice.”</div>
+<div class="quote-card">“I’m not crazy, I’ve just been in a very long meeting with reality.”</div>
+<div class="quote-card">“I talk to myself because I need expert advice.”</div>
+<div class="quote-card">“I dance like a chicken in a blender.”</div>
+<div class="quote-card">“I’m not arguing. I’m just expressing my strong opinion loudly.”</div>
+<div class="quote-card">“I put the ‘pro’ in procrastinate.”</div>
+<div class="quote-card">“I’m allergic to mornings, work, and people.”</div>
+<div class="quote-card">“I’m not shy. I’m just holding back my sarcasm.”</div>
+<div class="quote-card">“I whisper ‘why me?’ to the universe every morning.”</div>
+<div class="quote-card">“I’m multitasking: I can listen, ignore, and forget at the same time.”</div>
+<div class="quote-card">“I can resist everything except snacks, naps, and memes.”</div>
+<div class="quote-card">“I smile because I have no idea what’s going on.”</div>
+<div class="quote-card">“I am not late. I am just on my own time zone.”</div>
+<div class="quote-card">“I like my coffee black and my sarcasm darker.”</div>
+<div class="quote-card">“I don’t need anger management, I need people to stop annoying me.”</div>
+<div class="quote-card">“I’m not clumsy. I just test gravity often.”</div>
+<div class="quote-card">“I like my humor how I like my wine: dry and strong.”</div>
+<div class="quote-card">“I’m not lazy. I just rest before I get tired.”</div>
+<div class="quote-card">“I run on caffeine, chaos, and inappropriate thoughts.”</div>
+<div class="quote-card">“I pretend to work, but actually, I’m thinking about snacks.”</div>
+<div class="quote-card">“I’m not a morning person. Or an afternoon person. Let’s skip to evening.”</div>
+<div class="quote-card">“I put my phone on airplane mode, but it refuses to fly.”</div>
+<div class="quote-card">“I’m not arguing. I’m just explaining why you’re wrong.”</div>
+<div class="quote-card">“I’m on a chocolate diet. I’ve lost zero pounds, but gained happiness.”</div>
+<div class="quote-card">“I don’t need therapy. I need more naps.”</div>
+<div class="quote-card">“I don’t trip, I do random floor inspections.”</div>
+<div class="quote-card">“I’m not lazy, I’m just in energy-saving mode.”</div>
+<div class="quote-card">“I am silently judging your fashion choices.”</div>
+<div class="quote-card">“I have enough money to last a lifetime… if I die next week.”</div>
+<div class="quote-card">“I tried to be a morning person once. It lasted 5 minutes.”</div>
+<div class="quote-card">“I whisper to my Wi-Fi, please connect.”</div>
+<div class="quote-card">“I’m multitasking: procrastinating and stressing at the same time.”</div>
+<div class="quote-card">“I dance like no one’s watching because no one is.”</div>
+<div class="quote-card">“I’m not weird. I’m just more creative than you.”</div>
+<div class="quote-card">“I tried to be normal once. Worst two minutes of my life.”</div>
+<div class="quote-card">“I smile because life is funny, even when it’s not.”</div>
+<div class="quote-card">“I’m not arguing, I’m just explaining why I’m always right.”</div>
+<div class="quote-card">“I put the ‘fun’ in dysfunctional.”</div>
+<div class="quote-card">“I am not lazy. I’m on power-saving mode.”</div>
+<div class="quote-card">“I like my bed more than most people.”</div>
+<div class="quote-card">“I’m not crazy. I’m creatively insane.”</div>
+<div class="quote-card">“I don’t snore. I dream I’m a motorcycle.”</div>
+<div class="quote-card">“I am not messy. I am creatively organized.”</div>
+<div class="quote-card">“I don’t procrastinate. I delegate to my future self.”</div>
+<div class="quote-card">“I’m not lazy, I’m on my energy-saving mode.”</div>
+<div class="quote-card">“I dance like nobody’s watching, even though they are judging.”</div>
+<div class="quote-card">“I can’t adult today. Tomorrow doesn’t look good either.”</div>
+<div class="quote-card">“I put the ‘pro’ in procrastination.”</div>
+<div class="quote-card">“I don’t trip, I do random gravity checks.”</div>
+<div class="quote-card">“I’m not weird. I’m limited edition.”</div>
+<div class="quote-card">“I am not lazy, I just enjoy doing nothing.”</div>
+<div class="quote-card">“I don’t need an inspirational quote. I need coffee.”</div>
+<div class="quote-card">“I don’t always do my homework, but when I do, I still get it wrong.”</div>
+<div class="quote-card">“I’m on a seafood diet. I see food, I eat food… twice.”</div>
+<div class="quote-card">“I’m not crazy, I’ve just been in a very long meeting with reality.”</div>
+<div class="quote-card">“I talk to myself because I need expert advice.”</div>
+<div class="quote-card">“I dance like a chicken in a blender.”</div>
+<div class="quote-card">“I’m not arguing. I’m just expressing my strong opinion loudly.”</div>
+<div class="quote-card">“I put the ‘pro’ in procrastinate.”</div>
+<div class="quote-card">“I’m allergic to mornings, work, and people.”</div>
+<div class="quote-card">“I’m not shy. I’m just holding back my sarcasm.”</div>
+<div class="quote-card">“I whisper ‘why me?’ to the universe every morning.”</div>
+<div class="quote-card">“I’m multitasking: I can listen, ignore, and forget at the same time.”</div>
+<div class="quote-card">“I can resist everything except snacks, naps, and memes.”</div>
+<div class="quote-card">“I smile because I have no idea what’s going on.”</div>
+<div class="quote-card">“I am not late. I am just on my own time zone.”</div>
+<div class="quote-card">“I like my coffee black and my sarcasm darker.”</div>
+<div class="quote-card">“I don’t need anger management, I need people to stop annoying me.”</div>
+<div class="quote-card">“I’m not clumsy. I just test gravity often.”</div>
+<div class="quote-card">“I like my humor how I like my wine: dry and strong.”</div>
+<div class="quote-card">“I’m not lazy. I just rest before I get tired.”</div>
+<div class="quote-card">“I run on caffeine, chaos, and inappropriate thoughts.”</div>
+<div class="quote-card">“I pretend to work, but actually, I’m thinking about snacks.”</div>
+<div class="quote-card">“I’m not a morning person. Or an afternoon person. Let’s skip to evening.”</div>
+<div class="quote-card">“I put my phone on airplane mode, but it refuses to fly.”</div>
+<div class="quote-card">“I’m not arguing. I’m just explaining why you’re wrong.”</div>
+<div class="quote-card">“I’m on a chocolate diet. I’ve lost zero pounds, but gained happiness.”</div>
+<div class="quote-card">“I don’t need therapy. I need more naps.”</div>
+<div class="quote-card">“I don’t trip, I do random floor inspections.”</div>
+<div class="quote-card">“I’m not lazy, I’m just in energy-saving mode.”</div>
+<div class="quote-card">“I am silently judging your fashion choices.”</div>
+<div class="quote-card">“I have enough money to last a lifetime… if I die next week.”</div>
+<div class="quote-card">“I tried to be a morning person once. It lasted 5 minutes.”</div>
+<div class="quote-card">“I whisper to my Wi-Fi, please connect.”</div>
+<div class="quote-card">“I’m multitasking: procrastinating and stressing at the same time.”</div>
+<div class="quote-card">“I dance like no one’s watching because no one is.”</div>
+<div class="quote-card">“I’m not weird. I’m just more creative than you.”</div>
+<div class="quote-card">“I tried to be normal once. Worst two minutes of my life.”</div>
+<div class="quote-card">“I smile because life is funny, even when it’s not.”</div>
+<div class="quote-card">“I’m not arguing, I’m just explaining why I’m always right.”</div>
+<div class="quote-card">“I put the ‘fun’ in dysfunctional.”</div>
+<div class="quote-card">“I am not lazy. I’m on power-saving mode.”</div>
+<div class="quote-card">“I like my bed more than most people.”</div>
+<div class="quote-card">“I’m not crazy. I’m creatively insane.”</div>
+<div class="quote-card">“I don’t snore. I dream I’m a motorcycle.”</div>
+<div class="quote-card">“I am not messy. I am creatively organized.”</div>
+<div class="quote-card">“I don’t procrastinate. I delegate to my future self.”</div>
+<div class="quote-card">“I’m not lazy, I’m on my energy-saving mode.”</div>
+<div class="quote-card">“I dance like nobody’s watching, even though they are judging.”</div>
+<div class="quote-card">“I can’t adult today. Tomorrow doesn’t look good either.”</div>
+<div class="quote-card">“I put the ‘pro’ in procrastination.”</div>
+<div class="quote-card">“I don’t trip, I do random gravity checks.”</div>
+<div class="quote-card">“I’m not weird. I’m limited edition.”</div>
+
+  <div class="quote-card">“I’m reading a book about anti-gravity. It’s impossible to put down.”</div>
+  <div class="quote-card">“Parallel lines have so much in common… it’s a shame they’ll never meet.”</div>
+  <div class="quote-card">“I asked the gym instructor if he could teach me to do the splits. He said: 'How flexible are you?' I said: 'I can’t make it on Tuesdays.'”</div>
+  <div class="quote-card">“My bed and I are perfect for each other, but my alarm clock keeps trying to break us up.”</div>
+  <div class="quote-card">“Why did the scarecrow win an award? Because he was outstanding in his field!”</div>
+</div>
+
+<script>
+const burger = document.getElementById('burger');
+const menu = document.getElementById('menu');
+
+// Toggle burger menu
+burger.addEventListener('click', function(event){
+  menu.classList.toggle("active");
+  event.stopPropagation();
+});
+
+// Close menu if clicked outside
+document.addEventListener('click', function(event){
+  if(!menu.contains(event.target) && !burger.contains(event.target)){
+    menu.classList.remove("active");
+  }
+});
+
+// Menu links close menu when clicked
+const links = menu.querySelectorAll('a, button');
+links.forEach(link => {
+  link.addEventListener('click', function(event){
+    menu.classList.remove("active");
+  });
+});
+
+// Light/Dark Mode
+function toggleMode(){
+  document.body.classList.toggle('light-mode');
+  document.body.classList.toggle('dark-mode');
+}
+</script>
+
+</body>
+</html>
