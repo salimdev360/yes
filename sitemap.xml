@@ -7,32 +7,97 @@
     <priority>1.0</priority>
   </url>
 
-  <url><loc>https://salimdev360.github.io/yes/jgender.html</loc></url>
-  <url><loc>https://salimdev360.github.io/yes/jage.html</loc></url>
-  <url><loc>https://salimdev360.github.io/yes/jforth.html</loc></url>
-  <url><loc>https://salimdev360.github.io/yes/motivational_quotes.html</loc></url>
-  <url><loc>https://salimdev360.github.io/yes/mquotes.html</loc></url>
-  <url><loc>https://salimdev360.github.io/yes/ncontacts.html</loc></url>
-  <url><loc>https://salimdev360.github.io/yes/oabout.html</loc></url>
-  <url><loc>https://salimdev360.github.io/yes/pickuplines.html</loc></url>
-  <url><loc>https://salimdev360.github.io/yes/privacy.html</loc></url>
-  <url><loc>https://salimdev360.github.io/yes/tipsandadvice.html</loc></url>
+  <url>
+    <loc>https://salimdev360.github.io/yes/jgender.html</loc>
+  </url>
 
-  <url><loc>https://salimdev360.github.io/yes/zconfident.html</loc></url>
-  <url><loc>https://salimdev360.github.io/yes/zfunny.html</loc></url>
-  <url><loc>https://salimdev360.github.io/yes/zfunnyizz.html</loc></url>
-  <url><loc>https://salimdev360.github.io/yes/zheart.html</loc></url>
-  <url><loc>https://salimdev360.github.io/yes/zhelp.html</loc></url>
-  <url><loc>https://salimdev360.github.io/yes/zigbio.html</loc></url>
-  <url><loc>https://salimdev360.github.io/yes/zinlove.html</loc></url>
-  <url><loc>https://salimdev360.github.io/yes/zlastbio.html</loc></url>
-  <url><loc>https://salimdev360.github.io/yes/zlove_quotes.html</loc></url>
-  <url><loc>https://salimdev360.github.io/yes/zmoney.html</loc></url>
-  <url><loc>https://salimdev360.github.io/yes/zplayful.html</loc></url>
-  <url><loc>https://salimdev360.github.io/yes/zizzlines.html</loc></url>
-  <url><loc>https://salimdev360.github.io/yes/zsmooth.html</loc></url>
+  <url>
+    <loc>https://salimdev360.github.io/yes/jage.html</loc>
+  </url>
+
+  <url>
+    <loc>https://salimdev360.github.io/yes/jforth.html</loc>
+  </url>
+
+  <url>
+    <loc>https://salimdev360.github.io/yes/motivational_quotes.html</loc>
+  </url>
+
+  <url>
+    <loc>https://salimdev360.github.io/yes/mquotes.html</loc>
+  </url>
+
+  <url>
+    <loc>https://salimdev360.github.io/yes/ncontacts.html</loc>
+  </url>
+
+  <url>
+    <loc>https://salimdev360.github.io/yes/oabout.html</loc>
+  </url>
+
+  <url>
+    <loc>https://salimdev360.github.io/yes/pickuplines.html</loc>
+  </url>
+
+  <url>
+    <loc>https://salimdev360.github.io/yes/privacy.html</loc>
+  </url>
+
+  <url>
+    <loc>https://salimdev360.github.io/yes/tipsandadvice.html</loc>
+  </url>
+
+  <url>
+    <loc>https://salimdev360.github.io/yes/zconfident.html</loc>
+  </url>
+
+  <url>
+    <loc>https://salimdev360.github.io/yes/zfunny.html</loc>
+  </url>
+
+  <url>
+    <loc>https://salimdev360.github.io/yes/zfunnyizz.html</loc>
+  </url>
+
+  <url>
+    <loc>https://salimdev360.github.io/yes/zheart.html</loc>
+  </url>
+
+  <url>
+    <loc>https://salimdev360.github.io/yes/zhelp.html</loc>
+  </url>
+
+  <url>
+    <loc>https://salimdev360.github.io/yes/zigbio.html</loc>
+  </url>
+
+  <url>
+    <loc>https://salimdev360.github.io/yes/zinlove.html</loc>
+  </url>
+
+  <url>
+    <loc>https://salimdev360.github.io/yes/zlastbio.html</loc>
+  </url>
+
+  <url>
+    <loc>https://salimdev360.github.io/yes/zlove_quotes.html</loc>
+  </url>
+
+  <url>
+    <loc>https://salimdev360.github.io/yes/zmoney.html</loc>
+  </url>
+
+  <url>
+    <loc>https://salimdev360.github.io/yes/zplayful.html</loc>
+  </url>
+
+  <url>
+    <loc>https://salimdev360.github.io/yes/zizzlines.html</loc>
+  </url>
+
+  <url>
+    <loc>https://salimdev360.github.io/yes/zsmooth.html</loc>
+  </url>
 
 </urlset>
-User-agent: *
-Allow: /
-Sitemap: https://salimdev360.github.io/yes/sitemap.xml
+
